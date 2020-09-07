@@ -1,0 +1,37 @@
+{
+  "name": "UCLA ACM ICPC",
+  "short_name": "ICPC",
+  "lang": "en-US",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff8383",
+  "background_color": "#ffffff",
+  "description": "Official Website for ACM ICPC at UCLA",
+  "icons": [
+    {
+      "src": "/static/icon/logo64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icon/logo128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icon/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icon/logo256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icon/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
