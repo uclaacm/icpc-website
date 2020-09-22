@@ -41,7 +41,7 @@ ReactDOM.render(
     <ThemeProvider theme={customTheme}>
       {console.log(customTheme)}
       <CSSReset />
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <App />
       </BrowserRouter>
     </ThemeProvider>
