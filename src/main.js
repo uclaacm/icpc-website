@@ -39,7 +39,6 @@ import App from 'app';
 ReactDOM.render(
   <div id="mount">
     <ThemeProvider theme={customTheme}>
-      {console.log(customTheme)}
       <CSSReset />
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <App />

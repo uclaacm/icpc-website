@@ -69,8 +69,8 @@ const Navbar = () => {
                   acm.
                   <span style={{
                     background: "-webkit-linear-gradient(#ff8383 40%, #d73762 100%)",
-                    "-webkit-background-clip": "text",
-                    "-webkit-text-fill-color": "transparent",
+                    "WebkitBackgroundClip": "text",
+                    "WebkitTextFillColor": "transparent",
                   }}>icpc</span>
                 </Heading>
               )}
@@ -207,26 +207,16 @@ const App = () => {
     <div>
       <Navbar />
       <Suspense fallback={FallbackView}>
-        <Switch>
-          <MainContent>
-            <Route exact path="/">
-              <HomeContainer />
-            </Route>
-            <Route exact path="/events">
-              <EventsContainer />
-            </Route>
-            <Route exact path="/icpc">
-              <RegionalsContainer />
-            </Route>
-            <Route exact path="/team">
-              <TeamContainer />
-            </Route>
-            <Route exact path="/contact">
-              <ContactContainer />
-            </Route>
+        <MainContent>
+          <Switch>
+            <Route exact path="/" component={HomeContainer} />
+            <Route exact path="/events" component={EventsContainer} />
+            <Route exact path="/icpc" component={RegionalsContainer} />
+            <Route exact path="/team" component={TeamContainer} />
+            <Route exact path="/contact" component={ContactContainer} />
             <Redirect to="/" />
-          </MainContent>
-        </Switch>
+          </Switch>
+        </MainContent>
       </Suspense>
       <Footer />
     </div>
