@@ -28,7 +28,7 @@ const createConfig = (env, argv) => {
           test: /\.s?css$/,
           use: [
             ExtractTextPlugin.loader,
-            {loader: 'css-loader', options: {minimize: true}},
+            {loader: 'css-loader'},
             {loader: 'sass-loader'},
           ],
         },
@@ -78,11 +78,11 @@ const createConfig = (env, argv) => {
         filename: 'static/[name].[contenthash].css',
         chunkFilename: 'static/chunk.[name].[contenthash].css',
       }),
-      new CopyPlugin([
-        {
-          from: '../public',
-        },
-      ]),
+      new CopyPlugin({
+        patterns: [
+          { from: '../public', },
+        ]
+      }),
     ],
 
     output: {
