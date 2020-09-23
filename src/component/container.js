@@ -5,7 +5,7 @@ const Container = ({narrow, children}) => {
   if (narrow) {
     return (
       <Box
-        maxWidth={["512px", "512px", "800px", "1000px"]}
+        maxWidth={["512px", "768px", "800px", "1000px"]}
         mx='auto'
         px={3}
       >
@@ -15,7 +15,7 @@ const Container = ({narrow, children}) => {
   }
   return (
     <Box
-      maxWidth={["512px", "512px", "800px", "1280px"]}
+      maxWidth={["512px", "768px", "800px", "1280px"]}
       mx='auto'
       px={3}
     >
