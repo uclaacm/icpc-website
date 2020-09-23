@@ -1,7 +1,18 @@
 import React from 'react';
 import {Box} from '@chakra-ui/core';
 
-const Container = ({mt, children}) => {
+const Container = ({narrow, children}) => {
+  if (narrow) {
+    return (
+      <Box
+        maxWidth={["512px", "512px", "800px", "1000px"]}
+        mx='auto'
+        px={3}
+      >
+        {children}
+      </Box>
+    );
+  }
   return (
     <Box
       maxWidth={["512px", "512px", "800px", "1280px"]}
