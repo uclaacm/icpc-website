@@ -4,6 +4,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const ExtractTextPlugin = require('mini-css-extract-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 const BundleAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const createConfig = (env, argv) => {
@@ -82,6 +83,9 @@ const createConfig = (env, argv) => {
         patterns: [
           { from: '../public', },
         ]
+      }),
+      new CnameWebpackPlugin({
+        domain: 'icpc.uclaacm.com',
       }),
     ],
 
