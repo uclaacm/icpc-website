@@ -4,45 +4,63 @@ import 'main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 import{ThemeProvider, CSSReset} from '@chakra-ui/core';
 import { theme } from "@chakra-ui/core";
+import App from 'app';
 
 const customTheme = {
   ...theme,
   fonts: {
-    heading: '"Arial", sans-serif',
-    body: '"Poppins", sans-serif',
+    heading: '"Poppins", sans-serif',
+    body: '"Kufam", cursive',
     mono: "Menlo, monospace",
+  },
+  fontWeights: {
+    regular: '400',
+    semibold: '600',
+    bold: '800',
+  },
+  fontSizes: {
+    xs: '0.875rem',
+    sm: '0.95rem',
+    md: '1.125rem',
+    lg: '1.25rem',
+    xl: '1.5rem',
+    '2xl': '1.5rem',
+    '3xl': '1.95rem',
+    '4xl': '2.25rem',
+    '5xl': '3rem',
+    '6xl': '4rem',
   },
   colors: {
     ...theme.colors,
     primary: "#1f1f1f",
     secondary: "white",
     brand: {
-      50: 'rgba(0,0,0, 0.5)',
-      100: '#2af',
-      200: '#2af',
-      300: '#2af',
-      400: '#2af',
-      500: '#2af',
-      600: '#2af',
-      700: '#2af',
-      800: '#2af',
-      900: '#2af',
+      50: 'rgba(255, 84, 121, 0.1)',
+      100: 'rgba(255, 84, 121, 0.3)',
+      200: 'rgba(255, 84, 121, 0.5)',
+      300: 'rgba(255, 84, 121, 0.7)',
+      400: 'rgba(255, 84, 121, 0.9)',
+      500: 'rgba(255, 84, 121, 1)',
+      600: '#ff1043',
+      700: '#ed0033',
+      800: '#cb002c',
+      900: '#a90024',
     },
   },
 };
 
-import App from 'app';
+console.log(customTheme);
 
 ReactDOM.render(
   <div id="mount">
     <ThemeProvider theme={customTheme}>
       <CSSReset />
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   </div>,
   document.getElementById('mount'),

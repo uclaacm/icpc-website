@@ -1,4 +1,4 @@
-import React, {Component, Suspense, lazy} from 'react';
+import React, {Fragment, Component, Suspense, lazy} from 'react';
 import {useMediaQuery} from './hooks';
 import {
   Switch,
@@ -13,7 +13,10 @@ import {
   Flex,
   Text,
   Box,
+  PseudoBox,
+  SimpleGrid,
   Image,
+  Link,
   Stack,
   Button,
   Heading,
@@ -28,6 +31,13 @@ import {
   useDisclosure,
   useToast,
 } from '@chakra-ui/core';
+import {
+  FaFacebook,
+  FaDiscord,
+  FaMedium,
+  FaInstagram,
+  FaGithub,
+} from "react-icons/fa";
 import Container from 'component/container';
 import MainContent from 'component/maincontent';
 
@@ -46,16 +56,42 @@ const Navbar = () => {
   const toast = useToast();
   const isMobile = !useMediaQuery('(min-width: 500px)');
 
+  const MenuContent = () => {
+    return (
+      <Fragment>
+        <NavLink to='/events' activeStyle={{color: '#ff5479'}}>
+          <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
+            events
+          </Button>
+        </NavLink>
+        <NavLink to='/icpc' activeStyle={{color: '#ff5479'}}>
+          <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
+            regionals
+          </Button>
+        </NavLink>
+        <NavLink to='/team' activeStyle={{color: '#ff5479'}}>
+          <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
+            team
+          </Button>
+        </NavLink>
+        {/* <NavLink to='/contact' activeStyle={{color: '#ff5479'}}> */}
+        {/*   <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}> */}
+        {/*     contact */}
+        {/*   </Button> */}
+        {/* </NavLink> */}
+      </Fragment>
+    )};
+
   return (
     <Box
       as="nav"
-      bg='primary'
-      color="secondary"
+      bg='secondary'
+      color='primary'
       p={4}
       position="fixed"
       width="100vw"
       borderBottom="2px"
-      borderColor="red.500"
+      borderColor="brand.500"
       zIndex={9999}
     >
       <Container>
@@ -66,12 +102,12 @@ const Navbar = () => {
               <Image src="/static/icon/logo64.png" size="32px" />
               {!isMobile && (
                 <Heading as="h3" fontSize="24px">
-                  acm.
+                  acm
                   <span style={{
-                    background: "-webkit-linear-gradient(#ff8383 40%, #d73762 100%)",
+                    background: "linear-gradient(to right, #ff8383 0%, #ff8383 40%, #ff5479 90%)",
                     "WebkitBackgroundClip": "text",
                     "WebkitTextFillColor": "transparent",
-                  }}>icpc</span>
+                  }}> icpc</span>
                 </Heading>
               )}
             </Stack>
@@ -79,69 +115,52 @@ const Navbar = () => {
           <Box mx='auto' />
           {!isMobile && (
             <Stack isInline>
-              <NavLink to='/events' activeStyle={{color: "red"}}>
-                <Button size="sm" variant="transparent" _hover={{color: "red.500"}}>
-                  Events
-                </Button>
-              </NavLink>
-              <NavLink to='/icpc' activeStyle={{color: "red"}}>
-                <Button size="sm" variant="transparent" _hover={{color: "red.500"}}>
-                  Regionals
-                </Button>
-              </NavLink>
-              <NavLink to='/team' activeStyle={{color: "red"}}>
-                <Button size="sm" variant="transparent" _hover={{color: "red.500"}}>
-                  Our Team
-                </Button>
-              </NavLink>
-              <NavLink to='/contact' activeStyle={{color: "red"}}>
-                <Button size="sm" variant="transparent" _hover={{color: "red.500"}}>
-                  Contact
-                </Button>
-              </NavLink>
+              <MenuContent />
               <Box mx='2px' />
               <Button
+                fontFamily="heading"
+                fontWeight="semibold"
                 size="sm"
-                variantColor="red"
+                variantColor="brand"
                 variant="solid"
                 onClick={() =>
                     toast({
                       title: "Applications are not open.",
-                      description: "Hi! Applications are not open yet. Check back around Novemeber.",
+                      description: "Hi! Applications are not open yet (-_-;) . Check back around Novemeber.",
                       status: "error",
                       duration: 5000,
                       isClosable: true,
-                    })
-                }
+                    })}
               >
-                Apply Now!
+                apply now!
               </Button>
             </Stack>
           )}
           {isMobile && (
             <Stack isInline>
               <Button
+                fontFamily="heading"
+                fontWeight="semibold"
                 size="sm"
-                variantColor="red"
+                variantColor="brand"
                 variant="solid"
                 onClick={() =>
                     toast({
                       title: "Applications are not open.",
-                      description: "Hi! Applications are not open yet. Check back around Novemeber.",
+                      description: "Hi! Applications are not open yet (-_-;) . Check back around Novemeber.",
                       status: "error",
                       duration: 5000,
                       isClosable: true,
                     })
                 }
               >
-                Apply Now!
+                apply
               </Button>
-              <Box mx='2px' />
               {!isOpen && (
-                <IconButton ref={btnRef} size="sm" variantColor="red" aria-label="Open menu" icon="triangle-down" onClick={onOpen} />
+                <IconButton ref={btnRef} size="sm" variantColor="brand" aria-label="Open menu" icon="triangle-down" onClick={onOpen} />
               )}
               {isOpen && (
-                <IconButton ref={btnRef} size="sm" variantColor="red" aria-label="Close menu" icon="triangle-up" onClick={onClose} />
+                <IconButton ref={btnRef} size="sm" variantColor="brand" aria-label="Close menu" icon="triangle-up" onClick={onClose} />
               )}
             </Stack>
           )}
@@ -153,34 +172,15 @@ const Navbar = () => {
           >
             <DrawerOverlay />
             <DrawerContent
-              bg="primary"
-              color="secondary"
+              bg="secondary"
+              color="primary"
             >
               {/* <DrawerCloseButton /> */}
               <DrawerHeader>Menu</DrawerHeader>
 
               <DrawerBody>
                 <Stack>
-                  <NavLink to='/events' activeStyle={{color: "red"}}>
-                    <Button size="sm" variant="transparent" _hover={{color: "red.500"}}>
-                      Events
-                    </Button>
-                  </NavLink>
-                  <NavLink to='/icpc' activeStyle={{color: "red"}}>
-                    <Button size="sm" variant="transparent" _hover={{color: "red.500"}}>
-                      Regionals
-                    </Button>
-                  </NavLink>
-                  <NavLink to='/team' activeStyle={{color: "red"}}>
-                    <Button size="sm" variant="transparent" _hover={{color: "red.500"}}>
-                      Our Team
-                    </Button>
-                  </NavLink>
-                  <NavLink to='/contact' activeStyle={{color: "red"}}>
-                    <Button size="sm" variant="transparent" _hover={{color: "red.500"}}>
-                      Contact
-                    </Button>
-                  </NavLink>
+                  <MenuContent />
                 </Stack>
               </DrawerBody>
             </DrawerContent>
@@ -194,8 +194,52 @@ const Navbar = () => {
 const Footer = () => {
   return (
     <Box p={3} bg="primary" color="secondary" style={{marginBottom: '0px', bottom: '0px', left: '0px', right: '0px'}}>
-      <Container>
-        <Heading>Some Text</Heading>
+      <Container narrow>
+        <SimpleGrid minChildWidth="180px" textAlign="center" spacing="16px">
+          <Box>
+            <Heading my={2} fontSize="sm">find us on social media</Heading>
+            <Stack isInline justifyContent="center">
+              <Link href="https://www.facebook.com/groups/ucla.icpc" isExternal>
+                <Box as={FaFacebook} size={8} />
+              </Link>
+              <Link href="https://discord.gg/eWmzKsY" isExternal>
+                <Box as={FaDiscord} size={8} />
+              </Link>
+              <Link href="https://www.instagram.com/acm.ucla" isExternal>
+                <Box as={FaInstagram} size={8}/>
+              </Link>
+              <Link href="https://medium.com/techatucla" isExternal>
+                <Box as={FaMedium} size={8}/>
+              </Link>
+              <Link href="https://github.com/uclaacm" isExternal>
+                <Box as={FaGithub} size={8}/>
+              </Link>
+            </Stack>
+          </Box>
+          <Box>
+            <Heading my={2} fontSize="sm">reach us at</Heading>
+            <Heading my={2} fontSize="sm" fontWeight="regular" as="a" href="mailto:uclaicpc@gmail.com">uclaicpc@gmail.com</Heading>
+          </Box>
+          <Box>
+              <Button
+                as="a"
+                href="http://eepurl.com/c5pE6P"
+                target="_blank"
+                fontFamily="heading"
+                fontWeight="semibold"
+                size="sm"
+                variantColor="brand"
+                variant="solid"
+                my={2}
+              >
+                join the ACM mailing list
+              </Button>
+          </Box>
+        </SimpleGrid>
+        <Box my="16px" />
+        <Heading width="100%" textAlign="center" fontSize="sm" fontWeight="regular">
+          © ACM ICPC at UCLA 2020
+        </Heading>
       </Container>
     </Box>
   );
