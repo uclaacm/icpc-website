@@ -54,7 +54,7 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const toast = useToast();
-  const isMobile = !useMediaQuery('(min-width: 500px)');
+  const isMobile = !useMediaQuery('(min-width: 768px)');
 
   const MenuContent = () => {
     return (
