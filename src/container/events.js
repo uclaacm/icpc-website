@@ -135,16 +135,16 @@ const EventsContainer = (props) => {
         <meta name="keywords" content="events,acm,icpc,ucla,competitive,programming" />
       </Helmet>
       <Container>
-        <Stack p={3} spacing={3} align="center">
-          <Heading as="h1" fontSize={["2xl", "3xl"]}>Events</Heading>
-
-          <Heading as="h2" fontSize={["lg", "xl"]}>Upcoming</Heading>
-          <UpcomingEvents />
-
-          <Box my={2} />
-
-          <Heading as="h2" id="all-events" fontSize={["lg", "xl"]}>All Events and Workshops</Heading>
-          <AllEvents />
+        <Heading as="h1" fontSize={["2xl", "3xl"]} textAlign="center" py={4}>Events</Heading>
+        <Stack pb={10} spacing={10}>
+          <Stack align="center">
+            <Heading as="h2" fontSize={["lg", "xl"]}>Upcoming</Heading>
+            <UpcomingEvents />
+          </Stack>
+          <Stack align="center">
+            <Heading as="h2" id="all-events" fontSize={["lg", "xl"]}>All Events and Workshops</Heading>
+            <AllEvents />
+          </Stack>
         </Stack>
       </Container>
     </div>
