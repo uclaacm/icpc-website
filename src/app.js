@@ -236,6 +236,9 @@ const Footer = () => {
               </Button>
           </Box>
         </SimpleGrid>
+          <Link href="https://www.netlify.com" isExternal>
+            <Image padding="10px" margin="auto" src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
+          </Link>
         <Box my="16px" />
         <Heading width="100%" textAlign="center" fontSize="sm" fontWeight="regular">
           © ACM ICPC at UCLA 2020

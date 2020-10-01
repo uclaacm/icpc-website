@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/777861e3-68f3-4363-a673-8da56142c043/deploy-status)](https://app.netlify.com/sites/admiring-johnson-e4d28e/deploys)
+
 # ACM ICPC Website
 
 Official Website for ACM ICPC
