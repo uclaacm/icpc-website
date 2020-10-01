@@ -4,7 +4,7 @@ import 'main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider, CSSReset, theme } from '@chakra-ui/core';
 
 import App from 'app';
@@ -58,9 +58,9 @@ ReactDOM.render(
   <div id="mount">
     <ThemeProvider theme={customTheme}>
       <CSSReset />
-      <HashRouter>
+      <BrowserRouter>
         <App />
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   </div>,
   document.getElementById('mount'),
