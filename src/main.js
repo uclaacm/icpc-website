@@ -3,10 +3,10 @@ import 'main.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Provider} from 'react-redux';
-import {HashRouter} from 'react-router-dom';
-import{ThemeProvider, CSSReset} from '@chakra-ui/core';
-import { theme } from "@chakra-ui/core";
+import { Provider } from 'react-redux';
+import { HashRouter } from 'react-router-dom';
+import { ThemeProvider, CSSReset, theme } from '@chakra-ui/core';
+
 import App from 'app';
 
 const customTheme = {
@@ -14,7 +14,7 @@ const customTheme = {
   fonts: {
     heading: '"Poppins", sans-serif',
     body: '"Kufam", cursive',
-    mono: "Menlo, monospace",
+    mono: 'Menlo, monospace',
   },
   fontWeights: {
     regular: '400',
@@ -35,8 +35,8 @@ const customTheme = {
   },
   colors: {
     ...theme.colors,
-    primary: "#1f1f1f",
-    secondary: "white",
+    primary: '#1f1f1f',
+    secondary: 'white',
     brand: {
       50: 'rgba(255, 84, 121, 0.1)',
       100: 'rgba(255, 84, 121, 0.3)',

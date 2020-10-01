@@ -1,5 +1,6 @@
-import React, {Fragment, Component, Suspense, lazy} from 'react';
-import {useMediaQuery} from './hooks';
+import React, {
+  Fragment, Component, Suspense, lazy,
+} from 'react';
 import {
   Switch,
   Route,
@@ -37,9 +38,10 @@ import {
   FaMedium,
   FaInstagram,
   FaGithub,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 import Container from 'component/container';
 import MainContent from 'component/maincontent';
+import { useMediaQuery } from './hooks';
 
 const HomeContainer = lazy(() => import('container/home'));
 const EventsContainer = lazy(() => import('container/events'));
@@ -74,19 +76,14 @@ const Navbar = () => {
             team
           </Button>
         </NavLink>
-        {/* <NavLink to='/contact' activeStyle={{color: '#ff5479'}}> */}
-        {/*   <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}> */}
-        {/*     contact */}
-        {/*   </Button> */}
-        {/* </NavLink> */}
       </Fragment>
     )};
 
   return (
     <Box
       as="nav"
-      bg='secondary'
-      color='primary'
+      bg="secondary"
+      color="primary"
       p={4}
       position="fixed"
       width="100vw"
@@ -96,27 +93,36 @@ const Navbar = () => {
     >
       <Container>
         <Flex
-          alignItems='center'>
-          <NavLink exact to='/'>
-            <Stack isInline justify="center" alignItems="center">
+          alignItems="center"
+        >
+          <NavLink exact to="/">
+            <Stack
+              isInline
+              justify="center"
+              alignItems="center"
+            >
               <Image src="/static/icon/logo64.png" size="32px" />
               {!isMobile && (
                 <Heading as="h3" fontSize="24px">
                   acm
                   <span style={{
-                    background: "linear-gradient(to right, #ff8383 0%, #ff8383 40%, #ff5479 90%)",
-                    "WebkitBackgroundClip": "text",
-                    "WebkitTextFillColor": "transparent",
-                  }}> icpc</span>
+                    background: 'linear-gradient(to right, #ff8383 0%, #ff8383 40%, #ff5479 90%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                  }}
+                  >
+                    {' '}
+                    icpc
+                  </span>
                 </Heading>
               )}
             </Stack>
           </NavLink>
-          <Box mx='auto' />
+          <Box mx="auto" />
           {!isMobile && (
             <Stack isInline>
               <MenuContent />
-              <Box mx='2px' />
+              <Box mx="2px" />
               <Button
                 fontFamily="heading"
                 fontWeight="semibold"
@@ -191,62 +197,67 @@ const Navbar = () => {
   )
 };
 
-const Footer = () => {
-  return (
-    <Box p={3} bg="primary" color="secondary" style={{marginBottom: '0px', bottom: '0px', left: '0px', right: '0px'}}>
-      <Container narrow>
-        <SimpleGrid minChildWidth="180px" textAlign="center" spacing="16px">
-          <Box>
-            <Heading my={2} fontSize="sm">find us on social media</Heading>
-            <Stack isInline justifyContent="center">
-              <Link href="https://www.facebook.com/groups/ucla.icpc" isExternal>
-                <Box as={FaFacebook} size={8} />
-              </Link>
-              <Link href="https://discord.gg/eWmzKsY" isExternal>
-                <Box as={FaDiscord} size={8} />
-              </Link>
-              <Link href="https://www.instagram.com/acm.ucla" isExternal>
-                <Box as={FaInstagram} size={8}/>
-              </Link>
-              <Link href="https://medium.com/techatucla" isExternal>
-                <Box as={FaMedium} size={8}/>
-              </Link>
-              <Link href="https://github.com/uclaacm" isExternal>
-                <Box as={FaGithub} size={8}/>
-              </Link>
-            </Stack>
-          </Box>
-          <Box>
-            <Heading my={2} fontSize="sm">reach us at</Heading>
-            <Heading my={2} fontSize="sm" fontWeight="regular" as="a" href="mailto:uclaicpc@gmail.com">uclaicpc@gmail.com</Heading>
-          </Box>
-          <Box>
-              <Button
-                as="a"
-                href="http://eepurl.com/c5pE6P"
-                target="_blank"
-                fontFamily="heading"
-                fontWeight="semibold"
-                size="sm"
-                variantColor="brand"
-                variant="solid"
-                my={2}
-              >
-                join the ACM mailing list
-              </Button>
-          </Box>
-        </SimpleGrid>
-          <Link href="https://www.netlify.com" isExternal>
-            <Image padding="10px" margin="auto" src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
-          </Link>
-        <Box my="16px" />
-        <Heading width="100%" textAlign="center" fontSize="sm" fontWeight="regular">
-          © ACM ICPC at UCLA 2020
-        </Heading>
-      </Container>
-    </Box>
-  );
-};
+const Footer = () => (
+  <Box
+    p={3}
+    bg="primary"
+    color="secondary"
+    style={{
+      marginBottom: '0px', bottom: '0px', left: '0px', right: '0px',
+    }}
+  >
+    <Container narrow>
+      <SimpleGrid minChildWidth="180px" textAlign="center" spacing="16px">
+        <Box>
+          <Heading my={2} fontSize="sm">find us on social media</Heading>
+          <Stack isInline justifyContent="center">
+            <Link href="https://www.facebook.com/groups/ucla.icpc" isExternal>
+              <Box as={FaFacebook} size={8} />
+            </Link>
+            <Link href="https://discord.gg/eWmzKsY" isExternal>
+              <Box as={FaDiscord} size={8} />
+            </Link>
+            <Link href="https://www.instagram.com/acm.ucla" isExternal>
+              <Box as={FaInstagram} size={8} />
+            </Link>
+            <Link href="https://medium.com/techatucla" isExternal>
+              <Box as={FaMedium} size={8} />
+            </Link>
+            <Link href="https://github.com/uclaacm" isExternal>
+              <Box as={FaGithub} size={8} />
+            </Link>
+          </Stack>
+        </Box>
+        <Box>
+          <Heading my={2} fontSize="sm">reach us at</Heading>
+          <Heading my={2} fontSize="sm" fontWeight="regular" as="a" href="mailto:uclaicpc@gmail.com">uclaicpc@gmail.com</Heading>
+        </Box>
+        <Box>
+          <Button
+            as="a"
+            href="http://eepurl.com/c5pE6P"
+            target="_blank"
+            fontFamily="heading"
+            fontWeight="semibold"
+            size="sm"
+            variantColor="brand"
+            variant="solid"
+            my={2}
+          >
+            join the ACM mailing list
+          </Button>
+        </Box>
+      </SimpleGrid>
+      <Link href="https://www.netlify.com" isExternal>
+        <Image padding="10px" margin="auto" src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
+      </Link>
+      <Box my="16px" />
+      <Heading width="100%" textAlign="center" fontSize="sm" fontWeight="regular">
+        © ACM ICPC at UCLA 2020
+      </Heading>
+    </Container>
+  </Box>
+);
 
 const App = () => {
   const location = useLocation();
@@ -268,6 +279,6 @@ const App = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

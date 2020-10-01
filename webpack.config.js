@@ -29,8 +29,8 @@ const createConfig = (env, argv) => {
           test: /\.s?css$/,
           use: [
             ExtractTextPlugin.loader,
-            {loader: 'css-loader'},
-            {loader: 'sass-loader'},
+            { loader: 'css-loader' },
+            { loader: 'sass-loader' },
           ],
         },
         {
@@ -81,8 +81,8 @@ const createConfig = (env, argv) => {
       }),
       new CopyPlugin({
         patterns: [
-          { from: '../public', },
-        ]
+          { from: '../public' },
+        ],
       }),
       new CnameWebpackPlugin({
         domain: 'icpc.uclaacm.com',
