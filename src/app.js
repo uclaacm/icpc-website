@@ -1,5 +1,5 @@
 import React, {
-  Fragment, Component, Suspense, lazy,
+  Fragment, Suspense, lazy,
 } from 'react';
 import {
   Switch,
@@ -12,9 +12,7 @@ import {
 
 import {
   Flex,
-  Text,
   Box,
-  PseudoBox,
   SimpleGrid,
   Image,
   Link,
@@ -24,11 +22,9 @@ import {
   IconButton,
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
   useDisclosure,
   useToast,
 } from '@chakra-ui/core';
@@ -39,15 +35,14 @@ import {
   FaInstagram,
   FaGithub,
 } from 'react-icons/fa';
-import Container from 'component/container';
-import MainContent from 'component/maincontent';
+import Container from 'components/container';
+import MainContent from 'components/maincontent';
 import { useMediaQuery } from './hooks';
 
-const HomeContainer = lazy(() => import('container/home'));
-const EventsContainer = lazy(() => import('container/events'));
-const RegionalsContainer = lazy(() => import('container/regionals'));
-const TeamContainer = lazy(() => import('container/team'));
-const ContactContainer = lazy(() => import('container/contact'));
+const HomeContainer = lazy(() => import('pages/home'));
+const EventsContainer = lazy(() => import('pages/events'));
+const RegionalsContainer = lazy(() => import('pages/regionals'));
+const TeamContainer = lazy(() => import('pages/team'));
 const FallbackView = (
   <h1>Loading</h1>
 );
@@ -271,7 +266,6 @@ const App = () => {
             <Route exact path="/events" component={EventsContainer} />
             <Route exact path="/icpc" component={RegionalsContainer} />
             <Route exact path="/team" component={TeamContainer} />
-            <Route exact path="/contact" component={ContactContainer} />
             <Redirect to="/" />
           </Switch>
         </MainContent>
