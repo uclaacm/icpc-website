@@ -118,7 +118,7 @@ const Navbar = () => {
                 onClick={() =>
                     toast({
                       title: "Applications are not open.",
-                      description: "Hi! Applications are not open yet (-_-;) . Check back around Novemeber.",
+                      description: "Hi, thanks for showing interest! Applications are not open yet (-_-;). Check back around Novemeber for the ACM Intern/Officer Application Form.",
                       status: "error",
                       duration: 5000,
                       isClosable: true,
@@ -137,14 +137,13 @@ const Navbar = () => {
                 variantColor="brand"
                 variant="solid"
                 onClick={() =>
-                    toast({
-                      title: "Applications are not open.",
-                      description: "Hi! Applications are not open yet (-_-;) . Check back around Novemeber.",
-                      status: "error",
-                      duration: 5000,
-                      isClosable: true,
-                    })
-                }
+                  toast({
+                    title: "Applications are not open.",
+                    description: "Hi, thanks for showing interest! Applications are not open yet (-_-;). Check back around Novemeber for the ACM Intern/Officer Application Form.",
+                    status: "error",
+                    duration: 5000,
+                    isClosable: true,
+                  })}
               >
                 apply
               </Button>
