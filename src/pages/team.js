@@ -5,6 +5,7 @@ import {
   Image,
   Stack,
   Text,
+  AspectRatioBox,
   Box,
   SimpleGrid,
   Tooltip,
@@ -21,11 +22,15 @@ const AllMembers = () => {
     <SimpleGrid minChildWidth="300px" textAlign="center" spacing="16px" justifyContent="center">
       {membersData.map((member, index) => (
         <Box key={index} rounded="lg" overflow="hidden" p={2}>
-          <center>
-            <Tooltip hasArrow label={`favorite ${randFact}: ${member.funFacts[randFact]}`} placement="top">
-              <Image size="128px" src={member.image} rounded="lg" />
-            </Tooltip>
-          </center>
+          <Tooltip hasArrow label={`favorite ${randFact}: ${member.funFacts[randFact]}`} placement="top">
+            <center>
+              <AspectRatioBox maxW="152px" ratio={1}>
+                <Box p="4px" rounded="50%" borderColor="brand.500" borderWidth="8px">
+                  <Image size="128px" src={member.image} rounded="50%" />
+                </Box>
+              </AspectRatioBox>
+            </center>
+          </Tooltip>
           <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{member.name}</Heading>
           <Text fontSize={['sm', 'md']} mt={2}>{member.position}</Text>
           <Text>{member.description}</Text>
