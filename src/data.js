@@ -93,7 +93,7 @@ const allEvents = [
     image: '/static/member/sv.png',
     name: 'Suraj Vathsa',
     position: 'Officer',
-    description: 'I’m a Junior studying CS at UCLA. At ACM @ UCLA ICPC, I’ve taught Interview Track for the past couple of quarters . Apart from coding, you can catch me reading books, playing FIFA, watching soccer and working out at the gym!',
+    description: 'I’m a Junior studying CS at UCLA. At ACM ICPC, I’ve taught Interview Track for the past couple of quarters. Apart from coding, you can catch me reading books, playing FIFA, watching soccer and working out at the gym!',
     funFacts: {
       'ice cream': 'Strawberry',
       professor: 'Darwiche',
