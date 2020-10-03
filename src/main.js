@@ -1,9 +1,12 @@
+import 'main.scss'
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider, CSSReset, theme } from '@chakra-ui/core';
 
 import App from 'app';
+
 
 const customTheme = {
   ...theme,
