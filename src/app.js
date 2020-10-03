@@ -96,20 +96,11 @@ const Navbar = () => {
               justify="center"
               alignItems="center"
             >
-              <Image src="/static/icon/logo64.png" size="32px" />
               {!isMobile && (
-                <Heading as="h3" fontSize="24px">
-                  acm
-                  <span style={{
-                    background: 'linear-gradient(to right, #ff8383 0%, #ff8383 40%, #ff5479 90%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                  }}
-                  >
-                    {' '}
-                    icpc
-                  </span>
-                </Heading>
+                <Image h="32px" src="static/icon/acmicpc.png" />
+              )}
+              {isMobile && (
+                <Image h="32px" src="static/icon/logo64.png" />
               )}
             </Stack>
           </NavLink>
