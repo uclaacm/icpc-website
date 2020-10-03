@@ -15,8 +15,11 @@ import {
 import Container from 'components/container';
 import { UpcomingEvents } from 'pages/events';
 
+import { useMediaQuery } from 'hooks';
+
 const HomeContainer = () => {
   const toast = useToast();
+  const isMobile = !useMediaQuery('(min-width: 768px)');
   return (
     <div className="home">
       <Helmet>
@@ -24,15 +27,25 @@ const HomeContainer = () => {
         <meta name="description" content="Welcome to ACM ICPC at UCLA. Learn more about who we are and why we do what we do!" />
         <meta name="keywords" content="acm,icpc,ucla,competitive,programming" />
       </Helmet>
-      <Box bg="#F9BABC">
-        <Image
-          mx="auto"
-          objectFit="cover"
-          src="/static/banner.png"
-          alt="ICPC Banner"
-          width="100%"
-          maxWidth="80em"
-        />
+      <Box bg="#fff">
+        {!isMobile && (
+          <Image
+            mx="auto"
+            objectFit="cover"
+            src="/static/banner.png"
+            alt="ICPC Banner"
+            maxHeight="400px"
+          />
+        )}
+        {isMobile && (
+          <Image
+            mx="auto"
+            objectFit="cover"
+            src="/static/banner-mobile.png"
+            alt="ICPC Banner"
+            width="100%"
+          />
+        )}
       </Box>
       <Container narrow>
         <Stack p={3} spacing={3} align="center">
