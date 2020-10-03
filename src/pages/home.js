@@ -1,5 +1,4 @@
 import React from 'react';
-import { useMediaQuery } from 'hooks';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import {
@@ -13,8 +12,8 @@ import {
   Divider,
   useToast,
 } from '@chakra-ui/core';
-import Container from 'component/container';
-import { UpcomingEvents } from 'container/events';
+import Container from 'components/container';
+import { UpcomingEvents } from 'pages/events';
 
 const HomeContainer = () => {
   const toast = useToast();

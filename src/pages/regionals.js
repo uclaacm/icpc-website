@@ -10,16 +10,12 @@ import {
   Heading,
   Image,
   Stack,
-  Flex,
   Text,
   List,
   ListItem,
-  ListIcon,
-  Button,
   Box,
-  PseudoBox,
 } from '@chakra-ui/core';
-import Container from 'component/container';
+import Container from 'components/container';
 // import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import { Carousel } from 'react-responsive-carousel';
 
