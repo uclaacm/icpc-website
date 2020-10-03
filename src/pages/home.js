@@ -31,8 +31,8 @@ const HomeContainer = () => {
         {!isMobile && (
           <Image
             mx="auto"
-            objectFit="cover"
-            src="/static/banner.png"
+            objectFit="fit"
+            src="/static/banner.svg"
             alt="ICPC Banner"
             maxHeight="400px"
           />
@@ -40,8 +40,8 @@ const HomeContainer = () => {
         {isMobile && (
           <Image
             mx="auto"
-            objectFit="cover"
-            src="/static/banner-mobile.png"
+            objectFit="fit"
+            src="/static/banner-mobile.svg"
             alt="ICPC Banner"
             width="100%"
           />
