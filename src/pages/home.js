@@ -50,7 +50,7 @@ const HomeContainer = () => {
       <Container narrow>
         <Stack p={3} spacing={3} align="center">
           <Heading as="h1" fontSize={['2xl', '3xl']}>who we are</Heading>
-          <Heading as="h2" fontSize={['md', 'lg']}>algorithmic thinking, problem solving</Heading>
+          <Heading as="h2" textAlign="center" fontSize={['md', 'lg']}>algorithmic thinking, problem solving</Heading>
           <Text textAlign="justify" fontSize={['sm', 'md']}>
             We are a group of problem solvers at heart! ACM ICPC at UCLA is a student-led organization whose mission is to promote algorithmic thinking and help build proficient problem solvers. While we mostly dabble in competitive programming, we have grown to encompass algorithmic and creative thinking in general whether that helps you in answering those challenging coding interview questions or become a smarter and better programmer. We work diligently toward the shared goal of spreading the love of competitive programming and creative thinking to the greater UCLA community. We are also connected to the ICPC competition. Click below to find out more about the event.
           </Text>
@@ -68,8 +68,7 @@ const HomeContainer = () => {
       <Container narrow>
         <Stack p={3} spacing={3} align="center">
           <Heading as="h1" fontSize={['2xl', '3xl']}>what we do</Heading>
-          {/* <Heading as="h2" fontSize={['md', 'lg']}>learn, teach</Heading> */}
-          <Text fontSize={['sm', 'md']}>
+          <Text textAlign="justify" fontSize={['sm', 'md']}>
             We are rooted in creative problem solving. From weekly workshops on competitive programming and technical interview preparation, to our own in-house puzzle hunts and beginner-friendly programming contests, everything we do revolves around the central theme of critical algorithmic thinking. Regardless of whether you are a complete beginner to programming (or even CS!), or have multiple years of experience in competitive programming, we have something to help you grow! All you need is the passion/interest!</Text>
             { /* If you would like to join us as an officer and help teach/organize any of our workshops or events, apply to ICPC through the general ACM application linked below! We look forward to seeing your application. */ }
           <Stack isInline flexWrap="wrap" justify="center" p={4}>
