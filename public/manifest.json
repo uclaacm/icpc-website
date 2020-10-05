@@ -1,10 +1,10 @@
 {
-  "name": "UCLA ACM ICPC",
+  "name": "ACM ICPC at UCLA",
   "short_name": "ICPC",
   "lang": "en-US",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#ff8383",
+  "theme_color": "#FF5479",
   "background_color": "#ffffff",
   "description": "Official Website for ACM ICPC at UCLA",
   "icons": [
