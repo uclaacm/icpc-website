@@ -20,11 +20,11 @@ import Container from 'components/container';
 import { upcomingEvents, allEvents } from 'data';
 
 const UpcomingEvents = () => {
-  const eventsData = upcomingEvents;
+  const eventsData = upcomingEvents.slice(0, 3);
   return (
-    <SimpleGrid minChildWidth="300px" textAlign="center" spacing="16px" justifyContent="center">
+    <Flex wrap="wrap" textAlign="center" justify="space-evenly">
       {eventsData.map((event, index) => (
-        <Box key={index} rounded="lg" overflow="hidden" p={2}>
+        <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
           <Image src={event.image} rounded="lg" />
           <Flex align="baseline" mt={2}>
             <Text
@@ -57,16 +57,16 @@ const UpcomingEvents = () => {
           <Text>{event.description}</Text>
         </Box>
       ))}
-    </SimpleGrid>
+    </Flex>
   );
 };
 
 const AllEvents = () => {
   const eventsData = allEvents;
   return (
-    <SimpleGrid minChildWidth="300px" maxChildWidth="300px" textAlign="center" spacing="16px" justifyContent="center">
+    <Flex wrap="wrap" textAlign="center" justify="space-evenly">
       {eventsData.map((event, index) => (
-        <Box key={index} rounded="lg" overflow="hidden" p={2}>
+        <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
           <Image src={event.image} rounded="lg" />
           <Flex align="baseline" mt={2}>
             <Badge variantColor="teal">{event.quarter}</Badge>
@@ -75,7 +75,7 @@ const AllEvents = () => {
           <Text>{event.description}</Text>
         </Box>
       ))}
-    </SimpleGrid>
+    </Flex>
   );
 };
 

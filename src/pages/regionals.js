@@ -89,7 +89,7 @@ const RegionalsContainer = () => (
               <AccordionItem>
                 <AccordionHeader>
                   <Box flex="1" textAlign="left">
-                      Can you pick your own teams?
+                      Can I pick my own team?
                     </Box>
                   <AccordionIcon />
                 </AccordionHeader>
