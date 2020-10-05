@@ -22,7 +22,7 @@ import Container from 'components/container';
 const RegionalsContainer = () => (
   <div className="regionals">
     <Helmet>
-      <title>ICPC Regionals | ACM ICPC @ UCLA</title>
+      <title>ICPC Regionals | ACM ICPC at UCLA</title>
       <meta name="description" content="Learn more about the ICPC Regionals and UCLA's own team." />
       <meta name="keywords" content="competition,regionals,team,acm,icpc,ucla,competitive,programming" />
     </Helmet>

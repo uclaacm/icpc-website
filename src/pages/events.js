@@ -82,7 +82,7 @@ const AllEvents = () => {
 const EventsContainer = (props) => (
   <div className="events">
     <Helmet>
-      <title>Events | ACM ICPC @ UCLA</title>
+      <title>Events | ACM ICPC at UCLA</title>
       <meta name="description" content="Learn more about our current and upcoming events." />
       <meta name="keywords" content="events,acm,icpc,ucla,competitive,programming" />
     </Helmet>

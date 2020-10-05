@@ -43,7 +43,7 @@ const AllMembers = () => {
 const TeamContainer = () => (
   <div className="team">
     <Helmet>
-      <title>Our Team | ACM ICPC @ UCLA</title>
+      <title>Our Team | ACM ICPC at UCLA</title>
       <meta name="description" content="Meet Our Team for ACM ICPC at UCLA." />
       <meta name="keywords" content="team,acm,icpc,ucla,competitive,programming" />
     </Helmet>

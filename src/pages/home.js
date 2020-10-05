@@ -23,7 +23,7 @@ const HomeContainer = () => {
   return (
     <div className="home">
       <Helmet>
-        <title>Home | ACM ICPC @ UCLA</title>
+        <title>Home | ACM ICPC at UCLA</title>
         <meta name="description" content="Welcome to ACM ICPC at UCLA. Learn more about who we are and why we do what we do!" />
         <meta name="keywords" content="acm,icpc,ucla,competitive,programming" />
       </Helmet>
