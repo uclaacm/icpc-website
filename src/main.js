@@ -51,8 +51,6 @@ const customTheme = {
   },
 };
 
-console.log(customTheme);
-
 ReactDOM.render(
   <div id="mount">
     <ThemeProvider theme={customTheme}>
