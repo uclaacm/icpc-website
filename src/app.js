@@ -56,6 +56,11 @@ const Navbar = () => {
   const MenuContent = () => {
     return (
       <Fragment>
+        <NavLink exact to='/' activeStyle={{color: '#ff5479'}}>
+          <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
+            home
+          </Button>
+        </NavLink>
         <NavLink to='/events' activeStyle={{color: '#ff5479'}}>
           <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
             events
@@ -79,7 +84,8 @@ const Navbar = () => {
       as="nav"
       bg="secondary"
       color="primary"
-      p={4}
+      py={4}
+      px={0}
       position="fixed"
       width="100vw"
       borderBottom="2px"
@@ -96,57 +102,35 @@ const Navbar = () => {
               justify="center"
               alignItems="center"
             >
-              {!isMobile && (
-                <Image h="32px" src="static/icon/acmicpc.png" />
-              )}
-              {isMobile && (
-                <Image h="32px" src="static/icon/logo64.png" />
-              )}
+              <Image h="32px" src="static/icon/acmicpc.png" />
             </Stack>
           </NavLink>
           <Box mx="auto" />
           {!isMobile && (
             <Stack isInline>
               <MenuContent />
-              <Box mx="2px" />
-              <Button
-                fontFamily="heading"
-                fontWeight="semibold"
-                size="sm"
-                variantColor="brand"
-                variant="solid"
-                onClick={() =>
-                    toast({
-                      title: "Applications are not open.",
-                      description: "Hi, thanks for showing interest! Applications are not open yet (-_-;). Check back around Novemeber for the ACM Intern/Officer Application Form.",
-                      status: "error",
-                      duration: 5000,
-                      isClosable: true,
-                    })}
-              >
-                apply now!
-              </Button>
+              {/* <Box mx="2px" /> */}
+              {/* <Button */}
+              {/*   fontFamily="heading" */}
+              {/*   fontWeight="semibold" */}
+              {/*   size="sm" */}
+              {/*   variantColor="brand" */}
+              {/*   variant="solid" */}
+              {/*   onClick={() => */}
+              {/*       toast({ */}
+              {/*         title: "Applications are not open.", */}
+              {/*         description: "Hi, thanks for showing interest! Applications are not open yet (-_-;). Check back around Novemeber for the ACM Intern/Officer Application Form.", */}
+              {/*         status: "error", */}
+              {/*         duration: 5000, */}
+              {/*         isClosable: true, */}
+              {/*       })} */}
+              {/* > */}
+              {/*   apply now! */}
+              {/* </Button> */}
             </Stack>
           )}
           {isMobile && (
             <Stack isInline>
-              <Button
-                fontFamily="heading"
-                fontWeight="semibold"
-                size="sm"
-                variantColor="brand"
-                variant="solid"
-                onClick={() =>
-                  toast({
-                    title: "Applications are not open.",
-                    description: "Hi, thanks for showing interest! Applications are not open yet (-_-;). Check back around Novemeber for the ACM Intern/Officer Application Form.",
-                    status: "error",
-                    duration: 5000,
-                    isClosable: true,
-                  })}
-              >
-                apply
-              </Button>
               {!isOpen && (
                 <IconButton ref={btnRef} size="sm" variantColor="brand" aria-label="Open menu" icon="triangle-down" onClick={onOpen} />
               )}
@@ -227,6 +211,8 @@ const Footer = () => (
             size="sm"
             variantColor="brand"
             variant="solid"
+            rounded="lg"
+            py={5}
             my={2}
           >
             join the ACM mailing list
