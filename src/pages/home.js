@@ -32,7 +32,7 @@ const HomeContainer = () => {
           <Image
             mx="auto"
             objectFit="fit"
-            src="/static/banner.svg"
+            src="/static/banner.png"
             alt="ICPC Banner"
             maxHeight="500px"
           />
@@ -41,7 +41,7 @@ const HomeContainer = () => {
           <Image
             mx="auto"
             objectFit="fit"
-            src="/static/banner-mobile.svg"
+            src="/static/banner-mobile.png"
             alt="ICPC Banner"
             width="100%"
           />
