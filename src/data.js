@@ -10,16 +10,6 @@ const upcomingEvents = [
     discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
   },
   {
-    image: '/static/event/upcoming/graph.png',
-    name: 'Advanced Training #1',
-    date: 'Oct. 13',
-    time: '7 pm - 9 pm PT',
-    location: 'Zoom',
-    desription: 'Advanced topics',
-    facebook: 'https://www.facebook.com/groups/ucla.icpc',
-    discord: 'https://discord.com/channels/702801010426511373/727302374485655592',
-  },
-  {
     image: '/static/event/upcoming/intro.png',
     name: 'Intro to CP #1',
     date: 'Oct. 15',
@@ -37,6 +27,16 @@ const upcomingEvents = [
     location: 'Zoom',
     description: 'Welcome and Basic Data Structures',
     facebook: 'https://www.facebook.com/events/349843329588819/',
+    discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
+  },
+  {
+    image: '/static/event/upcoming/graph.png',
+    name: 'Advanced Training #1',
+    date: 'Oct. 20',
+    time: '7 pm - 9 pm PT',
+    location: 'Zoom',
+    description: 'Graphs and Related Algorithms',
+    facebook: 'https://www.facebook.com/groups/ucla.icpc',
     discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
   },
 ];
