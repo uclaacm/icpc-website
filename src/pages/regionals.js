@@ -25,6 +25,11 @@ const RegionalsContainer = () => (
       <title>ICPC Regionals | ACM ICPC at UCLA</title>
       <meta name="description" content="Learn more about the ICPC Regionals and UCLA's own team." />
       <meta name="keywords" content="competition,regionals,team,acm,icpc,ucla,competitive,programming" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="ICPC Regionals | ACM ICPC at UCLA" />
+      <meta property="og:description" content="Learn more about the ICPC Regionals and UCLA's own team." />
+      <meta property="og:url" content="https://icpc.uclaacm.com/icpc" />
+      <meta property="og:image" content="/static/icon/logo256.png" />
     </Helmet>
     <Container narrow>
       <Heading as="h1" fontSize={['2xl', '3xl']} textAlign="center" py={4}>ICPC Regionals</Heading>

@@ -46,6 +46,11 @@ const TeamContainer = () => (
       <title>Our Team | ACM ICPC at UCLA</title>
       <meta name="description" content="Meet Our Team for ACM ICPC at UCLA." />
       <meta name="keywords" content="team,acm,icpc,ucla,competitive,programming" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Team | ACM ICPC at UCLA" />
+      <meta property="og:description" content="Meet Our Team for ACM ICPC at UCLA." />
+      <meta property="og:url" content="https://icpc.uclaacm.com/team" />
+      <meta property="og:image" content="/static/icon/logo256.png" />
     </Helmet>
     <Container narrow>
       <Heading as="h1" fontSize={['2xl', '3xl']} textAlign="center" py={4}>Our Team</Heading>
