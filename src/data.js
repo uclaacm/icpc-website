@@ -1,4 +1,4 @@
-const upcomingEvents = [
+const pastEvents = [
   {
     image: '/static/event/upcoming/fallgm.png',
     name: 'Fall General Meeting',
@@ -9,6 +9,9 @@ const upcomingEvents = [
     facebook: 'https://www.facebook.com/events/793543541440096/',
     discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
   },
+];
+
+const upcomingEvents = [
   {
     image: '/static/event/upcoming/intro.png',
     name: 'Intro to CP #1',
@@ -17,7 +20,7 @@ const upcomingEvents = [
     location: 'Zoom',
     description: 'Introduction and your first solve!',
     facebook: 'https://www.facebook.com/events/1683530841849215/',
-    discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
+    discord: 'https://discord.com/channels/702801010426511373/765803180642533407',
   },
   {
     image: '/static/event/upcoming/interview.png',
@@ -27,7 +30,7 @@ const upcomingEvents = [
     location: 'Zoom',
     description: 'Welcome and Basic Data Structures',
     facebook: 'https://www.facebook.com/events/349843329588819/',
-    discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
+    discord: 'https://discord.com/channels/702801010426511373/713559003661336607',
   },
   {
     image: '/static/event/upcoming/graph.png',
@@ -37,7 +40,7 @@ const upcomingEvents = [
     location: 'Zoom',
     description: 'Graphs and Related Algorithms',
     facebook: 'https://www.facebook.com/groups/ucla.icpc',
-    discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
+    discord: 'https://discord.com/channels/702801010426511373/765803471621718086',
   },
 ];
 
