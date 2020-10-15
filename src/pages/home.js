@@ -30,7 +30,8 @@ const HomeContainer = () => {
         <meta property="og:title" content="Home | ACM ICPC at UCLA" />
         <meta property="og:description" content="Welcome to ACM ICPC at UCLA. Learn more about who we are and why we do what we do!" />
         <meta property="og:url" content="https://icpc.uclaacm.com/" />
-        <meta property="og:image" content="/static/icon/logo256.png" />
+        <meta property="og:image" itemprop="image" content="/static/icon/logo256.png" />
+        <meta property="og:site_name" content="ACM ICPC at UCLA" />
       </Helmet>
       <Box bg="#FCEDF3">
         {!isMobile && (
