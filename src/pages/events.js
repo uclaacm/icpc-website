@@ -90,7 +90,7 @@ const EventsContainer = (props) => (
       <meta property="og:title" content="Events | ACM ICPC at UCLA" />
       <meta property="og:description" content="Learn more about ACM ICPC's current and upcoming events." />
       <meta property="og:url" content="https://icpc.uclaacm.com/events" />
-      <meta property="og:image" itemprop="image" content="/static/icon/logo256.png" />
+      <meta property="og:image" content="https://icpc.uclaacm.com/static/icon/logo256.png" />
       <meta property="og:site_name" content="ACM ICPC at UCLA" />
     </Helmet>
     <Container>

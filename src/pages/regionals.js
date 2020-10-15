@@ -29,7 +29,7 @@ const RegionalsContainer = () => (
       <meta property="og:title" content="ICPC Regionals | ACM ICPC at UCLA" />
       <meta property="og:description" content="Learn more about the ICPC Regionals and UCLA's own team." />
       <meta property="og:url" content="https://icpc.uclaacm.com/icpc" />
-      <meta property="og:image" itemprop="image" content="/static/icon/logo256.png" />
+      <meta property="og:image" content="https://icpc.uclaacm.com/static/icon/logo256.png" />
       <meta property="og:site_name" content="ACM ICPC at UCLA" />
     </Helmet>
     <Container narrow>
