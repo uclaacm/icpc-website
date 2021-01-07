@@ -236,12 +236,12 @@ const allEvents = [
     image: '/static/member/aj.png',
     name: 'Arihant Jain',
     position: 'Officer',
-    description: 'Hi, I\'m Arihant. Stay tuned to know more about me!',
+    description: 'Hello! I\'m a third year CS major and I was on the team that went to ICPC nationals last year. In my free time I like to run and play video games. ',
     funFacts: {
-      'ice cream': 'TBD',
-      professor: 'TBD',
-      editor: 'TBD',
-      'TV show in the last year': 'TBD',
+      'ice cream': 'Cookies and Cream',
+      professor: 'Nachenberg',
+      editor: 'Vim',
+      'TV show in the last year': 'Barry',
     },
   },
   {
