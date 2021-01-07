@@ -35,6 +35,10 @@ const UpcomingEvents = () => {
               fontWeight="bold"
               color="brand.600"
             >
+              {event.day}
+              {' '}
+              &bull;
+              {' '}
               {event.date}
               {' '}
               &bull;
@@ -69,9 +73,11 @@ const AllEvents = () => {
       {eventsData.map((event, index) => (
         <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
           <Image src={event.image} rounded="lg" />
-          <Flex align="baseline" mt={2}>
-            <Badge variantColor="teal">{event.quarter}</Badge>
-          </Flex>
+            <Stack isInline mt={2} spacing={2}>
+            {event.quarter.split('/').map((qtr, index) => (
+              <Badge key={index} variantColor="teal">{qtr}</Badge>
+            ))}
+          </Stack>
           <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
           <Text>{event.description}</Text>
         </Box>
