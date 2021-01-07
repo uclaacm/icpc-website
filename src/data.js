@@ -1,45 +1,37 @@
-const pastEvents = [
-  {
-    image: '/static/event/upcoming/fallgm.png',
-    name: 'Fall General Meeting',
-    date: 'Thurs, Oct. 08',
-    time: '6 pm - 7 pm PT',
-    location: 'Zoom',
-    description: 'Learn more about ACM ICPC and our events at Fall GM 🙂',
-    facebook: 'https://www.facebook.com/events/793543541440096/',
-    discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
-  },
-];
+const pastEvents = [];
 
 const upcomingEvents = [
   {
-    image: '/static/event/upcoming/intro.png',
-    name: 'Intro to CP #3',
-    date: 'Oct. 29',
-    time: '7 pm - 9 pm PT',
-    location: 'Zoom',
-    description: 'Arrays',
-    facebook: 'https://www.facebook.com/events/1683530848515881/',
-    discord: 'https://discord.com/channels/702801010426511373/765803180642533407',
-  },
-  {
     image: '/static/event/upcoming/interview.png',
-    name: 'Coding Interview #3',
-    date: 'Oct. 30',
+    name: 'Coding Interview #1',
+    day: 'Tue',
+    date: 'Jan. 12',
     time: '6 pm - 8 pm PT',
     location: 'Zoom',
-    description: 'Linked Lists',
-    facebook: 'https://www.facebook.com/events/349843332922152/',
+    description: 'TBA',
+    facebook: 'https://www.facebook.com/groups/ucla.icpc',
     discord: 'https://discord.com/channels/702801010426511373/713559003661336607',
   },
   {
-    image: '/static/event/upcoming/graph.png',
-    name: 'Advanced Training #3',
-    date: 'Nov. 3',
+    image: '/static/event/upcoming/intro.png',
+    name: 'Beginner CP #1',
+    day: 'Wed',
+    date: 'Jan. 13',
     time: '7 pm - 9 pm PT',
     location: 'Zoom',
-    description: 'Biconnected and Strongly Connected Components + Top Sort',
-    facebook: 'https://www.facebook.com/events/1749129341930211/',
+    description: 'Welcome and Ad-Hoc Problems',
+    facebook: 'https://www.facebook.com/groups/ucla.icpc',
+    discord: 'https://discord.com/channels/702801010426511373/765803180642533407',
+  },
+  {
+    image: '/static/event/upcoming/graph.png',
+    name: 'Advanced Training #1',
+    day: 'Sat',
+    date: 'Jan. 16',
+    time: '10 am - 1 pm PT',
+    location: 'Zoom',
+    description: 'TBA',
+    facebook: 'https://www.facebook.com/groups/ucla.icpc',
     discord: 'https://discord.com/channels/702801010426511373/765803471621718086',
   },
 ];
@@ -47,21 +39,33 @@ const upcomingEvents = [
 const allEvents = [
   {
     image: '/static/event/intro.png',
-    name: 'Intro to Competitive Programming',
-    quarter: 'Fall 2020',
-    description: 'From climbing coding leaderboards to competing in ICPC regionals to constructing clever algorithms with clever friends, the Competitive Programming journey starts here. Write your first contest solution and learn what it takes to start solving challenging and often beautiful problems!',
+    name: 'Beginner Competitive Programming',
+    quarter: 'Winter',
+    description: 'Continue your journey into competitive programming with Beginner CP. Continuing on from Intro CP, we explore slightly more advanced yet beginner-friendly themes in competitive programming. Whether you are completely new to CP, an expert looking for a quick review, or just an algorithm and problem-solving enthusiast, we promise you will find the workshops interesting and fun!',
   },
   {
     image: '/static/event/interview.png',
     name: 'Coding Interview Crash Course (Interview Track)',
-    quarter: 'Fall 2020',
+    quarter: 'Fall/Winter',
     description: 'Worried about your upcoming coding interview? Don’t worry, we got you covered! ACM ICPC is hosting a crash course that’ll give you the data structure and algorithm knowledge you’ll need to ace your next technical interview. Come through to hone your skills and get a head start on your CS career!',
   },
   {
     image: '/static/event/advanced.png',
     name: 'Advanced Training',
-    quarter: 'Fall 2020',
+    quarter: 'Fall/Winter',
     description: 'An advanced workshop to help learn and practice advanced algorithms, data structures, and problem solving skills. Focus of the workshop will be preparing for the ICPC competition, but the workshop is open to anyone interested!',
+  },
+  {
+    image: '/static/event/codesprint.png',
+      name: 'CodeSprintLA',
+    quarter: 'Spring',
+    description: 'CodeSprintLA is UCLA\'s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!',
+  },
+  {
+    image: '/static/event/intro.png',
+    name: 'Intro to Competitive Programming',
+    quarter: 'Fall',
+    description: 'From climbing coding leaderboards to competing in ICPC regionals to constructing clever algorithms with clever friends, the Competitive Programming journey starts here. Write your first contest solution and learn what it takes to start solving challenging and often beautiful problems!',
   },
   {
     image: '/static/event/bruinquest.png',
@@ -69,13 +73,6 @@ const allEvents = [
     quarter: 'Fall 2020',
     description: 'Explore a virtual UCLA campus and complete fun challenges to compete for points, prizes, and the glory of being Bruin Quest Champion!',
   },
-  {
-    image: '/static/event/codesprint.png',
-      name: 'CodeSprintLA',
-    quarter: 'Spring 2021',
-    description: 'CodeSprintLA is UCLA\'s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!',
-  },
-
 ];
 
   const members = [
@@ -245,6 +242,42 @@ const allEvents = [
       professor: 'TBD',
       editor: 'TBD',
       'TV show in the last year': 'TBD',
+    },
+  },
+  {
+    image: '/static/member/kc.png',
+    name: 'Katie Chang',
+    position: 'Intern',
+    description: 'Heyo, I\'m kt, a second year Math of Comp major, algorithm & ML enthusiast, Ultimate Frisbee player, and amateur photographer. 7/10 times overly happy bc I’m sleep deprived and a crackhead; 3/10 bc life’s that good :)',
+    funFacts: {
+      'ice cream': 'Caramel Fudge Brownie',
+      professor: 'Reinman',
+      editor: 'Sublime Text',
+      'TV show in the last year': 'Money Heist & Promised Neverland',
+    },
+  },
+  {
+    image: '/static/member/lw.png',
+    name: 'Lenny Wu',
+    position: 'Intern',
+    description: 'I\'m Lenny, a second year CS & Applied Math major. In my free time, I like to cook and shoot photos for my food blog. You might also catch me running, lifting weights, reading, or playing the piano. :^)',
+    funFacts: {
+      'ice cream': 'Peanut Butter Banana',
+      professor: 'Sylvester Eriksson-Bique',
+      editor: 'VS Code',
+      'TV show in the last year': 'sike',
+    },
+  },
+  {
+    image: '/static/member/rd.png',
+    name: 'Reiya Downs',
+    position: 'Intern',
+    description: 'Hi! :) I\'m Reiya, and I\'m a third year studying Math of Computation. I love self-help books, dancing, drawing for animation, and I\'m currently learning web development. Fun facts! I\'m originally from Toronto, Canada, where I worked as an actress!',
+    funFacts: {
+      'ice cream': 'Double Peanut Butter Chip',
+      professor: 'Brent Corbin',
+      editor: 'Emacs',
+      'TV show in the last year': 'Crazy Ex-Girlfriend',
     },
   },
 ];
