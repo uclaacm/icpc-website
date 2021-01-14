@@ -15,12 +15,12 @@ const upcomingEvents = [
   {
     image: '/static/event/upcoming/intro.png',
     name: 'Beginner CP #1',
-    day: 'Wed',
-    date: 'Jan. 13',
-    time: '7 pm - 9 pm PT',
+    day: 'Fri',
+    date: 'Jan. 15',
+    time: '6 pm - 8 pm PT',
     location: 'Zoom',
     description: 'Welcome and Ad-Hoc Problems',
-    facebook: 'https://www.facebook.com/groups/ucla.icpc',
+    facebook: 'https://fb.me/e/3bIDYvAfN',
     discord: 'https://discord.com/channels/702801010426511373/765803180642533407',
   },
   {
