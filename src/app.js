@@ -43,6 +43,7 @@ const HomeContainer = lazy(() => import('pages/home'));
 const EventsContainer = lazy(() => import('pages/events'));
 const RegionalsContainer = lazy(() => import('pages/regionals'));
 const TeamContainer = lazy(() => import('pages/team'));
+const EstimathonContainer = lazy(() => import('pages/estimathon'));
 const FallbackView = (
   <h1>Loading</h1>
 );
@@ -238,7 +239,8 @@ const App = () => {
       <Suspense fallback={FallbackView}>
         <MainContent>
           <Switch>
-            <Route exact path="/" component={HomeContainer} />
+            <Route exact path="/" component={EstimathonContainer} />
+            <Route exact path="/home" component={HomeContainer} />
             <Route exact path="/events" component={EventsContainer} />
             <Route exact path="/icpc" component={RegionalsContainer} />
             <Route exact path="/team" component={TeamContainer} />
