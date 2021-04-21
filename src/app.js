@@ -224,7 +224,7 @@ const Footer = () => (
       </Link>
       <Box my="16px" />
       <Heading width="100%" textAlign="center" fontSize="sm" fontWeight="regular">
-        © ACM ICPC at UCLA 2020
+        © ACM ICPC at UCLA 2021
       </Heading>
     </Container>
   </Box>
