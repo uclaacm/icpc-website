@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production --env.production --progress --color",
-    "build-dev": "webpack-dev-server --mode development --env.development -w --hot --progress --color"
+    "build": "webpack --node-env production --progress --color",
+    "build-dev": "webpack-dev-server --node-env development -w --hot --progress --color"
   },
   "repository": {
     "type": "git",
