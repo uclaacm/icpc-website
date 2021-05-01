@@ -19,7 +19,7 @@
   },
   "homepage": "https://icpc.uclaacm.com",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.14.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-transform-react-jsx": "^7.12.12",
     "@babel/preset-env": "^7.2.3",
