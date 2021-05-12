@@ -104,7 +104,7 @@ const allEvents = [
     image: '/static/member/lx.png',
     name: 'Lucas Xia',
     position: 'Officer',
-    description: 'Hi, I\'m Lucas. Stay tuned to know more about me!',
+    description: 'Hi, I\'m Lucas. I like bouldering and kayaking!',
     funFacts: {
       'ice cream': 'TBD',
       professor: 'TBD',
@@ -247,7 +247,7 @@ const allEvents = [
   {
     image: '/static/member/kc.png',
     name: 'Katie Chang',
-    position: 'Intern',
+    position: 'Officer',
     description: 'Heyo, I\'m kt, a second year Math of Comp major, algorithm & ML enthusiast, Ultimate Frisbee player, and amateur photographer. 7/10 times overly happy bc I’m sleep deprived and a crackhead; 3/10 bc life’s that good :)',
     funFacts: {
       'ice cream': 'Caramel Fudge Brownie',
@@ -259,7 +259,7 @@ const allEvents = [
   {
     image: '/static/member/lw.png',
     name: 'Lenny Wu',
-    position: 'Intern',
+    position: 'Officer',
     description: 'I\'m Lenny, a second year CS & Applied Math major. In my free time, I like to cook and shoot photos for my food blog. You might also catch me running, lifting weights, reading, or playing the piano. :^)',
     funFacts: {
       'ice cream': 'Peanut Butter Banana',
@@ -271,13 +271,37 @@ const allEvents = [
   {
     image: '/static/member/rd.png',
     name: 'Reiya Downs',
-    position: 'Intern',
+    position: 'Officer',
     description: 'Hi! :) I\'m Reiya, and I\'m a third year studying Math of Computation. I love self-help books, dancing, drawing for animation, and I\'m currently learning web development. Fun facts! I\'m originally from Toronto, Canada, where I worked as an actress!',
     funFacts: {
       'ice cream': 'Double Peanut Butter Chip',
       professor: 'Brent Corbin',
       editor: 'Emacs',
       'TV show in the last year': 'Crazy Ex-Girlfriend',
+    },
+  },
+  {
+    image: '/static/member/rl.png',
+    name: 'Robert Lee',
+    position: 'Officer',
+    description: 'Hi! I\'m Robert, a 1st year studying Math of Computation and Aerospace Engineering from San Diego. I love competitive programming and teaching algorithms! My hobbies include working on never-ending projects and gaming.',
+    funFacts: {
+      'ice cream': 'Vanilla',
+      professor: 'Clites',
+      editor: 'VS Code',
+      'TV show in the last year': 'Queen\'s Gambit',
+    },
+  },
+  {
+    image: '/static/member/hlj.png',
+    name: 'Ho Lyun Jeong',
+    position: 'Officer',
+    description: 'Hi I\'m Lucas/Michael/Zach/Kai. I\'m a first year CS major. I sometimes do stuff.',
+    funFacts: {
+      'ice cream': 'Vanilla',
+      professor: 'Clites',
+      editor: 'VS Code',
+      'TV show in the last year': 'Queen\'s Gambit',
     },
   },
 ];
