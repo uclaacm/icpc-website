@@ -1,38 +1,51 @@
-const pastEvents = [];
+const pastEvents = [
+  {
+    image: '/static/event/bruinquest.png',
+    name: 'Hack x ICPC x Cyber presents BruinQuest',
+    quarter: 'Fall 2020',
+    description: 'Explore a virtual UCLA campus and complete fun challenges to compete for points, prizes, and the glory of being Bruin Quest Champion!',
+  },
+  {
+    image: '/static/event/intro.png',
+    name: 'Intro to Competitive Programming',
+    quarter: 'Fall 2020',
+    description: 'From climbing coding leaderboards to competing in ICPC regionals to constructing clever algorithms with clever friends, the Competitive Programming journey starts here. Write your first contest solution and learn what it takes to start solving challenging and often beautiful problems!',
+  }
+];
 
 const upcomingEvents = [
   {
     image: '/static/event/upcoming/interview.png',
-    name: 'Coding Interview #6',
-    day: 'Tue',
-    date: 'Mar. 2',
+    name: 'Coding Interview #1',
+    day: 'Thu',
+    date: 'Oct. 7',
     time: '6 pm - 8 pm PT',
-    location: 'Zoom',
-    description: 'Trees and Graphs',
-    facebook: 'https://fb.me/e/5DhHuB1F5',
-    discord: 'https://discord.com/channels/702801010426511373/713559003661336607',
+    location: 'In Person!',
+    description: 'Intro to Coding Interviews/Arrays',
+    // facebook: 'https://fb.me/e/5DhHuB1F5',
+    // discord: 'https://discord.com/channels/702801010426511373/713559003661336607',
   },
   {
     image: '/static/event/upcoming/graph.png',
-    name: 'Advanced Training #13',
-    day: 'Thu',
-    date: 'Feb. 25',
-    time: '6:30 pm - 9:30 pm PT',
-    location: 'Zoom',
+    name: 'Advanced Training #1',
+    day: 'TBA',
+    date: 'TBA',
+    time: 'TBA',
+    location: 'In Person!',
     description: 'TBA',
-    facebook: 'https://fb.me/e/ddXe8iFSC',
-    discord: 'https://discord.com/channels/702801010426511373/765803471621718086',
+    // facebook: 'https://fb.me/e/ddXe8iFSC',
+    // discord: 'https://discord.com/channels/702801010426511373/765803471621718086',
   },
   {
     image: '/static/event/upcoming/intro.png',
-    name: 'Beginner CP #6',
-    day: 'Fri',
-    date: 'Feb. 26',
-    time: '6 pm - 8 pm PT',
-    location: 'Zoom',
-    description: 'Game Theory',
-    facebook: 'https://fb.me/e/2jzENJlPp',
-    discord: 'https://discord.com/channels/702801010426511373/799726570268131398',
+    name: 'Beginner CP #1',
+    day: 'TBA',
+    date: 'TBA',
+    time: 'TBA',
+    location: 'In Person!',
+    description: 'TBA',
+    // facebook: 'https://fb.me/e/2jzENJlPp',
+    // discord: 'https://discord.com/channels/702801010426511373/799726570268131398',
   },
 ];
 
@@ -40,19 +53,19 @@ const allEvents = [
   {
     image: '/static/event/intro.png',
     name: 'Beginner Competitive Programming',
-    quarter: 'Winter',
+    quarter: 'Fall',
     description: 'Continue your journey into competitive programming with Beginner CP. Continuing on from Intro CP, we explore slightly more advanced yet beginner-friendly themes in competitive programming. Whether you are completely new to CP, an expert looking for a quick review, or just an algorithm and problem-solving enthusiast, we promise you will find the workshops interesting and fun!',
   },
   {
     image: '/static/event/interview.png',
-    name: 'Coding Interview Crash Course (Interview Track)',
-    quarter: 'Fall/Winter',
+    name: 'Interview Crash Course (Interview Track)',
+    quarter: 'Fall',
     description: 'Worried about your upcoming coding interview? Don’t worry, we got you covered! ACM ICPC is hosting a crash course that’ll give you the data structure and algorithm knowledge you’ll need to ace your next technical interview. Come through to hone your skills and get a head start on your CS career!',
   },
   {
     image: '/static/event/advanced.png',
     name: 'Advanced Training',
-    quarter: 'Fall/Winter',
+    quarter: 'Fall',
     description: 'An advanced workshop to help learn and practice advanced algorithms, data structures, and problem solving skills. Focus of the workshop will be preparing for the ICPC competition, but the workshop is open to anyone interested!',
   },
   {
@@ -61,37 +74,25 @@ const allEvents = [
     quarter: 'Spring',
     description: 'CodeSprintLA is UCLA\'s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!',
   },
-  {
-    image: '/static/event/intro.png',
-    name: 'Intro to Competitive Programming',
-    quarter: 'Fall',
-    description: 'From climbing coding leaderboards to competing in ICPC regionals to constructing clever algorithms with clever friends, the Competitive Programming journey starts here. Write your first contest solution and learn what it takes to start solving challenging and often beautiful problems!',
-  },
-  {
-    image: '/static/event/bruinquest.png',
-    name: 'Hack x ICPC x Cyber presents BruinQuest',
-    quarter: 'Fall 2020',
-    description: 'Explore a virtual UCLA campus and complete fun challenges to compete for points, prizes, and the glory of being Bruin Quest Champion!',
-  },
+  // {
+  //   image: '/static/event/intro.png',
+  //   name: 'Intro to Competitive Programming',
+  //   quarter: 'Fall',
+  //   description: 'From climbing coding leaderboards to competing in ICPC regionals to constructing clever algorithms with clever friends, the Competitive Programming journey starts here. Write your first contest solution and learn what it takes to start solving challenging and often beautiful problems!',
+  // },
+  // {
+  //   image: '/static/event/bruinquest.png',
+  //   name: 'Hack x ICPC x Cyber presents BruinQuest',
+  //   quarter: 'Fall 2020',
+  //   description: 'Explore a virtual UCLA campus and complete fun challenges to compete for points, prizes, and the glory of being Bruin Quest Champion!',
+  // },
 ];
 
   const members = [
   {
-    image: '/static/member/ns.png',
-    name: 'Nikil Selvam',
-    position: 'President',
-    description: 'Hey! I’m Nikil, a 3rd year majoring in CS & Math. I hail from Qatar (bonus points if you know this desert in the Middle East!). Badminton player, ML enthusiast, keyboardist, Factorio novice, and a die-hard Roger Federer fan :)',
-    funFacts: {
-      'ice cream': 'Cookies and Cream',
-      professor: 'Darwiche',
-      editor: 'Emacs',
-      'TV show in the last year': 'The Crown',
-    },
-  },
-  {
     image: '/static/member/jz.png',
     name: 'Jacob Zhang',
-    position: 'Officer',
+    position: 'President',
     description: 'I\'m a Math/CS Double Major interested in analysis, combinatorics, algorithms, and programming languages. In addition to ICPC workshops, I teach Olympiad problem-solving at LAMC. I enjoy running, rock climbing, and Chinese music.',
     funFacts: {
       'ice cream': 'Salted Caramel',
@@ -100,35 +101,35 @@ const allEvents = [
       'TV show in the last year': 'Silicon Valley',
     },
   },
-  {
-    image: '/static/member/lx.png',
-    name: 'Lucas Xia',
-    position: 'Officer',
-    description: 'Hi, I\'m Lucas. I like bouldering and kayaking!',
-    funFacts: {
-      'ice cream': 'TBD',
-      professor: 'TBD',
-      editor: 'TBD',
-      'TV show in the last year': 'TBD',
-    },
-  },
-  {
-    image: '/static/member/sv.png',
-    name: 'Suraj Vathsa',
-    position: 'Officer',
-    description: 'I’m a Junior studying CS at UCLA. At ACM ICPC, I’ve taught Interview Track for the past couple of quarters. Apart from coding, you can catch me reading books, playing FIFA, watching soccer and working out at the gym!',
-    funFacts: {
-      'ice cream': 'Strawberry',
-      professor: 'Darwiche',
-      editor: 'Vim',
-      'TV show in the last year': 'Parks and Rec',
-    },
-  },
+  // {
+  //   image: '/static/member/lx.png',
+  //   name: 'Lucas Xia',
+  //   position: 'Officer',
+  //   description: 'Hi, I\'m Lucas. I like bouldering and kayaking!',
+  //   funFacts: {
+  //     'ice cream': 'TBD',
+  //     professor: 'TBD',
+  //     editor: 'TBD',
+  //     'TV show in the last year': 'TBD',
+  //   },
+  // },
+  // {
+  //   image: '/static/member/sv.png',
+  //   name: 'Suraj Vathsa',
+  //   position: 'Officer',
+  //   description: 'I’m a Junior studying CS at UCLA. At ACM ICPC, I’ve taught Interview Track for the past couple of quarters. Apart from coding, you can catch me reading books, playing FIFA, watching soccer and working out at the gym!',
+  //   funFacts: {
+  //     'ice cream': 'Strawberry',
+  //     professor: 'Darwiche',
+  //     editor: 'Vim',
+  //     'TV show in the last year': 'Parks and Rec',
+  //   },
+  // },
   {
     image: '/static/member/ag.png',
     name: 'Ana Gu',
     position: 'Officer',
-    description: 'Hi. My name is Ana and I am a third year CS major with a minor in statistics. I switched from Bioengineering to CS. My hobbies include playing splatoon and reading.',
+    description: 'Hello. I\'m Ana. I am a fourth year majoring in CS. In my free time, I\m usually playing my switch and watching TV. Hit me up if you\'re into carnivorous plants and/or houseplants.',
     funFacts: {
       'ice cream': 'Ruby Chocolate',
       professor: 'Smallberg',
@@ -304,6 +305,18 @@ const allEvents = [
       'TV show in the last year': 'Queen\'s Gambit',
     },
   },
+  {
+    image: '/static/member/ns.png',
+    name: 'Nikil Selvam',
+    position: 'Advisor',
+    description: 'Hey! I’m Nikil, a 3rd year majoring in CS & Math. I hail from Qatar (bonus points if you know this desert in the Middle East!). Badminton player, ML enthusiast, keyboardist, Factorio novice, and a die-hard Roger Federer fan :)',
+    funFacts: {
+      'ice cream': 'Cookies and Cream',
+      professor: 'Darwiche',
+      editor: 'Emacs',
+      'TV show in the last year': 'The Crown',
+    },
+  }
 ];
 
-export { upcomingEvents, allEvents, members };
+export { upcomingEvents, allEvents, members, pastEvents };
