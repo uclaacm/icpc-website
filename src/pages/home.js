@@ -53,7 +53,7 @@ const HomeContainer = () => {
           />
         )}
       </Box>
-      <Container >
+      <Container narrow>
         <Stack p={3} spacing={3} align="center">
           <Heading as="h1" fontSize={['2xl', '3xl']}>Upcoming Events</Heading>
           <UpcomingEvents />

@@ -18,11 +18,10 @@ import {
 import Container from 'components/container';
 
 import { upcomingEvents, allEvents, pastEvents } from 'data';
-// import { pastEvents } from '../data';
 
 const UpcomingEvents = () => {
   const start = 0;
-  const eventsData = upcomingEvents.slice(start, start+3);
+  const eventsData = upcomingEvents.slice(start, start+4);
   return (
     <Flex wrap="wrap" textAlign="center" justify="space-evenly">
       {eventsData.map((event, index) => (

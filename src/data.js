@@ -15,6 +15,17 @@ const pastEvents = [
 
 const upcomingEvents = [
   {
+    image:'/static/event/fallgm_blank.png',
+    name: 'ICPC General Meeting',
+    day: 'Thu',
+    date: 'Sept. 30',
+    time: '7 pm - 8 pm PT',
+    location: 'In Person! Room TBA',
+    description: 'Our first GM of the year. Make sure to stop by to learn more about our events for the quarter and what we do :)',
+    facebook: 'https://www.facebook.com/groups/ucla.icpc/',
+    discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
+  },
+  {
     image: '/static/event/upcoming/interview.png',
     name: 'Coding Interview #1',
     day: 'Thu',
