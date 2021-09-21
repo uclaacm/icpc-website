@@ -17,7 +17,8 @@ import {
 } from 'react-icons/fa';
 import Container from 'components/container';
 
-import { upcomingEvents, allEvents } from 'data';
+import { upcomingEvents, allEvents, pastEvents } from 'data';
+// import { pastEvents } from '../data';
 
 const UpcomingEvents = () => {
   const start = 0;
@@ -86,6 +87,26 @@ const AllEvents = () => {
   );
 };
 
+const PastEvents = () => {
+  const eventsData = pastEvents;
+  return (
+    <Flex wrap="wrap" textAlign="center" justify="space-evenly">
+      {eventsData.map((event, index) => (
+        <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
+          <Image src={event.image} rounded="lg" />
+            <Stack isInline mt={2} spacing={2}>
+            {event.quarter.split('/').map((qtr, index) => (
+              <Badge key={index} variantColor="teal">{qtr}</Badge>
+            ))}
+          </Stack>
+          <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
+          <Text>{event.description}</Text>
+        </Box>
+      ))}
+    </Flex>
+  );
+};
+
 const EventsContainer = (props) => (
   <div className="events">
     <Helmet>
@@ -109,6 +130,10 @@ const EventsContainer = (props) => (
         <Stack align="center">
           <Heading as="h2" id="all-events" fontSize={['lg', 'xl']}>All Events and Workshops</Heading>
           <AllEvents />
+        </Stack>
+        <Stack align="center">
+          <Heading as="h2" id="past-events" fontSize={['lg', 'xl']}>Past Events and Workshops </Heading>
+          <PastEvents />
         </Stack>
       </Stack>
     </Container>
