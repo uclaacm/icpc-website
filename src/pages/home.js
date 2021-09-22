@@ -61,6 +61,12 @@ const HomeContainer = () => {
       </Container>
       <Container narrow>
         <Stack p={3} spacing={3} align="center">
+          <Heading as="h1" fontSize={['2xl', '3xl']}>Upcoming Events</Heading>
+          <UpcomingEvents />
+        </Stack>
+      </Container>
+      <Container narrow>
+        <Stack p={3} spacing={3} align="center">
           <Heading as="h1" fontSize={['2xl', '3xl']}>who we are</Heading>
           <Heading as="h2" textAlign="center" fontSize={['md', 'lg']}>algorithmic thinking, problem solving</Heading>
           <Text textAlign="justify" fontSize={['sm', 'md']}>
