@@ -10,10 +10,7 @@ const pastEvents = [
     name: 'Intro to Competitive Programming',
     quarter: 'Fall 2020',
     description: 'From climbing coding leaderboards to competing in ICPC regionals to constructing clever algorithms with clever friends, the Competitive Programming journey starts here. Write your first contest solution and learn what it takes to start solving challenging and often beautiful problems!',
-  }
-];
-
-const upcomingEvents = [
+  },
   {
     image: '/static/event/fallgm_blank.png',
     name: 'ICPC General Meeting',
@@ -37,6 +34,20 @@ const upcomingEvents = [
     discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
   },
   {
+    image: '/static/event/upcoming/graph.png',
+    name: 'ICPC Team Tryout #1',
+    day: 'Sat',
+    date: 'Oct. 9',
+    time: '12 pm - 3 pm PT',
+    location: 'Engineering VI 289',
+    description: "An individual programming contest to select some of the team members for the 2021-22 Regionals team!",
+    // facebook: 'https://fb.me/e/ddXe8iFSC',
+    discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
+  }
+];
+
+const upcomingEvents = [
+  { // UPDATE ME
     image: '/static/event/upcoming/intro.png',
     name: 'Beginner CP #1',
     day: 'Wed',
@@ -47,7 +58,7 @@ const upcomingEvents = [
     // facebook: 'https://fb.me/e/2jzENJlPp',
     discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
   },
-  {
+  { // UPDATE ME
     image: '/static/event/upcoming/interview.png',
     name: 'Coding Interview #1',
     day: 'Thu',
@@ -57,18 +68,7 @@ const upcomingEvents = [
     description: 'Intro to Coding Interviews/Arrays More details soon.',
     // facebook: 'https://fb.me/e/5DhHuB1F5',
     discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
-  },
-  {
-    image: '/static/event/upcoming/graph.png',
-    name: 'ICPC Team Tryout #1',
-    day: 'Sat',
-    date: 'Oct. 9',
-    time: '12 pm - 3 pm PT',
-    location: 'Engineering VI 289',
-    description: "An individual programming contest to select some of the team members for the 2021-22 Regionals team!",
-    // facebook: 'https://fb.me/e/ddXe8iFSC',
-    discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
-  },
+  }
 ];
 
 const allEvents = [
