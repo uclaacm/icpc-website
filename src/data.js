@@ -60,13 +60,13 @@ const upcomingEvents = [
   },
   { // UPDATE ME
     image: '/static/event/upcoming/interview.png',
-    name: 'Coding Interview #1',
+    name: 'Coding Interview #3',
     day: 'Thu',
-    date: 'Oct. 7',
+    date: 'Oct. 21',
     time: '6 pm - 8 pm PT',
-    location: 'Engineering IV 67-124 (Faraday)',
-    description: 'Intro to Coding Interviews/Arrays More details soon.',
-    // facebook: 'https://fb.me/e/5DhHuB1F5',
+    location: 'Boelter 2760',
+    description: 'Come this Thursday to learn more about Stacks and Queues.',
+    facebook: 'https://fb.me/e/1emchkMLh',
     discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
   }
 ];
