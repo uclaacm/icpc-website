@@ -53,7 +53,7 @@ const upcomingEvents = [
     day: 'Wed',
     date: 'Oct. 20',
     time: '6 pm - 8 pm PT',
-    location: 'Boelter 3400,
+    location: 'Boelter 3400',
     description: 'Come on down to Boelter 3400 for a taste in competitive programming!',
     facebook: 'https://fb.me/e/2bCuI7ErG',
     discord: 'https://discord.com/channels/702801010426511373/702835998207246426',
