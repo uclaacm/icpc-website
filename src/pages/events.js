@@ -74,9 +74,10 @@ const AllEvents = () => {
         <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
           <Image src={event.image} rounded="lg" />
             <Stack isInline mt={2} spacing={2}>
-            {event.quarter.split('/').map((qtr, index) => (
-              <Badge key={index} variantColor="teal">{qtr}</Badge>
-            ))}
+            {typeof event.quarter !== "undefined" && 
+                  event.quarter.split('/').map((qtr, index) => (
+                    <Badge key={index} variantColor="teal">{qtr}</Badge>
+                  ))}
           </Stack>
           <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
           <Text>{event.description}</Text>
@@ -94,9 +95,10 @@ const PastEvents = () => {
         <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
           <Image src={event.image} rounded="lg" />
             <Stack isInline mt={2} spacing={2}>
-            {event.quarter.split('/').map((qtr, index) => (
-              <Badge key={index} variantColor="teal">{qtr}</Badge>
-            ))}
+              {typeof event.quarter !== "undefined" && 
+                  event.quarter.split('/').map((qtr, index) => (
+                    <Badge key={index} variantColor="teal">{qtr}</Badge>
+                  ))}
           </Stack>
           <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
           <Text>{event.description}</Text>

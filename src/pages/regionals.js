@@ -70,6 +70,9 @@ const RegionalsContainer = () => (
           </Text>
         </Stack>
         <Stack align="center">
+          <Heading as="h2" fontSize={['lg', 'xl']}> In the News</Heading>
+        </Stack>
+        <Stack align="center">
           <Heading as="h2" fontSize={['lg', 'xl']}>Latest Update (09/25/20)</Heading>
           <Text>
             Stay tuned for updates on ICPC Regionals 2020. We will post all and any information we have here.
@@ -117,6 +120,9 @@ const RegionalsContainer = () => (
             </Accordion>
           </Container>
         </Stack>
+          
+
+
       </Stack>
     </Container>
   </div>
