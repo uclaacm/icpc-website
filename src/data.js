@@ -305,7 +305,67 @@ const allEvents = [
       editor: 'VS Code',
       'TV show in the last year': 'The Crown',
     },
-  }
+  },
+  {
+    image: '/static/member/cc.png',
+    name: 'Carson Cox',
+    position: 'Intern',
+    description: '2nd year computer science and possibly applied math major who likes to rock climb, watch anime, and play videogames. I like to boulder, I just got caught up in One Piece, and my favorite game is Minecraft.',
+    funFacts: {
+      'ice cream': 'Vanilla',
+      professor: 'Eggert',
+      editor: 'Emacs for text editing and Xcode for ide',
+      'TV show in the last year': 'Attack on Titan Season 4',
+    },
+  },
+  {
+    image: '/static/member/is.png',
+    name: 'Illia Shkirko',
+    position: 'Intern',
+    description: 'Hi! I’m Illia Shkirko, a first-year student majoring in Computer Science and Engineering! I joined ACM ICPC in Fall 2021 and have been involved in Beginner Track and CodeSprint preparation since then. I enjoy doing rock-climbing, solving Physics problems, and watching tv-shows on Netflix!',
+    funFacts: {
+      'ice cream': 'Chocolate ice cream',
+      professor: 'Christopher Gutierrez',
+      editor: 'CodeBlocks',
+      'TV show in the last year': 'The Queen’s Gambit',
+    },
+  },
+  {
+    image: '/static/member/nv.png',
+    name: 'Neil Vaishampayan',
+    position: 'Intern',
+    description: 'Hi! I’m Neil, a 3rd year CS major from the Bay Area interested in compilers and ML.  In my free time, I like to watch soccer, play the horn, and play video games.',
+    funFacts: {
+      'ice cream': 'Mint Chocolate Chip',
+      professor: 'Dr. Palsberg',
+      editor: 'PyCharm',
+      'TV show in the last year': 'The Bad Batch',
+    },
+  },
+  {
+    image: '/static/member/rt.png',
+    name: 'Ryan Tjoa',
+    position: 'Intern',
+    description: 'I’m a second year computer science major from Seattle. I enjoy reading and am a Python fan. Ask me to do a backflip!',
+    funFacts: {
+      'ice cream': 'Cookie Dough',
+      professor: 'Eggert',
+      editor: 'VS Code',
+      'TV show in the last year': 'Squid Game',
+    },
+  },
+  {
+    image: '/static/member/sn.png',
+    name: 'Suhas Nagar',
+    position: 'Intern',
+    description: 'Hi! I’m Suhas, a 1st year CS Major from the Bay Area. In my free time, you can usually find me playing video games (I’m a big fan of Hollow Knight), trying to write my own rap battles, or bricking shots at Hitch :)',
+    funFacts: {
+      'ice cream': 'Cookies and Cream',
+      professor: 'Smallberg',
+      editor: 'IntelliJ IDEA',
+      'TV show in the last year': 'Arcane',
+    },
+  },
 ];
 
 export { upcomingEvents, allEvents, members, pastEvents };
