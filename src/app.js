@@ -43,6 +43,7 @@ const HomeContainer = lazy(() => import('pages/home'));
 const EventsContainer = lazy(() => import('pages/events'));
 const RegionalsContainer = lazy(() => import('pages/regionals'));
 const TeamContainer = lazy(() => import('pages/team'));
+const PuzzleHuntContainer = lazy(()=> import('pages/puzzlehunt'));
 const FallbackView = (
   <h1>Loading</h1>
 );
@@ -74,6 +75,11 @@ const Navbar = () => {
         <NavLink to='/team' activeStyle={{color: '#ff5479'}}>
           <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
             team
+          </Button>
+        </NavLink>
+        <NavLink to='/puzzlehunt' activeStyle={{color: '#ff5479'}}>
+          <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
+            puzzlehunt
           </Button>
         </NavLink>
       </Fragment>
@@ -242,6 +248,7 @@ const App = () => {
             <Route exact path="/events" component={EventsContainer} />
             <Route exact path="/icpc" component={RegionalsContainer} />
             <Route exact path="/team" component={TeamContainer} />
+            <Route exact path='/puzzlehunt' component={PuzzleHuntContainer} />
             <Redirect to="/" />
           </Switch>
         </MainContent>
