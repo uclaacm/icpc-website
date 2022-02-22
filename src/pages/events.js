@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import {
   Heading,
@@ -16,12 +16,31 @@ import {
   FaDiscord,
 } from 'react-icons/fa';
 import Container from 'components/container';
-
+import * as AWS from "aws-sdk";
 import { upcomingEvents, allEvents, pastEvents } from 'data';
 
+const docClient = new AWS.DynamoDB.DocumentClient();
+
 const UpcomingEvents = () => {
-  const start = 0;
-  const eventsData = upcomingEvents.slice(start, start+4);
+  const [eventsData, setEventsData] = useState([]);
+  
+  useEffect(()=>{
+    (async ()=>{
+      let res = await fetch('http://ec2-18-237-233-117.us-west-2.compute.amazonaws.com:4000/events');
+      let eventsData = await res.json();
+      const sortedEventsData = eventsData.map(event => ({
+        ...event,
+        start_time: new Date(event.start_time),
+        end_time: new Date(event.end_time)
+      })).sort((a,b) => a.start_time < b.start_time);
+      const firstUpcomingEvent = sortedEventsData.findIndex(event => event.start_time > (new Date(2020)));
+      setEventsData(sortedEventsData.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
+    })()
+  });
+
+  function hourToString(hour){
+    return ((hour%12) === 0 ? '12' : (hour % 12)) + ((hour < 12) ? ' AM' : ' PM');
+  }
   return (
     <Flex wrap="wrap" textAlign="center" justify="space-evenly">
       {eventsData.map((event, index) => (
@@ -35,15 +54,15 @@ const UpcomingEvents = () => {
               fontWeight="bold"
               color="brand.600"
             >
-              {event.day}
+              {((new Intl.DateTimeFormat('en-US', {weekday: 'short'})).format(event.start_time)).toString()}
               {' '}
               &bull;
               {' '}
-              {event.date}
+              {((new Intl.DateTimeFormat('en-US', {month: 'short'}).format(event.start_time))).toString() + ' ' + event.start_time.getDate()}
               {' '}
               &bull;
               {' '}
-              {event.time}
+              {hourToString(event.start_time.getHours()) + ' - ' + hourToString(event.end_time.getHours())}
               {' '}
               &bull;
               {' '}
