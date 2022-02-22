@@ -49,7 +49,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@chakra-ui/core": "^0.8.0",
-    "@emotion/core": "^10.0.35",
+    "@emotion/core": "^10.3.1",
     "@emotion/styled": "^10.0.27",
     "aws-sdk": "^2.1019.0",
     "body-parser": "^1.19.0",
