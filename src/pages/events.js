@@ -26,7 +26,7 @@ const UpcomingEvents = () => {
   
   useEffect(()=>{
     (async ()=>{
-      let res = await fetch('http://ec2-18-237-233-117.us-west-2.compute.amazonaws.com:4000/events');
+      let res = await fetch('https://guarded-reaches-79446.herokuapp.com/events');
       let eventsData = await res.json();
       const sortedEventsData = eventsData.map(event => ({
         ...event,
