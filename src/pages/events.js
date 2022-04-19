@@ -33,7 +33,7 @@ const UpcomingEvents = () => {
         start_time: new Date(event.start_time),
         end_time: new Date(event.end_time)
       })).sort((a,b) => a.start_time < b.start_time);
-      const firstUpcomingEvent = sortedEventsData.findIndex(event => event.start_time > (new Date(2020)));
+      const firstUpcomingEvent = sortedEventsData.findIndex(event => event.start_time > (new Date()));
       setEventsData(sortedEventsData.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
     })()
   });
