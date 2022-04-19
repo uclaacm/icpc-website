@@ -106,7 +106,7 @@ const createConfig = (env, argv) => {
       contentBase: path.resolve(__dirname, 'public'),
       compress: true,
       host: '0.0.0.0',
-      port: 3000,
+      port: 5000,
       disableHostCheck: true,
       historyApiFallback: true,
     },
