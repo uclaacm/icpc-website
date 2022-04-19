@@ -37,21 +37,31 @@ import {
 } from 'react-icons/fa';
 import Container from 'components/container';
 import MainContent from 'components/maincontent';
-import { useMediaQuery } from './hooks';
+import { useMediaQuery, usePersistedState } from './hooks';
+import { isatty } from 'tty';
+const { createHash } = require('crypto');
+
+
 
 const HomeContainer = lazy(() => import('pages/home'));
 const EventsContainer = lazy(() => import('pages/events'));
 const RegionalsContainer = lazy(() => import('pages/regionals'));
 const TeamContainer = lazy(() => import('pages/team'));
+const CreateContainer = lazy(() => import("pages/create"));
+// import CreateContainer from './pages/create';
+const UpdateContainer = lazy(() => import("pages/update"));
+const LoginContainer = lazy(() => import("pages/login"));
 const FallbackView = (
   <h1>Loading</h1>
 );
 
-const Navbar = () => {
+const Navbar = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const toast = useToast();
   const isMobile = !useMediaQuery('(min-width: 768px)');
+  const location = useLocation();
+  const isAdmin = props.admin;
 
   const MenuContent = () => {
     return (
@@ -74,6 +84,29 @@ const Navbar = () => {
         <NavLink to='/team' activeStyle={{color: '#ff5479'}}>
           <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
             team
+          </Button>
+        </NavLink>
+        
+      </Fragment>
+    )};
+
+
+  const HiddenContent = () => {
+    return (
+      <Fragment>
+        <NavLink exact to='/update' activeStyle={{color: '#ff5479'}}>
+          <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
+            update
+          </Button>
+        </NavLink>
+        <NavLink to='/create' activeStyle={{color: '#ff5479'}}>
+          <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
+            create
+          </Button>
+        </NavLink>
+        <NavLink exact to='/' activeStyle={{color: '#ff5479'}} onClick={props.logout}>
+          <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
+            log out
           </Button>
         </NavLink>
       </Fragment>
@@ -109,24 +142,7 @@ const Navbar = () => {
           {!isMobile && (
             <Stack isInline>
               <MenuContent />
-              {/* <Box mx="2px" /> */}
-              {/* <Button */}
-              {/*   fontFamily="heading" */}
-              {/*   fontWeight="semibold" */}
-              {/*   size="sm" */}
-              {/*   variantColor="brand" */}
-              {/*   variant="solid" */}
-              {/*   onClick={() => */}
-              {/*       toast({ */}
-              {/*         title: "Applications are not open.", */}
-              {/*         description: "Hi, thanks for showing interest! Applications are not open yet (-_-;). Check back around Novemeber for the ACM Intern/Officer Application Form.", */}
-              {/*         status: "error", */}
-              {/*         duration: 5000, */}
-              {/*         isClosable: true, */}
-              {/*       })} */}
-              {/* > */}
-              {/*   apply now! */}
-              {/* </Button> */}
+              {isAdmin && (<HiddenContent />)}
             </Stack>
           )}
           {isMobile && (
@@ -156,6 +172,7 @@ const Navbar = () => {
               <DrawerBody>
                 <Stack>
                   <MenuContent />
+                  {isAdmin && (<HiddenContent />)}
                 </Stack>
               </DrawerBody>
             </DrawerContent>
@@ -231,10 +248,20 @@ const Footer = () => (
 );
 
 const App = () => {
-  const location = useLocation();
+  let [_, __] = usePersistedState("_", 0);
+  const isAdmin = () => {
+    return createHash('sha256').update(_).digest('hex') === '9a8622ec4e63d21f81c2b7c51b10a722aab9436f69d12d49e84e3918abe6b83a';
+  }
+  const handle_cred = (e) => {
+    __(e.target.value);
+  };
+  const logout = (e) => {
+    __(0);
+  }
+
   return (
     <div>
-      <Navbar />
+      <Navbar admin={isAdmin()} logout={logout}/>
       <Suspense fallback={FallbackView}>
         <MainContent>
           <Switch>
@@ -242,6 +269,15 @@ const App = () => {
             <Route exact path="/events" component={EventsContainer} />
             <Route exact path="/icpc" component={RegionalsContainer} />
             <Route exact path="/team" component={TeamContainer} />
+            <Route exact path="/admin">
+              <LoginContainer cred={_} onChange={handle_cred}/>
+            </Route>
+            <Route exact path="/create">
+              {isAdmin() ? <CreateContainer/> : <Redirect to="/admin" />}
+            </Route>
+            <Route exact path="/update">
+              {isAdmin() ? <UpdateContainer/> : <Redirect to="/admin" />}
+            </Route>
             <Redirect to="/" />
           </Switch>
         </MainContent>
