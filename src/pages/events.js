@@ -28,15 +28,16 @@ const UpcomingEvents = () => {
     (async ()=>{
       let res = await fetch('https://guarded-reaches-79446.herokuapp.com/events');
       let eventsData = await res.json();
-      const sortedEventsData = eventsData.map(event => ({
+      eventsData = eventsData.map(event => ({
         ...event,
         start_time: new Date(event.start_time),
         end_time: new Date(event.end_time)
-      })).sort((a,b) => a.start_time < b.start_time);
-      const firstUpcomingEvent = sortedEventsData.findIndex(event => event.start_time > (new Date()));
-      setEventsData(sortedEventsData.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
+      }));
+      eventsData.sort((a,b) => {return a.start_time - b.start_time});
+      const firstUpcomingEvent = eventsData.findIndex(event => event.end_time > (new Date()));
+      setEventsData(eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
     })()
-  });
+  }, []);
 
   function hourToString(hour){
     return ((hour%12) === 0 ? '12' : (hour % 12)) + ((hour < 12) ? ' AM' : ' PM');
