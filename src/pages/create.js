@@ -88,12 +88,16 @@ class UpcomingEvents extends React.Component {
     );
     console.log(res.status);
     let eventsData = await res.json()
+    eventsData = eventsData.map((item) => ({
+      ...item,
+      start_time: new Date(item.start_time),
+      end_time: new Date(item.end_time)
+    }));
+    // sort reverse chronologically
+    eventsData = eventsData.sort((a, b) => b.start_time - a.start_time);
+    eventsData = eventsData.splice(0, 4);
     this.setState({
-        eventsData: eventsData.map((item) => ({
-          ...item,
-          start_time: new Date(item.start_time),
-          end_time: new Date(item.end_time)
-        }))
+        eventsData: eventsData
     });
   }
 }

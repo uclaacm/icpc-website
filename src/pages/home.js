@@ -53,12 +53,8 @@ const HomeContainer = () => {
           />
         )}
       </Box>
-      <Container>
-        <Stack p={3} spacing={3} align="center">
-          <Heading as="h1" fontSize={['2xl', '3xl']}>Upcoming Events</Heading>
-          <UpcomingEvents />
-        </Stack>
-      </Container>
+
+
       <Container narrow>
         <Stack p={3} spacing={3} align="center">
           <Heading as="h1" fontSize={['2xl', '3xl']}>who we are</Heading>
@@ -90,7 +86,16 @@ const HomeContainer = () => {
           </Flex>
         </Stack>
       </Container>
+
       <Divider p={3} borderColor="brand.500" />
+
+      <Container>
+        <Stack p={3} spacing={3} align="center">
+          <Heading as="h1" fontSize={['2xl', '3xl']}>Upcoming Events</Heading>
+          <UpcomingEvents />
+        </Stack>
+      </Container>
+
 
     </div>
   );
