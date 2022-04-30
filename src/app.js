@@ -275,7 +275,7 @@ const App = () => {
             <Route exact path="/icpc" component={RegionalsContainer} />
             <Route exact path="/team" component={TeamContainer} />
             <Route exact path="/admin">
-              <LoginContainer cred={_} onChange={handle_cred}/>
+              <LoginContainer isAdmin={isAdmin()} onChange={handle_cred}/>
             </Route>
             <Route exact path="/create">
               {isAdmin() ? <CreateContainer/> : <Redirect to="/admin" />}
