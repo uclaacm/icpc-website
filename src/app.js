@@ -86,6 +86,11 @@ const Navbar = (props) => {
             team
           </Button>
         </NavLink>
+        <a href="https://codesprintla.uclaacm.com/">
+          <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
+            codesprint
+          </Button>
+        </a>
         
       </Fragment>
     )};
