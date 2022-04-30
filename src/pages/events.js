@@ -35,13 +35,18 @@ const UpcomingEvents = () => {
       }));
       eventsData.sort((a,b) => {return a.start_time - b.start_time});
       const firstUpcomingEvent = eventsData.findIndex(event => event.end_time > (new Date()));
-      setEventsData(eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
+      if (firstUpcomingEvent !== -1) {
+        setEventsData(eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
+      }
     })()
   }, []);
 
   function hourToString(hour){
     return ((hour%12) === 0 ? '12' : (hour % 12)) + ((hour < 12) ? ' AM' : ' PM');
   }
+
+  if (eventsData.length === 0) 
+    return (<Heading size='lg'>Loading...</Heading>);
   return (
     <Flex wrap="wrap" textAlign="center" justify="space-evenly">
       {eventsData.map((event, index) => (
