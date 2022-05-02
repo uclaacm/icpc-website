@@ -6,63 +6,135 @@ import {
   Text,
   Stack,
   Avatar,
+  Image,
+  useColorModeValue,
+  Link,
+  Flex,
+  Button,
 } from '@chakra-ui/react';
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Drawer,
+} from '@chakra-ui/react';
+import {
+  FaFacebook,
+  FaDiscord,
+} from 'react-icons/fa';
 
 
 const EventCard = (props) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+
+  const hourToString = (hour) => {
+    return ((hour%12) === 0 ? '12' : (hour % 12)) + ((hour < 12) ? ' AM' : ' PM');
+  }
+
+  const eventTime = () => {
+    let weekday = ((Intl.DateTimeFormat('en-US', {weekday: 'short'}).format(props.event.start_time))).toString();
+    let date = ((Intl.DateTimeFormat('en-US', {month: 'short'}).format(props.event.start_time))).toString() + ' ' + props.event.start_time.getDate();
+    let time = hourToString(props.event.start_time.getHours()) + ' - ' + hourToString(props.event.end_time.getHours());
+    return weekday + ' | ' + date + ' | ' + time;
+  }
+
+  const EventTitle = () => {
+    return (<Heading
+      color={'brand.600'}
+      fontSize={'2xl'}
+      fontFamily={'body'}
+      align={'left'}>
+      {props.event.name}
+    </Heading>);
+  };
+  const EventLinks = () => {
+    return (
+      <Stack isInline justifyContent="start" my={2}>
+        <Link href={props.event.facebook} isExternal>
+          <Box as={FaFacebook} h={6} w={6} />
+        </Link>
+        <Link href={props.event.discord} isExternal>
+          <Box as={FaDiscord} h={6} w={6} />
+        </Link>
+      </Stack>
+    );
+  };
+  const EventTimeAndLocation = (p) => {
+    return (
+      <Flex align="baseline" justify="start" mt={2}>
+        <Text
+          textTransform="uppercase"
+          fontSize="sm"
+          fontWeight={p.fontWeight}
+          color="black"
+          noOfLines={2}
+          align='left'
+        >
+          {eventTime()} <br/> {props.event.location}
+        </Text>
+      </Flex>
+    );
+  };
+
   return (
-    <Center py={6}>
+    <Center py={6} w="30%">
       <Box
-        maxW={'445px'}
+        h={'450px'}
         w={'full'}
-        boxShadow={'2xl'}
+        boxShadow={'lg'}
         rounded={'md'}
-        bg={'green.500'}
+        bg={'white'}
         p={6}
-        overflow={'hidden'}>
-        <Box
+        overflowY={'hidden'}>
+        <Center
           h={'210px'}
-          bg={'gray.100'}
+          bg={'white'}
           mt={-6}
           mx={-6}
           mb={6}
-          pos={'relative'}>
+          pos={'relative'}
+          overflow={'hidden'}>
           <Image
+            h={"100%"}
             src={props.event.image}
             layout={'fill'}
           />
-        </Box>
+        </Center>
         <Stack>
-          <Text
-            color={'green.500'}
-            textTransform={'uppercase'}
-            fontWeight={800}
-            fontSize={'sm'}
-            letterSpacing={1.1}>
-            Blog
-          </Text>
-          <Heading
-            color={'green.500'}
-            fontSize={'2xl'}
-            fontFamily={'body'}>
-            Boost your conversion rate
-          </Heading>
-          <Text color={'gray.500'}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum.
-          </Text>
-        </Stack>
-        <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
-          <Avatar
-            src={'https://avatars0.githubusercontent.com/u/1164541?v=4'}
-            alt={'Author'}
-          />
-          <Stack direction={'column'} spacing={0} fontSize={'sm'}>
-            <Text fontWeight={600}>Achim Rolle</Text>
-            <Text color={'gray.500'}>Feb 08, 2021 · 6min read</Text>
-          </Stack>
+          <EventTitle />
+          <EventLinks />
+          <EventTimeAndLocation />
+          <Button onClick={onOpen}>Details</Button>
+          <Modal isOpen={isOpen} onClose={onClose} isCentered scrollBehavior='inside'>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader><EventTitle /></ModalHeader>
+              <ModalCloseButton />
+              <ModalBody mt={"10px"}>
+                <Center
+                  h={'210px'}
+                  bg={'white'}
+                  mb={2}
+                  pos={'relative'}
+                  overflow={'hidden'}>
+                  <Image
+                    h={"100%"}
+                    src={props.event.image}
+                    layout={'fill'}
+                  />
+                </Center>
+                <EventLinks />
+                <EventTimeAndLocation fontWeight="bold" />
+                <Text>{props.event.description}</Text>
+              </ModalBody>
+            </ModalContent>
+          </Modal>
         </Stack>
       </Box>
     </Center>
