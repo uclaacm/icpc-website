@@ -34,7 +34,7 @@ const RegionalsContainer = () => (
       <meta property="og:site_name" content="ACM ICPC at UCLA" />
     </Helmet>
     <Container narrow>
-      <Heading as="h1" fontSize={['2xl', '3xl']} textAlign="center" py={4}>ICPC</Heading>
+      <Heading as="h1" fontSize={['5xl']} textAlign="center" py={4}>ICPC</Heading>
       <Stack pb={10} spacing={10} align="center">
         <Stack direction='row' align="center" justify='space-between'>
           <Image src="/static/regionals/2021.jpg" width="49%"/>
@@ -51,30 +51,30 @@ const RegionalsContainer = () => (
           <Heading as="h2" fontSize={['lg', 'xl']}> News</Heading>
           <Heading as="h4" fontSize={['md']}> 2020-2021 World Finals</Heading>
           <List styleType="disc" width="100%" pb={10}>
-            <ListItem>The team composed of Lucas Xia, Jacob Zhang, and Arihant Jain will compete in Dhaka, Bangladesh. Stay tuned!</ListItem>
+            <ListItem>UCLA Ice-cream Sandwich (Lucas Xia, Jacob Zhang, and Arihant Jain) will compete in Dhaka, Bangladesh. Stay tuned!</ListItem>
           </List>
           <Heading as="h4" fontSize={['md']}> 2021-2022 Regionals</Heading>
           <List styleType="disc" width="100%" pb={10}>
             <ListItem>UCLA's teams placed 2nd, 4th, 8th, 9th, and 13th.</ListItem>
-            <ListItem>The team composed of Jacob Zhang, Arihant Jain, and Nikil Selvam qualified for the North American Championship.</ListItem>
+            <ListItem>UCLA Lemon Meringue (Jacob Zhang, Arihant Jain, and Nikil Selvam) qualified for the North American Championship.</ListItem>
           </List>
           <Heading as="h4" fontSize={['md']}> 2020-2021 North American Championship</Heading>
           <List styleType="disc" width="100%" pb={10}>
-            <ListItem>Lucas Xia, Jacob Zhang, and Arihant Jain placed 17th qualifying for the World Finals.</ListItem>
+            <ListItem>UCLA Ice-cream Sandwich (Lucas Xia, Jacob Zhang, and Arihant Jain) placed 17th qualifying for the World Finals.</ListItem>
           </List>
           <Heading as="h4" fontSize={['md']}> 2020-2021 North America Division Championships</Heading>
           <List styleType="disc" width="100%" pb={10}>
             <ListItem>UCLA's teams placed 3rd and 9th.</ListItem>
-            <ListItem>The teams composed of Lucas Xia, Jacob Zhang, and Arihant Jain qualified for the North American Championship.</ListItem>
+            <ListItem>UCLA Ice-cream Sandwich (Lucas Xia, Jacob Zhang, and Arihant Jain) qualified for the North American Championship.</ListItem>
           </List>
           <Heading as="h4" fontSize={['md']}> 2020-2021 Regionals</Heading>
-          <List styleType="disc" width="100%" pb={10}>
+          <List styleType="disc" width="100%" pb={5}>
             <ListItem>UCLA's teams placed 2nd, 5th, 8th, 13th, and 15th.</ListItem>
-            <ListItem>The teams composed of Lucas Xia, Jacob Zhang, and Arihant Jain and Nikil Selvam, Justin Li, Ho Lyun Jeong, qualified for the North America Division Championships.</ListItem>
+            <ListItem>UCLA Ice-cream Sandwich (Lucas Xia, Jacob Zhang, and Arihant Jain) and UCLA Gingerbread (Nikil Selvam, Justin Li, Ho Lyun Jeong), qualified for the North America Division Championships.</ListItem>
           </List>
 
         </Stack>
-        <Stack align="center" w="100%">
+        <Stack align="center" w="100%" pb={10}>
           <Heading as="h2" fontSize={['lg', 'xl']}>FAQ</Heading>
           <Container narrow w="100%">
             <Accordion allowToggle defaultIndex={[]}>
