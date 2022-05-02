@@ -82,7 +82,7 @@ const Navbar = (props) => {
         </NavLink>
         <NavLink to='/icpc' activeStyle={{color: '#ff5479'}}>
           <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
-            regionals
+            competition
           </Button>
         </NavLink>
         <NavLink to='/team' activeStyle={{color: '#ff5479'}}>

@@ -23,64 +23,58 @@ import Container from 'components/container';
 const RegionalsContainer = () => (
   <div className="regionals">
     <Helmet>
-      <title>ICPC Regionals | ACM ICPC at UCLA</title>
+      <title>ICPC | ACM ICPC at UCLA</title>
       <meta name="description" content="Learn more about the ICPC Regionals and UCLA's own team." />
       <meta name="keywords" content="competition,regionals,team,acm,icpc,ucla,competitive,programming" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="ICPC Regionals | ACM ICPC at UCLA" />
+      <meta property="og:title" content="ICPC | ACM ICPC at UCLA" />
       <meta property="og:description" content="Learn more about the ICPC Regionals and UCLA's own team." />
       <meta property="og:url" content="https://icpc.uclaacm.com/icpc" />
       <meta property="og:image" content="https://icpc.uclaacm.com/static/icon/logo256.png" />
       <meta property="og:site_name" content="ACM ICPC at UCLA" />
     </Helmet>
     <Container narrow>
-      <Heading as="h1" fontSize={['2xl', '3xl']} textAlign="center" py={4}>ICPC Regionals</Heading>
-      <Stack pb={10} spacing={10}>
-        <Flex direction="row" wrap="wrap" justify="space-between" align="center">
-        {/* <Stack isInline spacing={4} > */}
-          <Image src="/static/regionals/2019.jpeg" w="49%" alt="regionals2019" />
-          <Image src="/static/regionals/2018.jpeg" w="49%" alt="regionals2018" />
-          {/* <Image src="/static/regionals/2018.jpeg" /> */}
-
-          {/* <Carousel> */}
-          {/*   <div> */}
-          {/*     <Image size="80%" src="/static/regionals/2019.jpeg" /> */}
-          {/*     <p className="legend">2019 Team</p> */}
-          {/*   </div> */}
-          {/*   <div> */}
-          {/*     <Image size="80%" maxSize="60px" src="/static/regionals/2018.jpeg" /> */}
-          {/*     <p className="legend">2018 Team</p> */}
-          {/*   </div> */}
-          {/* </Carousel> */}
-        </Flex>
-        {/* </Stack> */}
+      <Heading as="h1" fontSize={['2xl', '3xl']} textAlign="center" py={4}>ICPC</Heading>
+      <Stack pb={10} spacing={10} align="center">
+        <Stack direction='row' align="center" justify='space-between'>
+          <Image src="/static/regionals/2021.jpg" width="49%"/>
+          <Image src="/static/regionals/2019.jpeg" width="49%"/>
+        </Stack>
         <Stack align="center">
           <Heading as="h2" fontSize={['lg', 'xl']}>About</Heading>
           <Text>
-            The International Collegiate Programming Contest (ICPC) is an algorithmic programming contest for college students. Teams of three, representing their university, work to solve the most real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure. Through training and competition, teams challenge each other to raise the bar on the possible. Quite simply, it is the oldest, largest, and most prestigious programming contest in the world. It is often considered to be the ”Olympics of Programming Competitions”, featuring contestants from over 2,000 universities that are spread across 80 countries and six continents.
-          </Text>
-          <Text>
-            The ICPC features several levels of competition:
-            <List styleType="disc">
-              <ListItem>Regional Contests</ListItem>
-              <ListItem>Regional/National Championships</ListItem>
-              <ListItem>The World Finals</ListItem>
-            </List>
-          </Text>
-          <Text>
-            In November 2019, UCLA sent 5 teams to the ICPC Southern California Regional Contest at Riverside Community College. As a school, we put on an extremely strong performance with UCLA’s top three teams placing 4th, 6th, and 8th in the region. The team composed of Lucas Xia, Arihant Jain, Justin Li, and coach Justin Li thereby qualified for the prestigious 2020 ICPC North American Championship(NAC) hosted by Georgia Tech in Atlanta. At NAC in February, the team went on to solve 5 problems, which placed them in 32nd place in the nation out of the 59 teams in attendance.
+          The International Collegiate Programming Contest (ICPC) is an algorithmic programming contest for college students. Teams of three, representing their university, work to solve the most real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure. It is the oldest, largest, and most prestigious programming contest in the world, featuring contestants from over 2,000 universities that are spread across 80 countries and six continents.
+
           </Text>
         </Stack>
         <Stack align="center">
-          <Heading as="h2" fontSize={['lg', 'xl']}> In the News</Heading>
+          <Heading as="h2" fontSize={['lg', 'xl']}> News</Heading>
+          <Heading as="h4" fontSize={['md']}> 2020-2021 World Finals</Heading>
+          <List styleType="disc" width="100%" pb={10}>
+            <ListItem>The team composed of Lucas Xia, Jacob Zhang, and Arihant Jain will compete in Dhaka, Bangladesh. Stay tuned!</ListItem>
+          </List>
+          <Heading as="h4" fontSize={['md']}> 2021-2022 Regionals</Heading>
+          <List styleType="disc" width="100%" pb={10}>
+            <ListItem>UCLA's teams placed 2nd, 4th, 8th, 9th, and 13th.</ListItem>
+            <ListItem>The team composed of Jacob Zhang, Arihant Jain, and Nikil Selvam qualified for the North American Championship.</ListItem>
+          </List>
+          <Heading as="h4" fontSize={['md']}> 2020-2021 North American Championship</Heading>
+          <List styleType="disc" width="100%" pb={10}>
+            <ListItem>Lucas Xia, Jacob Zhang, and Arihant Jain placed 17th qualifying for the World Finals.</ListItem>
+          </List>
+          <Heading as="h4" fontSize={['md']}> 2020-2021 North America Division Championships</Heading>
+          <List styleType="disc" width="100%" pb={10}>
+            <ListItem>UCLA's teams placed 3rd and 9th.</ListItem>
+            <ListItem>The teams composed of Lucas Xia, Jacob Zhang, and Arihant Jain qualified for the North American Championship.</ListItem>
+          </List>
+          <Heading as="h4" fontSize={['md']}> 2020-2021 Regionals</Heading>
+          <List styleType="disc" width="100%" pb={10}>
+            <ListItem>UCLA's teams placed 2nd, 5th, 8th, 13th, and 15th.</ListItem>
+            <ListItem>The teams composed of Lucas Xia, Jacob Zhang, and Arihant Jain and Nikil Selvam, Justin Li, Ho Lyun Jeong, qualified for the North America Division Championships.</ListItem>
+          </List>
+
         </Stack>
-        <Stack align="center">
-          <Heading as="h2" fontSize={['lg', 'xl']}>Latest Update (09/25/20)</Heading>
-          <Text>
-            Stay tuned for updates on ICPC Regionals 2020. We will post all and any information we have here.
-          </Text>
-        </Stack>
-        <Stack align="center">
+        <Stack align="center" w="100%">
           <Heading as="h2" fontSize={['lg', 'xl']}>FAQ</Heading>
           <Container narrow w="100%">
             <Accordion allowToggle defaultIndex={[]}>
