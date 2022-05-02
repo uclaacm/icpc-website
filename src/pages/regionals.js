@@ -36,9 +36,9 @@ const RegionalsContainer = () => (
     <Container narrow>
       <Heading as="h1" fontSize={['5xl']} textAlign="center" py={4}>ICPC</Heading>
       <Stack pb={10} spacing={10} align="center">
-        <Stack direction='row' align="center" justify='space-between'>
-          <Image src="/static/regionals/2021.jpg" width="49%"/>
-          <Image src="/static/regionals/2019.jpeg" width="49%"/>
+        <Stack direction={['column', 'row']} align="center" justify='space-between'>
+          <Image src="/static/regionals/2021.jpg" width={["100%","49%"]}/>
+          <Image src="/static/regionals/2019.jpeg" width={["100%","49%"]}/>
         </Stack>
         <Stack align="center">
           <Heading as="h2" fontSize={['lg', 'xl']}>About</Heading>

@@ -83,7 +83,7 @@ const EventCard = (props) => {
   };
 
   return (
-    <Center py={6} w="30%">
+    <Center py={6} w={["100%", "30%"]}>
       <Box
         h={'450px'}
         w={'full'}
