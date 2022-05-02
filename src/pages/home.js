@@ -11,7 +11,7 @@ import {
   Box,
   Divider,
   useToast,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import Container from 'components/container';
 import { UpcomingEvents } from 'pages/events';
 
@@ -71,17 +71,17 @@ const HomeContainer = () => {
             </Text>
           <Flex wrap="wrap" justify="center" align="center">
             <Link to="team">
-              <Button m={3} variantColor="brand" variant="outline">Meet Our Team</Button>
+              <Button m={3} colorScheme="brand" variant="outline">Meet Our Team</Button>
             </Link>
             <Link to="icpc">
-              <Button m={3} variantColor="brand" variant="outline">ICPC Regionals</Button>
+              <Button m={3} colorScheme="brand" variant="outline">ICPC Regionals</Button>
             </Link>
             <Link to={{
               pathname: 'events',
               hash: '#all-events',
             }}
             >
-              <Button m={3} variantColor="brand" variant="outline">Learn More About our Events</Button>
+              <Button m={3} colorScheme="brand" variant="outline">Learn More About our Events</Button>
             </Link>
           </Flex>
         </Stack>

@@ -16,7 +16,7 @@ import {
   Textarea,
   Input,
   Select
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import Container from 'components/container';
 import { UpcomingEvents } from 'pages/create';
 import DatePicker from "react-datepicker";

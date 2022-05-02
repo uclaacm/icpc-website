@@ -13,7 +13,7 @@ import {
   Input,
   Textarea,
   Button
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import {
   FaFacebook,
   FaDiscord,

@@ -10,12 +10,13 @@ import {
   SimpleGrid,
   Box,
   Link,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import {
   FaFacebook,
   FaDiscord,
 } from 'react-icons/fa';
 import Container from 'components/container';
+// import EventCard from 'components/eventcard';
 import * as AWS from "aws-sdk";
 import { upcomingEvents, allEvents, pastEvents } from 'data';
 
@@ -50,6 +51,7 @@ const UpcomingEvents = () => {
   return (
     <Flex wrap="wrap" textAlign="center" justify="space-evenly">
       {eventsData.map((event, index) => (
+        // <EventCard key={index} event={event}></EventCard>
         <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
           <Image src={event.image} rounded="lg" />
           <Flex align="baseline" mt={2}>
@@ -78,10 +80,10 @@ const UpcomingEvents = () => {
           <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
           <Stack isInline justifyContent="center" my={2}>
             <Link href={event.facebook} isExternal>
-              <Box as={FaFacebook} size={6} />
+              <Box as={FaFacebook} h={6} w={6} />
             </Link>
             <Link href={event.discord} isExternal>
-              <Box as={FaDiscord} size={6} />
+              <Box as={FaDiscord} h={6} w={6} />
             </Link>
           </Stack>
           <Text>{event.description}</Text>
@@ -101,7 +103,7 @@ const AllEvents = () => {
             <Stack isInline mt={2} spacing={2}>
             {typeof event.quarter !== "undefined" && 
                   event.quarter.split('/').map((qtr, index) => (
-                    <Badge key={index} variantColor="teal">{qtr}</Badge>
+                    <Badge key={index} colorScheme="teal">{qtr}</Badge>
                   ))}
           </Stack>
           <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
@@ -122,7 +124,7 @@ const PastEvents = () => {
             <Stack isInline mt={2} spacing={2}>
               {typeof event.quarter !== "undefined" && 
                   event.quarter.split('/').map((qtr, index) => (
-                    <Badge key={index} variantColor="teal">{qtr}</Badge>
+                    <Badge key={index} colorScheme="teal">{qtr}</Badge>
                   ))}
           </Stack>
           <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
