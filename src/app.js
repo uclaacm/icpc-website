@@ -27,7 +27,11 @@ import {
   DrawerContent,
   useDisclosure,
   useToast,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
+import {
+  TriangleDownIcon,
+  TriangleUpIcon,
+} from "@chakra-ui/icons";
 import {
   FaFacebook,
   FaDiscord,
@@ -153,10 +157,10 @@ const Navbar = (props) => {
           {isMobile && (
             <Stack isInline>
               {!isOpen && (
-                <IconButton ref={btnRef} size="sm" variantColor="brand" aria-label="Open menu" icon="triangle-down" onClick={onOpen} />
+                <IconButton ref={btnRef} size="sm" colorScheme="brand" aria-label="Open menu" icon={<TriangleDownIcon />} onClick={onOpen} />
               )}
               {isOpen && (
-                <IconButton ref={btnRef} size="sm" variantColor="brand" aria-label="Close menu" icon="triangle-up" onClick={onClose} />
+                <IconButton ref={btnRef} size="sm" colorScheme="brand" aria-label="Close menu" icon={<TriangleUpIcon />} onClick={onClose} />
               )}
             </Stack>
           )}
@@ -203,19 +207,19 @@ const Footer = () => (
           <Heading my={2} fontSize="sm">find us on social media</Heading>
           <Stack isInline justifyContent="center">
             <Link href="https://www.facebook.com/groups/ucla.icpc" isExternal>
-              <Box as={FaFacebook} size={8} />
+              <Box as={FaFacebook} w={8} h={8} />
             </Link>
             <Link href="https://discord.gg/eWmzKsY" isExternal>
-              <Box as={FaDiscord} size={8} />
+              <Box as={FaDiscord} w={8} h={8} />
             </Link>
             <Link href="https://www.instagram.com/acm.ucla" isExternal>
-              <Box as={FaInstagram} size={8} />
+              <Box as={FaInstagram} w={8} h={8} />
             </Link>
             <Link href="https://medium.com/techatucla" isExternal>
-              <Box as={FaMedium} size={8} />
+              <Box as={FaMedium} w={8} h={8} />
             </Link>
             <Link href="https://github.com/uclaacm" isExternal>
-              <Box as={FaGithub} size={8} />
+              <Box as={FaGithub} w={8} h={8} />
             </Link>
           </Stack>
         </Box>
@@ -231,7 +235,7 @@ const Footer = () => (
             fontFamily="heading"
             fontWeight="semibold"
             size="sm"
-            variantColor="brand"
+            colorScheme="brand"
             variant="solid"
             rounded="lg"
             py={5}

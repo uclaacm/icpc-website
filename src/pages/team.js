@@ -5,11 +5,11 @@ import {
   Image,
   Stack,
   Text,
-  AspectRatioBox,
+  AspectRatio,
   Box,
   SimpleGrid,
   Tooltip,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import Container from 'components/container';
 
 import { members as membersData } from 'data';
@@ -24,11 +24,11 @@ const AllMembers = () => {
         <Box key={index} rounded="lg" overflow="hidden" p={2}>
           <Tooltip hasArrow label={`favorite ${randFact}: ${member.funFacts[randFact]}`} placement="top">
             <center>
-              <AspectRatioBox maxW="152px" ratio={1}>
+              <AspectRatio maxW="152px" ratio={1}>
                 <Box p="4px" rounded="50%" borderColor="brand.500" borderWidth="8px">
                   <Image size="128px" src={member.image} rounded="50%" />
                 </Box>
-              </AspectRatioBox>
+              </AspectRatio>
             </center>
           </Tooltip>
           <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{member.name}</Heading>

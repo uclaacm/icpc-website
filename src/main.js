@@ -3,7 +3,7 @@ import 'main.scss'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { ThemeProvider, CSSReset, theme } from '@chakra-ui/core';
+import { ChakraProvider, CSSReset, theme } from '@chakra-ui/react';
 
 import App from 'app';
 
@@ -53,12 +53,12 @@ const customTheme = {
 
 ReactDOM.render(
   <div id="mount">
-    <ThemeProvider theme={customTheme}>
+    <ChakraProvider theme={customTheme}>
       <CSSReset />
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </ThemeProvider>
+    </ChakraProvider>
   </div>,
   document.getElementById('mount'),
 );

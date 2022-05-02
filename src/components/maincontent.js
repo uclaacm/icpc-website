@@ -1,8 +1,8 @@
 import React from 'react';
-import { Box } from '@chakra-ui/core';
+import { Box } from '@chakra-ui/react';
 
 const MainContent = ({ children }) => (
-  <div style={{ minHeight: '100vh' }}>
+  <div style={{ minHeight: '100vh', overflowX: 'hidden'}}>
     <Box
       pt={16}
     >

@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import {
   Accordion,
   AccordionItem,
-  AccordionHeader,
+  AccordionButton,
   AccordionPanel,
   AccordionIcon,
   Heading,
@@ -14,7 +14,8 @@ import {
   List,
   ListItem,
   Box,
-} from '@chakra-ui/core';
+  Flex,
+} from '@chakra-ui/react';
 import Container from 'components/container';
 // import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import { Carousel } from 'react-responsive-carousel';
@@ -34,10 +35,10 @@ const RegionalsContainer = () => (
     </Helmet>
     <Container narrow>
       <Heading as="h1" fontSize={['2xl', '3xl']} textAlign="center" py={4}>ICPC</Heading>
-      <Stack pb={10} spacing={10} align="center" paddingLeft={'10%'} paddingRight={'10%'}>
-        <Stack direction='row' align="center" justify='center'>
-          <Image src="/static/regionals/2021.jpg" width="40%"/>
-          <Image src="/static/regionals/2019.jpeg" width="40%"/>
+      <Stack pb={10} spacing={10} align="center">
+        <Stack direction='row' align="center" justify='space-between'>
+          <Image src="/static/regionals/2021.jpg" width="49%"/>
+          <Image src="/static/regionals/2019.jpeg" width="49%"/>
         </Stack>
         <Stack align="center">
           <Heading as="h2" fontSize={['lg', 'xl']}>About</Heading>
@@ -73,41 +74,47 @@ const RegionalsContainer = () => (
           </List>
 
         </Stack>
-        <Stack align="center">
+        <Stack align="center" w="100%">
           <Heading as="h2" fontSize={['lg', 'xl']}>FAQ</Heading>
-          <Container narrow>
-            <Accordion>
+          <Container narrow w="100%">
+            <Accordion allowToggle defaultIndex={[]}>
               <AccordionItem>
-                <AccordionHeader>
-                  <Box flex="1" textAlign="left">
-                      How do I apply?
-                    </Box>
-                  <AccordionIcon />
-                </AccordionHeader>
+                <h2>
+                  <AccordionButton _expanded={{ color: '#ff5479' }}>
+                    <Box flex="1" textAlign="left">
+                        How do I apply?
+                      </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
                 <AccordionPanel pb={4}>
                   While all our events and workshops are open to all, selection for the UCLA ICPC regionals team is based solely on performance in the annual tryouts (we ICPC officers have to try out too!) Each year, the top 12-15 performers in the tryout are invited to represent UCLA at the Southern California ICPC Regionals.
 
                   It is also worth mentioning that this tryout process is completely different from the application to join us as an officer! You need not be an expert at competitive programming to join us. All you need is a passion for teaching and problem-solving!
-                  </AccordionPanel>
+                </AccordionPanel>
               </AccordionItem>
               <AccordionItem>
-                <AccordionHeader>
-                  <Box flex="1" textAlign="left">
-                      Can I pick my own team?
-                    </Box>
-                  <AccordionIcon />
-                </AccordionHeader>
+                <h2>
+                  <AccordionButton _expanded={{ color: '#ff5479' }}>
+                    <Box flex="1" textAlign="left">
+                        Can I pick my own team?
+                      </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
                 <AccordionPanel pb={4}>
                   Absolutely! Team formation to left to be an organic process amongst the selected contests. Contestants form teams as they wish, typically after practicing together as a big group and identifying each individual’s strengths and weaknesses. However, each contestant must tryout individually.
                   </AccordionPanel>
               </AccordionItem>
               <AccordionItem>
-                <AccordionHeader>
-                  <Box flex="1" textAlign="left">
-                      Do I need to be an ICPC officer to tryout?
-                    </Box>
-                  <AccordionIcon />
-                </AccordionHeader>
+                <h2>
+                  <AccordionButton _expanded={{ color: '#ff5479' }}>
+                    <Box flex="1" textAlign="left">
+                        Do I need to be an ICPC officer to tryout?
+                      </Box>
+                    <AccordionIcon />
+                  </AccordionButton> 
+                </h2>
                 <AccordionPanel pb={4}>
                   Not at all! The tryout process is completely independent of the ICPC officers application process. Selection for the UCLA ICPC regionals team is based solely on performance in the annual tryouts (we ICPC officers have to try out too!) Each year, the top 12-15 performers in the tryout are invited to represent UCLA at the Southern California ICPC Regionals.
                   </AccordionPanel>
