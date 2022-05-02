@@ -16,7 +16,7 @@ import {
   FaDiscord,
 } from 'react-icons/fa';
 import Container from 'components/container';
-// import EventCard from 'components/eventcard';
+import EventCard from 'components/eventcard';
 import * as AWS from "aws-sdk";
 import { upcomingEvents, allEvents, pastEvents } from 'data';
 
@@ -39,6 +39,7 @@ const UpcomingEvents = () => {
       if (firstUpcomingEvent !== -1) {
         setEventsData(eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
       }
+      // setEventsData(eventsData.splice(0, 4));
     })()
   }, []);
 
@@ -49,45 +50,9 @@ const UpcomingEvents = () => {
   if (eventsData.length === 0) 
     return (<Heading size='lg'>Loading...</Heading>);
   return (
-    <Flex wrap="wrap" textAlign="center" justify="space-evenly">
+    <Flex wrap="wrap" direction="row" textAlign="center" justify="space-evenly" w={"100%"}>
       {eventsData.map((event, index) => (
-        // <EventCard key={index} event={event}></EventCard>
-        <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
-          <Image src={event.image} rounded="lg" />
-          <Flex align="baseline" mt={2}>
-            <Text
-              ml={2}
-              textTransform="uppercase"
-              fontSize="sm"
-              fontWeight="bold"
-              color="brand.600"
-            >
-              {((new Intl.DateTimeFormat('en-US', {weekday: 'short'})).format(event.start_time)).toString()}
-              {' '}
-              &bull;
-              {' '}
-              {((new Intl.DateTimeFormat('en-US', {month: 'short'}).format(event.start_time))).toString() + ' ' + event.start_time.getDate()}
-              {' '}
-              &bull;
-              {' '}
-              {hourToString(event.start_time.getHours()) + ' - ' + hourToString(event.end_time.getHours())}
-              {' '}
-              &bull;
-              {' '}
-              {event.location}
-            </Text>
-          </Flex>
-          <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
-          <Stack isInline justifyContent="center" my={2}>
-            <Link href={event.facebook} isExternal>
-              <Box as={FaFacebook} h={6} w={6} />
-            </Link>
-            <Link href={event.discord} isExternal>
-              <Box as={FaDiscord} h={6} w={6} />
-            </Link>
-          </Stack>
-          <Text>{event.description}</Text>
-        </Box>
+        <EventCard key={index} event={event}></EventCard>
       ))}
     </Flex>
   );
