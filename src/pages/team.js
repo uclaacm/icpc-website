@@ -15,8 +15,8 @@ import Container from 'components/container';
 import { members as membersData } from 'data';
 
 const AllMembers = () => {
-  const funFacts = ['ice cream', 'professor', 'editor', 'TV show in the last year'];
-  const randFact = funFacts[Math.floor(Math.random() * 4)];
+  const funFacts = ['ice cream', 'professor', 'editor', 'language', 'favorite TV show', 'course'];
+  const randFact = funFacts[Math.floor(Math.random() * 6)];
 
   return (
     <SimpleGrid minChildWidth="300px" textAlign="center" spacing="16px" justifyContent="center">
