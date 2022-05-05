@@ -57,7 +57,7 @@ const HomeContainer = () => {
 
       <Container narrow>
         <Stack p={3} spacing={3} align="center">
-          <Heading as="h1" fontSize={['2xl', '3xl']}>who we are</Heading>
+          <Heading as="h1" fontSize={['2xl', '3xl']}>who are we?</Heading>
           <Heading as="h2" textAlign="center" fontSize={['md', 'lg']}>algorithmic thinking, problem solving</Heading>
           <Text textAlign="justify" fontSize={['sm', 'md']}>
             We are a group of problem solvers at heart! ACM ICPC at UCLA is a student-led organization whose mission is to promote algorithmic thinking and help build proficient problem solvers.

@@ -18,7 +18,7 @@ import {
 import Container from 'components/container';
 import EventCard from 'components/eventcard';
 import * as AWS from "aws-sdk";
-import { upcomingEvents, allEvents, pastEvents } from 'data';
+import { allEvents, pastEvents } from 'data';
 
 const docClient = new AWS.DynamoDB.DocumentClient();
 
