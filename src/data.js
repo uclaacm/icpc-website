@@ -370,6 +370,34 @@ const members = [
       'favorite TV show': 'Arcane',
     },
   },
+  {
+    image: '/static/member/ad.png',
+    name: 'Arvin Ding',
+    position: 'Officer',
+    description: 'Hi! I’m a first year CS major. I like math, Valorant, competitive programming, sushi, and shark tank. I want do a triathlon and create a startup at some point.',
+    funFacts: {
+      'ice cream': 'mango',
+      professor: 'Igor Pak!',
+      editor: 'Eclipse',
+      language: 'Java',
+      course: 'CS 35L',
+      'favorite TV show': 'Ping Pong The Animation!!!',
+    },
+  },
+  {
+    image: '/static/member/jh.png',
+    name: 'Jason Huang',
+    position: 'Officer',
+    description: 'Hi! I’m a first-year math major with an interest in ML. You can usually catch me playing piano at Covel. I also like to lift weights and watch anime (big fan of Attack on Titan and Studio Ghibli movies).',
+    funFacts: {
+      'ice cream': 'Cotton candy',
+      professor: 'Gieseker',
+      editor: 'Sublime Text',
+      language: 'Java',
+      course: 'Japan 50 ',
+      'favorite TV show': 'Attack on Titan',
+    },
+  },
 ];
 
 export { allEvents, members, pastEvents };
