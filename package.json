@@ -41,7 +41,7 @@
     "prettier": "^2.2.1",
     "sass-loader": "^10.1.0",
     "terser-webpack-plugin": "^4.2.2",
-    "webpack": "^4.46.0",
+    "webpack": "^5.73.0",
     "webpack-bundle-analyzer": "^4.4.1",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
