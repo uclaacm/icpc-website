@@ -205,7 +205,7 @@ const members = [
   {
     image: '/static/member/jl.png',
     name: 'Justin Li',
-    position: 'Vice President',
+    position: 'Advisor',
     description: 'I’m Justin, a third year Computer Science major! I like doing competitive programming and solving puzzles, but I also really enjoy doing non-techy things like cooking, reading, or hiking. Always looking to try something new!',
     funFacts: {
       'ice cream': 'Cookies and Cream',
