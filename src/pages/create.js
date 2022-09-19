@@ -96,14 +96,14 @@ class UpcomingEvents extends React.Component {
       start_time: new Date(item.start_time),
       end_time: new Date(item.end_time)
     }));
-    // sort reverse chronologically
-    eventsData = eventsData.sort((a, b) => b.start_time - a.start_time);
-
-    // show the four most recent events so as a reference
-    eventsData = eventsData.splice(0, 4);
-    this.setState({
-        eventsData: eventsData
-    });
+    // sort chronologically
+    eventsData = eventsData.sort((a, b) => a.start_time - b.start_time);
+    const firstUpcomingEvent = eventsData.findIndex(event => event.end_time > (new Date()));
+    if (firstUpcomingEvent !== -1) {
+      this.setState({
+          eventsData: eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+6)
+      });
+    }
   }
 }
 

@@ -1,3 +1,5 @@
+import { UnorderedList } from "@chakra-ui/react";
+
 const pastEvents = [
   {
     image: '/static/event/bruinquest.png',
@@ -52,27 +54,45 @@ const pastEvents = [
 const allEvents = [
   {
     image: '/static/event/intro.png',
-    name: 'Beginner Competitive Programming',
-    quarter: 'Fall',
-    description: 'Continue your journey into competitive programming with Beginner CP. Continuing on from Intro CP, we explore slightly more advanced yet beginner-friendly themes in competitive programming. Whether you are completely new to CP, an expert looking for a quick review, or just an algorithm and problem-solving enthusiast, we promise you will find the workshops interesting and fun!',
+    name: 'Intro to Competitive Programming',
+    description: 'In intro to CP, we explore various beginner-friendly topics that appear frequently in competitive programming. Whether you are completely new to CP, an expert looking for a quick review, or just an algorithm and problem-solving enthusiast, we promise you will find the workshops interesting and fun!',
+    quarter: "Fall | Winter | Spring",
+    shortDesc: "Workshop",
   },
   {
     image: '/static/event/interview.png',
     name: 'Interview Crash Course (Interview Track)',
-    quarter: 'Fall/Winter',
     description: 'Worried about your upcoming coding interview? Don’t worry, we got you covered! ACM ICPC is hosting a crash course that’ll give you the data structure and algorithm knowledge you’ll need to ace your next technical interview. Come through to hone your skills and get a head start on your CS career!',
+    quarter: "Fall | Winter | Spring",
+    shortDesc: "Workshop",
   },
   {
-    image: '/static/event/advanced.png',
-    name: 'Advanced Training',
-    quarter: 'Fall',
+    image: '/static/banner.png',
+    name: 'ICPC Training (Advanced Track)',
     description: 'An advanced workshop to help learn and practice advanced algorithms, data structures, and problem solving skills. Focus of the workshop will be preparing for the ICPC competition, but the workshop is open to anyone interested!',
+    quarter: "Winter | Spring",
+    shortDesc: "Workshop",
+  },
+  {
+    image: '/static/event/icpc-banner.png',
+    name: 'ICPC Team Tryouts',
+    description: 'Think you have what it takes? Come tryout for the UCLA ICPC team! Each Fall, we host two tryouts to select the 15 best contestants to represent UCLA at ICPC regionals, where we compete against other schools in SoCal for a chance to advance to the national championship or even the world final!',
+    quarter: "Fall",
+    shortDesc: "Contest",
   },
   {
     image: '/static/event/codesprint.png',
-      name: 'CodeSprintLA',
-    quarter: 'Spring',
+    name: 'CodeSprintLA',
     description: 'CodeSprintLA is UCLA’s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!',
+    quarter: "Spring",
+    shortDesc: "Contest",
+  },
+  {
+    image: '/static/event/bruinquest.png',
+    name: 'ICPC x Cyber Puzzle Hunt',
+    description: 'Programming puzzles are fun, but do you know what’s more fun? Programming puzzles + Non-programming puzzles :). Join us to solve some interesting UCLA-related puzzles in an intense team-based contest. Winners get bragging rights, prizes, and more!',
+    quarter: 'TBD',
+    shortDesc: "Contest"
   },
 ];
 
