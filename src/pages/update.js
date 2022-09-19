@@ -37,7 +37,7 @@ class UpdateContainer extends React.Component {
         time: undefined,
         location: undefined,
         description: undefined,
-        facebook: undefined,
+        link: undefined,
         discord: undefined,
       }
     }
@@ -183,9 +183,9 @@ class EventForm extends React.Component {
           
         />
         <Input 
-            id='facebook' 
-            placeholder={this.state.eventData.facebook===undefined ? "facebook": this.state.eventData.facebook} 
-            value={this.state.eventData.facebook===undefined ? "": this.state.eventData.facebook}
+            id='link' 
+            placeholder={this.state.eventData.link===undefined ? "link": this.state.eventData.link} 
+            value={this.state.eventData.link===undefined ? "": this.state.eventData.link}
             onChange={this.handleChange.bind(this)}/>
         <Input 
             id='discord'

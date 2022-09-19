@@ -27,7 +27,9 @@ import {
   FaFacebook,
   FaDiscord,
 } from 'react-icons/fa';
-
+import {
+  ImLink
+} from 'react-icons/im';
 
 const EventCard = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -56,8 +58,8 @@ const EventCard = (props) => {
   const EventLinks = () => {
     return (
       <Stack isInline justifyContent="start" my={2}>
-        <Link href={props.event.facebook} isExternal>
-          <Box as={FaFacebook} h={6} w={6} />
+        <Link href={props.event.link} isExternal>
+          <Box as={ImLink} h={6} w={6} />
         </Link>
         <Link href={props.event.discord} isExternal>
           <Box as={FaDiscord} h={6} w={6} />
@@ -103,10 +105,12 @@ const EventCard = (props) => {
           <Image
             h={"100%"}
             src={props.event.image}
-            layout={'fill'}
+            fit={'cover'}
           />
         </Center>
-        <Stack>
+        <Stack
+          mt={10}
+        >
           <EventTitle />
           <EventLinks />
           <EventTimeAndLocation />
@@ -116,7 +120,7 @@ const EventCard = (props) => {
             <ModalContent>
               <ModalHeader><EventTitle /></ModalHeader>
               <ModalCloseButton />
-              <ModalBody mt={"10px"}>
+              <ModalBody mt={"0px"} mb={'10px'}>
                 <Center
                   h={'210px'}
                   bg={'white'}

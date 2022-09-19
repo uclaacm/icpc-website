@@ -37,7 +37,7 @@ const UpcomingEvents = () => {
       eventsData.sort((a,b) => {return a.start_time - b.start_time});
       const firstUpcomingEvent = eventsData.findIndex(event => event.end_time > (new Date()));
       if (firstUpcomingEvent !== -1) {
-        setEventsData(eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
+        setEventsData(eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+6)); 
       }
       // setEventsData(eventsData.splice(0, 4));
     })()
