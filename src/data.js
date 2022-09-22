@@ -212,7 +212,7 @@ const members = [
     image: '/static/member/rl.png',
     name: 'Robert Lee',
     position: 'President',
-    description: 'Hi! I’m Robert, a 2nd year studying Math of Computation and Aerospace Engineering from San Diego. I love competitive programming and teaching algorithms! My hobbies include working on never-ending projects and gaming.',
+    description: 'Hi! I’m Robert, a 3rd year studying Math of Computation and Aerospace Engineering from San Diego. I love competitive programming and teaching algorithms! My hobbies include working on never-ending projects and playing Overwatch.',
     funFacts: {
       'ice cream': 'Vietnamese Rocky Road',
       professor: 'Taira',
@@ -310,7 +310,7 @@ const members = [
     image: '/static/member/lj.png',
     name: 'Lucas Jeong',
     position: 'Officer',
-    description: 'hi im lucas',
+    description: 'hi',
     funFacts: {
       'ice cream': 'strawberry',
       professor: 'sherstov',
