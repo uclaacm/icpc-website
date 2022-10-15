@@ -39,12 +39,19 @@ const EventCard = (props) => {
     return ((hour%12) === 0 ? '12' : (hour % 12)) + ((hour < 12) ? ' AM' : ' PM');
   }
 
+  const timeToString = (time) => {
+    let hour = time.getHours();
+    let minute = time.getMinutes();
+    return (hour % 12 === 0 ? '12' : hour % 12) + (minute ? ':' + minute : '') + ((hour < 12) ? ' AM' : ' PM');
+  }
+
   const eventTime = () => {
     if (props.event.start_time === undefined)
       return "";
     let weekday = ((Intl.DateTimeFormat('en-US', {weekday: 'short'}).format(props.event.start_time))).toString();
     let date = ((Intl.DateTimeFormat('en-US', {month: 'short'}).format(props.event.start_time))).toString() + ' ' + props.event.start_time.getDate();
-    let time = hourToString(props.event.start_time.getHours()) + ' - ' + hourToString(props.event.end_time.getHours());
+    // let time = hourToString(props.event.start_time.getHours()) + ' - ' + hourToString(props.event.end_time.getHours());
+    let time = timeToString(props.event.start_time) + ' - ' + timeToString(props.event.end_time);
     return weekday + ' | ' + date + ' | ' + time;
   }
 
