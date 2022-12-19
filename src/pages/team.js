@@ -15,7 +15,7 @@ import Container from 'components/container';
 import { members as membersData } from 'data';
 
 const AllMembers = () => {
-  const funFacts = ['ice cream', 'professor', 'editor', 'language', 'favorite TV show', 'course'];
+  const funFacts = ['ice cream', 'professor', 'editor', 'language', 'TV show', 'course'];
   const randFact = funFacts[Math.floor(Math.random() * 6)];
 
   return (
