@@ -407,7 +407,7 @@ const members = [
   {
     image: '/static/member/ad.png',
     name: 'Arvin Ding',
-    position: 'Intern',
+    position: 'Officer',
     description: 'Hi! I’m a second year CS major. I like math, Valorant, competitive programming, sushi, and shark tank. I want do a triathlon and create a startup at some point.',
     funFacts: {
       'ice cream': 'mango',
