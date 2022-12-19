@@ -106,7 +106,7 @@ const Seniors = [
       'ice cream': 'Handel’s Graham Central Station',
       professor: 'Eggert',
       editor: 'VSCode + Vim keybindings',
-      'favorite TV show': 'Queen’s Gambit',
+      'TV show': 'Queen’s Gambit',
     },
   },
   {
@@ -118,7 +118,7 @@ const Seniors = [
       'ice cream': 'Ruby Chocolate',
       professor: 'Smallberg',
       editor: 'Emacs/Pycharm',
-      'favorite TV show': 'Brooklyn 99',
+      'TV show': 'Brooklyn 99',
     },
   },
   {
@@ -130,7 +130,7 @@ const Seniors = [
       'ice cream': 'Chocolate',
       professor: 'Smallberg',
       editor: 'VS Code',
-      'favorite TV show': 'The Boys',
+      'TV show': 'The Boys',
     },
   },
   {
@@ -142,7 +142,7 @@ const Seniors = [
       'ice cream': 'Mint Chocolate Chip',
       professor: 'Eggert',
       editor: 'Vim',
-      'favorite TV show': 'Re:Zero',
+      'TV show': 'Re:Zero',
     },
   },
   {
@@ -154,7 +154,7 @@ const Seniors = [
       'ice cream': 'Mango/Peach',
       professor: 'Eggert',
       editor: 'Emacs',
-      'favorite TV show': 'Mythic Quest',
+      'TV show': 'Mythic Quest',
     },
   },
   {
@@ -166,7 +166,7 @@ const Seniors = [
       'ice cream': 'Chocolate',
       professor: 'Eggert',
       editor: 'VS Code',
-      'favorite TV show': 'The Bachelor',
+      'TV show': 'The Bachelor',
     },
   },
   {
@@ -178,7 +178,7 @@ const Seniors = [
       'ice cream': 'Butter Pecan',
       professor: 'Nachenberg',
       editor: 'VS Code',
-      'favorite TV show': 'Barry',
+      'TV show': 'Barry',
     },
   },
   {
@@ -190,7 +190,7 @@ const Seniors = [
       'ice cream': 'Double Peanut Butter Chip',
       professor: 'Jon Eyolfson',
       editor: 'Emacs',
-      'favorite TV show': 'Banana Fish',
+      'TV show': 'Banana Fish',
     },
   },
   {
@@ -202,7 +202,7 @@ const Seniors = [
       'ice cream': 'Olive Oil',
       professor: 'Darwiche',
       editor: 'VS Code',
-      'favorite TV show': 'The Crown',
+      'TV show': 'The Crown',
     },
   },
 ]
@@ -219,7 +219,7 @@ const members = [
       editor: 'VS Code',
       language: 'C++',
       course: 'CS 35L',
-      'favorite TV show': 'Community',
+      'TV show': 'Community',
     },
   },
   {
@@ -233,7 +233,7 @@ const members = [
       editor: 'CodeBlocks',
       language: 'C++',
       course: 'Filet Mignon',
-      'favorite TV show': 'I don’t watch TV :)',
+      'TV show': 'I don’t watch TV :)',
     },
   },
   {
@@ -247,7 +247,7 @@ const members = [
       editor: 'VS Code',
       language: 'Java',
       course: 'CS 132',
-      'favorite TV show': 'the big bang theory',
+      'TV show': 'the big bang theory',
     },
   },
   {
@@ -261,7 +261,7 @@ const members = [
       editor: 'VS Code',
       language: 'Python',
       course: 'CS 188 Deep Learning for Computer Vision',
-      'favorite TV show': 'Boba Fett',
+      'TV show': 'Boba Fett',
     },
   },
   {
@@ -275,7 +275,7 @@ const members = [
       editor: 'VS Code',
       langauge: '',
       course: '',
-      'favorite TV show': 'Breaking Bad',
+      'TV show': 'Breaking Bad',
     },
   },
   {
@@ -289,7 +289,7 @@ const members = [
       editor: 'Sublime. Always. Sometimes nano/vim if I’m feeling frisky',
       language: 'C++',
       course: 'all the CS188s <3',
-      'favorite TV show': 'umm can’t decide between Solar Opposites and the Blacklist',
+      'TV show': 'umm can’t decide between Solar Opposites and the Blacklist',
     },
   },
   {
@@ -303,7 +303,7 @@ const members = [
       editor: 'VS Code',
       language: 'Python',
       course: 'EE C143A - Neural Signal Processing',
-      'favorite TV show': 'sike',
+      'TV show': 'sike',
     },
   },
   {
@@ -317,7 +317,7 @@ const members = [
       editor: 'nvim',
       language: 'python',
       course: 'cs 181',
-      'favorite TV show': 'i dont watch tv',
+      'TV show': 'i dont watch tv',
     },
   },
   {
@@ -331,7 +331,7 @@ const members = [
       editor: 'PyCharm',
       language: 'Python',
       course: 'CS 132',
-      'favorite TV show': 'Andor',
+      'TV show': 'Andor',
     },
   },
   {
@@ -345,7 +345,7 @@ const members = [
       editor: 'Emacs',
       language: 'Python',
       course: 'CS 161',
-      'favorite TV show': 'One Piece',
+      'TV show': 'One Piece',
     },
   },
   {
@@ -359,7 +359,7 @@ const members = [
       editor: 'VSCode',
       language: 'C++',
       course: 'CS 35L',
-      'favorite TV show': 'how to get away with murder',
+      'TV show': 'how to get away with murder',
     },
   },
   // {
@@ -373,7 +373,7 @@ const members = [
   //     editor: 'VS Code',
   //     language: 'Python',
   //     course: 'CS 231',
-  //     'favorite TV show': 'Squid Game',
+  //     'TV show': 'Squid Game',
   //   },
   // },
   {
@@ -387,7 +387,7 @@ const members = [
       editor: 'IntelliJ IDEA',
       language: 'Java',
       course: 'CS 33',
-      'favorite TV show': 'The Owl House',
+      'TV show': 'The Owl House',
     },
   },
   {
@@ -401,7 +401,7 @@ const members = [
       editor: 'Sublime Text',
       language: 'Java',
       course: 'Japan 50 ',
-      'favorite TV show': 'Attack on Titan',
+      'TV show': 'Attack on Titan',
     },
   },
   {
@@ -415,7 +415,7 @@ const members = [
       editor: 'Eclipse',
       language: 'Java',
       course: 'CS 35L',
-      'favorite TV show': 'Ping Pong The Animation!!!',
+      'TV show': 'Ping Pong The Animation!!!',
     },
   },
   {
@@ -429,7 +429,7 @@ const members = [
       editor: 'Vim',
       language: 'LaTeX',
       course: 'Math 184 Combinatorics',
-      'favorite TV show': 'Clannad',
+      'TV show': 'Clannad',
     },
   },
   {
@@ -443,7 +443,7 @@ const members = [
       editor: 'Vim I guess',
       language: 'c++',
       course: 'CS 31',
-      'favorite TV show': 'Better Call Saul!',
+      'TV show': 'Better Call Saul!',
     },
   },
   {
@@ -457,7 +457,7 @@ const members = [
       editor: 'repl.it',
       language: 'python',
       course: 'Ling 1',
-      'favorite TV show': 'spongebob',
+      'TV show': 'spongebob',
     },
   },
   {
@@ -471,7 +471,7 @@ const members = [
       editor: 'MacVim',
       language: 'C++',
       course: 'Physics 1B',
-      'favorite TV show': 'The Promised Neverland',
+      'TV show': 'The Promised Neverland',
     },
   },
   {
@@ -485,7 +485,7 @@ const members = [
       editor: 'Xcode',
       language: 'C++',
       course: 'Math 101',
-      'favorite TV show': 'Death Note',
+      'TV show': 'Death Note',
     },
   },
   {
@@ -499,7 +499,7 @@ const members = [
       editor: 'sublime text',
       language: 'C++',
       course: 'Math 115AH',
-      'favorite TV show': 'The Big Bang Theory',
+      'TV show': 'The Big Bang Theory',
     },
   },
   {
@@ -513,7 +513,7 @@ const members = [
       editor: 'VS Code',
       language: 'C++/Java',
       course: 'CS 31',
-      'favorite TV show': 'The Simpsons (early seasons GOAT)',
+      'TV show': 'The Simpsons (early seasons GOAT)',
     },
   },
 ];
