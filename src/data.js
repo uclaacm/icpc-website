@@ -1,5 +1,39 @@
 import { UnorderedList } from "@chakra-ui/react";
 
+const upcomingEvents = [
+  {
+    name: "ICPC NA Qualifier",
+    start_time: "02/04/2023 11:00 AM",
+    end_time: "02/04/2023 4:00 PM",
+    link: "https://forms.gle/7TNxszZxY9ijGG5n8",
+    discord: "https://discord.com/channels/702801010426511373/1024066185203023922",
+    location: "Eng VI 289",
+    image: "/static/event/icpc-banner.png",
+    description: "An official ICPC contest with original problems open to anyone. Grab up to two of your friends and see how you stack up against other college students! To register for NAQ, fill out this Google Form (https://forms.gle/7TNxszZxY9ijGG5n8).",
+  },
+  {
+    name: "Estimathon",
+    start_time: undefined,
+    end_time: undefined,
+    link: "https://forms.gle/xNoAMWFrJfMhf7Sy6",
+    discord: "https://discord.com/channels/702801010426511373/702835998207246426",
+    location: "Location: TBD",
+    image: "/static/banner.png",
+    description: "The Estimathon is a team-based contest prepared and hosted by ACM ICPC @ UCLA that combines trivia, game theory, and mathematical thinking. Teams have 30 minutes to work on a set of 13 estimation problems, the winning team being the one with the best set of estimates. If this sounds interesting, please fill out this interest form (https://forms.gle/xNoAMWFrJfMhf7Sy6) and we will keep you up to date when details are finalized.",
+  },
+  {
+    name: "ICPC Team Training #1",
+    start_time: "02/04/2023 12:00 PM",
+    end_time: "02/04/2023 5:30 PM",
+    link: "",
+    discord: "https://discord.com/channels/702801010426511373/1024066185203023922",
+    location: "Eng VI 289",
+    image: "/static/banner.png",
+    description: "Training for ICPC SoCal Regionals. Everyone is welcome."
+    
+  }
+]
+
 const pastEvents = [
   {
     image: '/static/event/bruinquest.png',
@@ -518,4 +552,4 @@ const members = [
   },
 ];
 
-export { allEvents, members, pastEvents };
+export { allEvents, members, pastEvents, upcomingEvents };

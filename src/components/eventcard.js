@@ -46,8 +46,9 @@ const EventCard = (props) => {
   }
 
   const eventTime = () => {
-    if (props.event.start_time === undefined)
-      return "";
+    if (props.event.start_time === undefined) {
+      return "Time: TBD";
+    }
     let weekday = ((Intl.DateTimeFormat('en-US', {weekday: 'short'}).format(props.event.start_time))).toString();
     let date = ((Intl.DateTimeFormat('en-US', {month: 'short'}).format(props.event.start_time))).toString() + ' ' + props.event.start_time.getDate();
     // let time = hourToString(props.event.start_time.getHours()) + ' - ' + hourToString(props.event.end_time.getHours());

@@ -51,7 +51,8 @@ const RegionalsContainer = () => (
           <Heading as="h2" fontSize={['lg', 'xl']}> News</Heading>
           <Heading as="h4" fontSize={['md']}> 2020-2021 World Finals</Heading>
           <List styleType="disc" width="100%" pb={10}>
-            <ListItem>UCLA Ice-cream Sandwich (Lucas Xia, Jacob Zhang, and Arihant Jain) will compete in Dhaka, Bangladesh. Stay tuned!</ListItem>
+            <ListItem>UCLA Ice-cream Sandwich (Lucas Xia, Jacob Zhang, and Arihant Jain) competed in Dhaka, Bangladesh.</ListItem>
+            <ListItem>Congratulations to Arihant Jain, Jacob Zhang, and Lucas Xia for their amazing performance at ICPC World Finals in Dhaka, solving 6 problems and placing 34th out of 132 teams.</ListItem>
           </List>
           <Heading as="h4" fontSize={['md']}> 2021-2022 Regionals</Heading>
           <List styleType="disc" width="100%" pb={10}>

@@ -18,7 +18,7 @@ import {
 import Container from 'components/container';
 import {EventCard, EventDescriptionCard} from 'components/eventcard';
 import * as AWS from "aws-sdk";
-import { allEvents, pastEvents } from 'data';
+import { allEvents, pastEvents, upcomingEvents } from 'data';
 
 const docClient = new AWS.DynamoDB.DocumentClient();
 
@@ -27,18 +27,38 @@ const UpcomingEvents = () => {
   
   useEffect(()=>{
     (async ()=>{
-      let res = await fetch('https://guarded-reaches-79446.herokuapp.com/events');
-      let eventsData = await res.json();
-      eventsData = eventsData.map(event => ({
-        ...event,
-        start_time: new Date(event.start_time),
-        end_time: new Date(event.end_time)
-      }));
-      eventsData.sort((a,b) => {return a.start_time - b.start_time});
-      const firstUpcomingEvent = eventsData.findIndex(event => event.end_time > (new Date()));
-      if (firstUpcomingEvent !== -1) {
-        setEventsData(eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+6)); 
-      }
+      // let res = await fetch('https://guarded-reaches-79446.herokuapp.com/events');
+      // let eventsData = await res.json();
+      // eventsData = eventsData.map(event => ({
+      //   ...event,
+      //   start_time: new Date(event.start_time),
+      //   end_time: new Date(event.end_time)
+      // }));
+      // eventsData.sort((a,b) => {return a.start_time - b.start_time});
+      // const firstUpcomingEvent = eventsData.findIndex(event => event.end_time > (new Date()));
+      // if (firstUpcomingEvent !== -1) {
+      //   setEventsData(eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+6)); 
+      // }
+      let tempData = upcomingEvents;
+      tempData = tempData.map(event => {
+        if (event.start_time !== undefined) 
+          return {
+            ...event,
+            start_time: new Date(event.start_time),
+            end_time: new Date(event.end_time)
+          };
+        else
+          return event;
+      });
+      // console.log(tempData);
+      // tempData.sort((a,b) => {return a.start_time - b.start_time});
+      // const firstUpcomingEvent = tempData.findIndex(event => event.end_time > (new Date()));
+      // console.log(firstUpcomingEvent);
+      // if (firstUpcomingEvent !== -1) {
+        // console.log(tempData.splice(firstUpcomingEvent, firstUpcomingEvent+6));
+        // setEventsData(tempData.splice(firstUpcomingEvent, firstUpcomingEvent+6)); 
+      // }
+      setEventsData(tempData); 
       // setEventsData(eventsData.splice(0, 4));
     })()
   }, []);
