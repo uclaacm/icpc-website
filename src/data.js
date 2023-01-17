@@ -12,6 +12,16 @@ const upcomingEvents = [
     description: "An official ICPC contest with original problems open to anyone. Grab up to two of your friends and see how you stack up against other college students! To register for NAQ, fill out this Google Form (https://forms.gle/7TNxszZxY9ijGG5n8).",
   },
   {
+    name: "ICPC Team Training #1",
+    start_time: "01/14/2023 12:00 PM",
+    end_time: "01/14/2023 5:30 PM",
+    link: "",
+    discord: "https://discord.com/channels/702801010426511373/1024066185203023922",
+    location: "Engr. VI 289",
+    image: "/static/banner.png",
+    description: "Training for ICPC SoCal Regionals. Everyone is welcome."
+  },
+  {
     name: "Estimathon",
     start_time: undefined,
     end_time: undefined,
@@ -22,15 +32,14 @@ const upcomingEvents = [
     description: "The Estimathon is a team-based contest prepared and hosted by ACM ICPC @ UCLA that combines trivia, game theory, and mathematical thinking. Teams have 30 minutes to work on a set of 13 estimation problems, the winning team being the one with the best set of estimates. If this sounds interesting, please fill out this interest form (https://forms.gle/xNoAMWFrJfMhf7Sy6) and we will keep you up to date when details are finalized.",
   },
   {
-    name: "ICPC Team Training #1",
-    start_time: "01/14/2023 12:00 PM",
-    end_time: "01/14/2023 5:30 PM",
+    name: "Interview Track Workshop #1",
+    start_time: "01/19/2023 6:00 PM",
+    end_time: "01/19/2023 8:00 PM",
     link: "",
-    discord: "https://discord.com/channels/702801010426511373/1024066185203023922",
-    location: "Eng VI 289",
-    image: "/static/banner.png",
-    description: "Training for ICPC SoCal Regionals. Everyone is welcome."
-    
+    discord: "https://discord.com/channels/702801010426511373/898718342922248252",
+    location: "Engr. VI 289",
+    image: "/static/event/interview.png",
+    description: "🚀💻🔥Get ready to ACE your coding interviews!🔥💻🚀 Our workshop series covers all the important stuff: \n📚 Data Structures, \n📊 Algorithms, \n💻 Coding Techniques, \n🔥 Problem Solving Skills. \nBut wait, there's more! \n🤔 We'll also be solving practice interview problems to perfect your interviewing skills. \nThis week's focus: \n🤓 Two pointer method and crucial data structures. \n🗓 Thursday (Jan. 19) 6-8 PM. \n📍 Engineering VI 289. \nCan't wait to see you there! 🤗🚀"
   }
 ]
 
