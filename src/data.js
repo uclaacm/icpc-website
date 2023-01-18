@@ -12,9 +12,9 @@ const upcomingEvents = [
     description: "An official ICPC contest with original problems open to anyone. Grab up to two of your friends and see how you stack up against other college students! To register for NAQ, fill out this Google Form (https://forms.gle/7TNxszZxY9ijGG5n8).",
   },
   {
-    name: "ICPC Team Training #1",
-    start_time: "01/14/2023 12:00 PM",
-    end_time: "01/14/2023 5:30 PM",
+    name: "ICPC Team Training #2",
+    start_time: "01/22/2023 12:00 PM",
+    end_time: "01/22/2023 5:30 PM",
     link: "",
     discord: "https://discord.com/channels/702801010426511373/1024066185203023922",
     location: "Engr. VI 289",
