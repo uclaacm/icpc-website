@@ -42,7 +42,7 @@ const upcomingEvents = [
     description: "🚀💻🔥Get ready to ACE your coding interviews!🔥💻🚀 Our workshop series covers all the important stuff: \n📚 Data Structures, \n📊 Algorithms, \n💻 Coding Techniques, \n🔥 Problem Solving Skills. \nBut wait, there's more! \n🤔 We'll also be solving practice interview problems to perfect your interviewing skills. \nThis week's focus: \n🤓 Two pointer method and crucial data structures. \n🗓 Thursday (Jan. 19) 6-8 PM. \n📍 Engineering VI 289. \nCan't wait to see you there! 🤗🚀"
   },
   {
-    name: "Intermediate Competitive Programming Track Workshop 1",
+    name: "Intermediate Competitive Programming #1",
     start_time: "01/23/2023 6:00 PM",
     end_time: "01/23/2023 8:00 PM",
     link: "",
