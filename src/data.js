@@ -40,6 +40,16 @@ const upcomingEvents = [
     location: "Engr. VI 289",
     image: "/static/event/interview.png",
     description: "🚀💻🔥Get ready to ACE your coding interviews!🔥💻🚀 Our workshop series covers all the important stuff: \n📚 Data Structures, \n📊 Algorithms, \n💻 Coding Techniques, \n🔥 Problem Solving Skills. \nBut wait, there's more! \n🤔 We'll also be solving practice interview problems to perfect your interviewing skills. \nThis week's focus: \n🤓 Two pointer method and crucial data structures. \n🗓 Thursday (Jan. 19) 6-8 PM. \n📍 Engineering VI 289. \nCan't wait to see you there! 🤗🚀"
+  },
+  {
+    name: "Intermediate Competitive Programming Track Workshop 1",
+    start_time: "01/23/2023 6:00 PM",
+    end_time: "01/23/2023 8:00 PM",
+    link: "",
+    discord: "https://discord.com/channels/702801010426511373/894508836617084938",
+    location: "Engr. VI 289",
+    image: "/static/banner.png",
+    description: "Are you ready to level up 🚀 your competitive programming skills? 😍 Our intermediate workshop series is starting this Monday at 6pm, and we're covering some exciting topics this quarter! 🔥 Brush up on Graph Theory 📊, Game Theory 🎲, Dynamic Programming 💻, Divide and Conquer 🤔, and Advanced Mathematics 📚. Join us for the first meeting on Monday Week 3, 🕕 6:00-7:30pm in room 289 of Engineering VI 🏢 for an introduction to Graph Theory! 📊 We will have snacks 🍭, a raffle 💸, a Kahoot 👩‍🏫, a contest 🧠, and more every week! 🤙 Don't miss out on the opportunity to improve your coding abilities and conquer those algorithms together! 💪📚💻 See you there! 🤗"
   }
 ]
 
