@@ -48,7 +48,7 @@ const upcomingEvents = [
     link: "",
     discord: "https://discord.com/channels/702801010426511373/894508836617084938",
     location: "Engr. VI 289",
-    image: "/static/eent/intermediate.png",
+    image: "/static/event/intermediate.png",
     description: "Are you ready to level up 🚀 your competitive programming skills? 😍 Our intermediate workshop series is starting this Monday at 6pm, and we're covering some exciting topics this quarter! 🔥 Brush up on Graph Theory 📊, Game Theory 🎲, Dynamic Programming 💻, Divide and Conquer 🤔, and Advanced Mathematics 📚. Join us for the first meeting on Monday Week 3, 🕕 6:00-7:30pm in room 289 of Engineering VI 🏢 for an introduction to Graph Theory! 📊 We will have snacks 🍭, a raffle 💸, a Kahoot 👩‍🏫, a contest 🧠, and more every week! 🤙 Don't miss out on the opportunity to improve your coding abilities and conquer those algorithms together! 💪📚💻 See you there! 🤗"
   }
 ]
