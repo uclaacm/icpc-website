@@ -42,7 +42,7 @@ const upcomingEvents = [
     description: "Are you preparing for a computer science interview and want to improve your skills in graph theory? Next week’s workshop on graph traversals is the perfect opportunity for you! This workshop will review graph representations and will cover various types of graph traversals, such as breadth-first search and depth-first search. You will also have the opportunity to practice solving interview-style questions and receive feedback from experienced instructors. The workshop will be held at Engineering VI 289 on Thursday (Jan. 26) at 6-8 PM. Don't miss out on this chance to improve your interview skills!"
   },
   {
-    name: "Intermediate Competitive Programming #1",
+    name: "Intermediate Track Workshop #1",
     start_time: "01/23/2023 6:00 PM",
     end_time: "01/23/2023 8:00 PM",
     link: "",
