@@ -12,9 +12,9 @@ const upcomingEvents = [
     description: "An official ICPC contest with original problems open to anyone. Grab up to two of your friends and see how you stack up against other college students! To register for NAQ, fill out this Google Form (https://forms.gle/7TNxszZxY9ijGG5n8).",
   },
   {
-    name: "ICPC Team Training #2",
-    start_time: "01/22/2023 12:00 PM",
-    end_time: "01/22/2023 5:30 PM",
+    name: "ICPC Team Training #3",
+    start_time: "01/28/2023 12:00 PM",
+    end_time: "01/28/2023 5:30 PM",
     link: "",
     discord: "https://discord.com/channels/702801010426511373/1024066185203023922",
     location: "Engr. VI 289",
@@ -32,14 +32,14 @@ const upcomingEvents = [
     description: "The Estimathon is a team-based contest prepared and hosted by ACM ICPC @ UCLA that combines trivia, game theory, and mathematical thinking. Teams have 30 minutes to work on a set of 13 estimation problems, the winning team being the one with the best set of estimates. If this sounds interesting, please fill out this interest form (https://forms.gle/xNoAMWFrJfMhf7Sy6) and we will keep you up to date when details are finalized.",
   },
   {
-    name: "Interview Track Workshop #1",
-    start_time: "01/19/2023 6:00 PM",
-    end_time: "01/19/2023 8:00 PM",
+    name: "Interview Track Workshop #2",
+    start_time: "01/26/2023 6:00 PM",
+    end_time: "01/26/2023 8:00 PM",
     link: "",
     discord: "https://discord.com/channels/702801010426511373/898718342922248252",
     location: "Engr. VI 289",
     image: "/static/event/interview.png",
-    description: "🚀💻🔥Get ready to ACE your coding interviews!🔥💻🚀 Our workshop series covers all the important stuff: \n📚 Data Structures, \n📊 Algorithms, \n💻 Coding Techniques, \n🔥 Problem Solving Skills. \nBut wait, there's more! \n🤔 We'll also be solving practice interview problems to perfect your interviewing skills. \nThis week's focus: \n🤓 Two pointer method and crucial data structures. \n🗓 Thursday (Jan. 19) 6-8 PM. \n📍 Engineering VI 289. \nCan't wait to see you there! 🤗🚀"
+    description: "Are you preparing for a computer science interview and want to improve your skills in graph theory? Next week’s workshop on graph traversals is the perfect opportunity for you! This workshop will review graph representations and will cover various types of graph traversals, such as breadth-first search and depth-first search. You will also have the opportunity to practice solving interview-style questions and receive feedback from experienced instructors. The workshop will be held at Engineering VI 289 on Thursday (Jan. 26) at 6-8 PM. Don't miss out on this chance to improve your interview skills!"
   },
   {
     name: "Intermediate Competitive Programming #1",
@@ -48,7 +48,7 @@ const upcomingEvents = [
     link: "",
     discord: "https://discord.com/channels/702801010426511373/894508836617084938",
     location: "Engr. VI 289",
-    image: "/static/banner.png",
+    image: "/static/eent/intermediate.png",
     description: "Are you ready to level up 🚀 your competitive programming skills? 😍 Our intermediate workshop series is starting this Monday at 6pm, and we're covering some exciting topics this quarter! 🔥 Brush up on Graph Theory 📊, Game Theory 🎲, Dynamic Programming 💻, Divide and Conquer 🤔, and Advanced Mathematics 📚. Join us for the first meeting on Monday Week 3, 🕕 6:00-7:30pm in room 289 of Engineering VI 🏢 for an introduction to Graph Theory! 📊 We will have snacks 🍭, a raffle 💸, a Kahoot 👩‍🏫, a contest 🧠, and more every week! 🤙 Don't miss out on the opportunity to improve your coding abilities and conquer those algorithms together! 💪📚💻 See you there! 🤗"
   }
 ]
