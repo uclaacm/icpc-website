@@ -8,7 +8,7 @@ const upcomingEvents = [
     link: "https://forms.gle/7TNxszZxY9ijGG5n8",
     discord: "https://discord.com/channels/702801010426511373/1024066185203023922",
     location: "Eng VI 289",
-    image: "/static/event/icpc-banner.png",
+    image: "/static/event/naq.png",
     description: "An official ICPC contest with original problems open to anyone. Grab up to two of your friends and see how you stack up against other college students! To register for NAQ, fill out this Google Form (https://forms.gle/7TNxszZxY9ijGG5n8).",
   },
   {
