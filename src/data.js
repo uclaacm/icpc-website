@@ -9,7 +9,7 @@ const upcomingEvents = [
     discord: "https://discord.com/channels/702801010426511373/702835998207246426",
     location: "Rolfe Hall Room 3108",
     image: "/static/event/estimathon.png",
-    description: "The Estimathon is a team-based contest prepared and hosted by ACM ICPC @ UCLA that combines trivia, game theory, and mathematical thinking. Teams have 30 minutes to work on a set of 13 estimation problems, the winning team being the one with the best set of estimates. If this sounds interesting, sign up at: https://tinyurl.com/estimathonsignup ",
+    description: "The Estimathon is a team-based contest prepared and hosted by ACM ICPC @ UCLA that combines trivia, game theory, and mathematical thinking. Teams have 30 minutes to work on a set of 13 estimation problems, the winning team being the one with the best set of estimates. If this sounds interesting, please fill out the signup form at https://tinyurl.com/estimathonsignup . You can register as an individual or as a team with up to two of your friends.",
   },
   {
     name: "Interview Track Workshop #2",
