@@ -16,17 +16,24 @@ import {
   FaDiscord,
 } from 'react-icons/fa';
 import Container from 'components/container';
+<<<<<<< HEAD
 import {EventCard, EventDescriptionCard} from 'components/eventcard';
 import * as AWS from "aws-sdk";
 import { allEvents, pastEvents, upcomingEvents } from 'data';
+=======
+import EventCard from 'components/eventcard';
+// import * as AWS from "aws-sdk";
+import { allEvents, pastEvents } from 'data';
+>>>>>>> newserver
 
-const docClient = new AWS.DynamoDB.DocumentClient();
+// const docClient = new AWS.DynamoDB.DocumentClient();
 
 const UpcomingEvents = () => {
   const [eventsData, setEventsData] = useState([]);
   
   useEffect(()=>{
     (async ()=>{
+<<<<<<< HEAD
       // let res = await fetch('https://guarded-reaches-79446.herokuapp.com/events');
       // let eventsData = await res.json();
       // eventsData = eventsData.map(event => ({
@@ -59,6 +66,20 @@ const UpcomingEvents = () => {
         // setEventsData(tempData.splice(firstUpcomingEvent, firstUpcomingEvent+6)); 
       // }
       setEventsData(tempData); 
+=======
+      let res = await fetch('https://clammy-waiting-dragon.glitch.me/events');
+      let eventsData = await res.json();
+      eventsData = eventsData.map(event => ({
+        ...event,
+        start_time: new Date(event.start_time),
+        end_time: new Date(event.end_time)
+      }));
+      eventsData.sort((a,b) => {return a.start_time - b.start_time});
+      const firstUpcomingEvent = eventsData.findIndex(event => event.end_time > (new Date()));
+      if (firstUpcomingEvent !== -1) {
+        setEventsData(eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
+      }
+>>>>>>> newserver
       // setEventsData(eventsData.splice(0, 4));
     })()
   }, []);
