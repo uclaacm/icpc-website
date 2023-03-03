@@ -101,7 +101,7 @@ class EventForm extends React.Component {
 
   async submitForm(event){
     console.log(this.state.eventData);
-    let res = await fetch('https://clammy-waiting-dragon.glitch.me/update', {
+    let res = await fetch('https://clammy-waiting-dragon.glitch.me/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
