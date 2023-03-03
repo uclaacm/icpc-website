@@ -61,6 +61,13 @@ const UpcomingEvents = () => {
 const AllEvents = () => {
   const eventsData = allEvents;
   return (
+    <Flex wrap="wrap" direction="row" textAlign="center" justify="space-evenly" w={"100%"}>
+      {eventsData.map((event, index) => (
+        <EventDescriptionCard key={index} event={event}></EventDescriptionCard>
+      ))}
+    </Flex>
+  );
+  return (
     <Flex wrap="wrap" textAlign="center" justify="space-evenly">
       {eventsData.map((event, index) => (
         <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
@@ -124,10 +131,10 @@ const EventsContainer = (props) => (
           <Heading as="h2" id="all-events" fontSize={['lg', 'xl']}>All Events and Workshops</Heading>
           <AllEvents />
         </Stack>
-        <Stack align="center">
+        {/* <Stack align="center">
           <Heading as="h2" id="past-events" fontSize={['lg', 'xl']}>Past Events and Workshops </Heading>
           <PastEvents />
-        </Stack>
+        </Stack> */}
       </Stack>
     </Container>
   </div>

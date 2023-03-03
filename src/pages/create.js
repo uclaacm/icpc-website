@@ -18,6 +18,9 @@ import {
   FaFacebook,
   FaDiscord,
 } from 'react-icons/fa';
+import {
+  ImLink
+} from 'react-icons/im';
 import Container from 'components/container';
 import { v4 as uuidv4 } from 'uuid';
 import DatePicker from "react-datepicker";
@@ -65,8 +68,8 @@ class UpcomingEvents extends React.Component {
             </Flex>
             <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
             <Stack isInline justifyContent="center" my={2}>
-              <Link href={event.facebook} isExternal>
-                <Box as={FaFacebook} size={6} />
+              <Link href={event.link} isExternal>
+                <Box as={ImLink} size={6} />
               </Link>
               <Link href={event.discord} isExternal>
                 <Box as={FaDiscord} size={6} />
@@ -93,12 +96,14 @@ class UpcomingEvents extends React.Component {
       start_time: new Date(item.start_time),
       end_time: new Date(item.end_time)
     }));
-    // sort reverse chronologically
-    eventsData = eventsData.sort((a, b) => b.start_time - a.start_time);
-    eventsData = eventsData.splice(0, 4);
-    this.setState({
-        eventsData: eventsData
-    });
+    // sort chronologically
+    eventsData = eventsData.sort((a, b) => a.start_time - b.start_time);
+    const firstUpcomingEvent = eventsData.findIndex(event => event.end_time > (new Date()));
+    if (firstUpcomingEvent !== -1) {
+      this.setState({
+          eventsData: eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+6)
+      });
+    }
   }
 }
 
@@ -108,7 +113,7 @@ const eventData = {
   end_time: new Date(),
   location: "", 
   description: "",
-  facebook: "",
+  link: "",
   discord: "",
 }
 const CreateContainer = (props) => (
@@ -195,7 +200,7 @@ class EventForm extends React.Component {
           size="sm"
           onChange={this.handleChange.bind(this)}
         />
-        <Input id='facebook' placeholder="facebook" onChange={this.handleChange.bind(this)}/>
+        <Input id='link' placeholder="link" onChange={this.handleChange.bind(this)}/>
         <Input id='discord'placeholder="discord" onChange={this.handleChange.bind(this)}/>
         <Input id='image'placeholder="image" onChange={this.handleChange.bind(this)}/>
         <Button colorScheme="blue" onClick={this.submitForm.bind(this)}>Submit</Button>
