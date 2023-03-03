@@ -79,7 +79,7 @@ class UpcomingEvents extends React.Component {
     );
   }
   async componentDidMount(){
-    let res = await fetch('https://guarded-reaches-79446.herokuapp.com/events'//, //{
+    let res = await fetch('https://clammy-waiting-dragon.glitch.me/events'//, //{
     //   method: 'GET',
     //   headers: {
     //     'Content-Type': 'application/json'
@@ -143,7 +143,7 @@ class EventForm extends React.Component {
       alert("Event name is required")
       return
     }
-    let res = await fetch('https://guarded-reaches-79446.herokuapp.com/update', {
+    let res = await fetch('https://clammy-waiting-dragon.glitch.me/update', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

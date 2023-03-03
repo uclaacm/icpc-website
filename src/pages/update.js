@@ -101,7 +101,7 @@ class EventForm extends React.Component {
 
   async submitForm(event){
     console.log(this.state.eventData);
-    let res = await fetch('https://guarded-reaches-79446.herokuapp.com/update', {
+    let res = await fetch('https://clammy-waiting-dragon.glitch.me/update', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -118,7 +118,7 @@ class EventForm extends React.Component {
 
   async deleteEvent(event){
     console.log(this.state.eventData);
-    let res = await fetch('https://guarded-reaches-79446.herokuapp.com/delete', {
+    let res = await fetch('https://clammy-waiting-dragon.glitch.me/delete', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

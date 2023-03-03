@@ -17,17 +17,17 @@ import {
 } from 'react-icons/fa';
 import Container from 'components/container';
 import EventCard from 'components/eventcard';
-import * as AWS from "aws-sdk";
+// import * as AWS from "aws-sdk";
 import { allEvents, pastEvents } from 'data';
 
-const docClient = new AWS.DynamoDB.DocumentClient();
+// const docClient = new AWS.DynamoDB.DocumentClient();
 
 const UpcomingEvents = () => {
   const [eventsData, setEventsData] = useState([]);
   
   useEffect(()=>{
     (async ()=>{
-      let res = await fetch('https://guarded-reaches-79446.herokuapp.com/events');
+      let res = await fetch('https://clammy-waiting-dragon.glitch.me/events');
       let eventsData = await res.json();
       eventsData = eventsData.map(event => ({
         ...event,
