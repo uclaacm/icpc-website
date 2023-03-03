@@ -16,7 +16,7 @@ import {
   FaDiscord,
 } from 'react-icons/fa';
 import Container from 'components/container';
-import EventCard from 'components/eventcard';
+import { EventCard, EventDescriptionCard } from 'components/eventcard';
 // import * as AWS from "aws-sdk";
 import { allEvents, pastEvents } from 'data';
 
@@ -28,16 +28,17 @@ const UpcomingEvents = () => {
   useEffect(()=>{
     (async ()=>{
       let res = await fetch('https://clammy-waiting-dragon.glitch.me/events');
-      let eventsData = await res.json();
-      eventsData = eventsData.map(event => ({
+      let data = await res.json();
+      console.log(data);
+      data = data.map(event => ({
         ...event,
         start_time: new Date(event.start_time),
         end_time: new Date(event.end_time)
       }));
-      eventsData.sort((a,b) => {return a.start_time - b.start_time});
-      const firstUpcomingEvent = eventsData.findIndex(event => event.end_time > (new Date()));
+      data.sort((a,b) => {return a.start_time - b.start_time});
+      const firstUpcomingEvent = data.findIndex(event => event.end_time > (new Date()));
       if (firstUpcomingEvent !== -1) {
-        setEventsData(eventsData.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
+        setEventsData(data.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
       }
       // setEventsData(eventsData.splice(0, 4));
     })()
