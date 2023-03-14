@@ -242,17 +242,31 @@ const Seniors = [
 
 const members = [
   {
-    image: '/static/member/rl.png',
-    name: 'Robert Lee',
+    image: '/static/member/sn.png',
+    name: 'Suhas Nagar',
     position: 'President',
-    description: 'Hi! I’m Robert, a 3rd year studying Math of Computation and Aerospace Engineering from San Diego. I love competitive programming and teaching algorithms! My hobbies include working on never-ending projects and playing Overwatch.',
+    description: 'Hi! I’m Suhas, a 2nd year CS Major from the Bay Area. I’m the Codesprint 2023 Director for the upcoming year. In my free time, you can usually find me playing video games (I’m a big fan of Hollow Knight), trying to write my own rap battles, or playing basketball at Hitch :)',
     funFacts: {
-      'ice cream': 'Vietnamese Rocky Road',
-      professor: 'Taira',
-      editor: 'VS Code',
-      language: 'C++',
-      course: 'CS 35L',
-      'TV show': 'Community',
+      'ice cream': 'Cookies and Cream',
+      professor: 'Smallberg',
+      editor: 'IntelliJ IDEA',
+      language: 'Java',
+      course: 'CS 33',
+      'TV show': 'The Owl House',
+    },
+  },
+  {
+    image: '/static/member/cc.png',
+    name: 'Carson Cox',
+    position: 'Vice President',
+    description: 'Hi! My name is Carson, and I am a third year computer science major living in the university apartments this year. In my free time, I like to game, climb, and binge anime, and I am also an intro to competitive programming track lead.',
+    funFacts: {
+      'ice cream': 'Vanilla',
+      professor: 'Eggert',
+      editor: 'Emacs',
+      language: 'Python',
+      course: 'CS 161',
+      'TV show': 'One Piece',
     },
   },
   {
@@ -340,6 +354,20 @@ const members = [
     },
   },
   {
+    image: '/static/member/rl.png',
+    name: 'Robert Lee',
+    position: 'Advisor, President Emeritus',
+    description: 'Hi! I’m Robert, a 3rd year studying Math of Computation and Aerospace Engineering from San Diego. I love competitive programming and teaching algorithms! My hobbies include working on never-ending projects and playing Overwatch.',
+    funFacts: {
+      'ice cream': 'Vietnamese Rocky Road',
+      professor: 'Taira',
+      editor: 'VS Code',
+      language: 'C++',
+      course: 'CS 35L',
+      'TV show': 'Community',
+    },
+  },
+  {
     image: '/static/member/lj.png',
     name: 'Lucas Jeong',
     position: 'Officer',
@@ -365,20 +393,6 @@ const members = [
       language: 'Python',
       course: 'CS 132',
       'TV show': 'Andor',
-    },
-  },
-  {
-    image: '/static/member/cc.png',
-    name: 'Carson Cox',
-    position: 'Officer',
-    description: 'Hi! My name is Carson, and I am a third year computer science major living in the university apartments this year. In my free time, I like to game, climb, and binge anime, and I am also an intro to competitive programming track lead.',
-    funFacts: {
-      'ice cream': 'Vanilla',
-      professor: 'Eggert',
-      editor: 'Emacs',
-      language: 'Python',
-      course: 'CS 161',
-      'TV show': 'One Piece',
     },
   },
   {
@@ -409,20 +423,6 @@ const members = [
   //     'TV show': 'Squid Game',
   //   },
   // },
-  {
-    image: '/static/member/sn.png',
-    name: 'Suhas Nagar',
-    position: 'Officer',
-    description: 'Hi! I’m Suhas, a 2nd year CS Major from the Bay Area. I’m the Codesprint 2023 Director for the upcoming year. In my free time, you can usually find me playing video games (I’m a big fan of Hollow Knight), trying to write my own rap battles, or playing basketball at Hitch :)',
-    funFacts: {
-      'ice cream': 'Cookies and Cream',
-      professor: 'Smallberg',
-      editor: 'IntelliJ IDEA',
-      language: 'Java',
-      course: 'CS 33',
-      'TV show': 'The Owl House',
-    },
-  },
   {
     image: '/static/member/jh.png',
     name: 'Jason Huang',
