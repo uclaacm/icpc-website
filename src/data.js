@@ -270,6 +270,20 @@ const members = [
     },
   },
   {
+    image: '/static/member/rl.png',
+    name: 'Robert Lee',
+    position: 'Advisor, President Emeritus',
+    description: 'Hi! I’m Robert, a 3rd year studying Math of Computation and Aerospace Engineering from San Diego. I love competitive programming and teaching algorithms! My hobbies include working on never-ending projects and playing Overwatch.',
+    funFacts: {
+      'ice cream': 'Vietnamese Rocky Road',
+      professor: 'Taira',
+      editor: 'VS Code',
+      language: 'C++',
+      course: 'CS 35L',
+      'TV show': 'Community',
+    },
+  },
+  {
     image: '/static/member/jl.png',
     name: 'Justin Li',
     position: 'Advisor',
@@ -351,20 +365,6 @@ const members = [
       language: 'Python',
       course: 'EE C143A - Neural Signal Processing',
       'TV show': 'sike',
-    },
-  },
-  {
-    image: '/static/member/rl.png',
-    name: 'Robert Lee',
-    position: 'Advisor, President Emeritus',
-    description: 'Hi! I’m Robert, a 3rd year studying Math of Computation and Aerospace Engineering from San Diego. I love competitive programming and teaching algorithms! My hobbies include working on never-ending projects and playing Overwatch.',
-    funFacts: {
-      'ice cream': 'Vietnamese Rocky Road',
-      professor: 'Taira',
-      editor: 'VS Code',
-      language: 'C++',
-      course: 'CS 35L',
-      'TV show': 'Community',
     },
   },
   {
