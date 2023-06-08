@@ -242,7 +242,7 @@ const Seniors = [
 
 const members = [
   {
-    image: '/static/member/sn.png',
+    image: '/static/member/sn.JPG',
     name: 'Suhas Nagar',
     position: 'President',
     description: 'Hi! I’m Suhas, a 2nd year CS Major from the Bay Area. I’m the Codesprint 2023 Director for the upcoming year. In my free time, you can usually find me playing video games (I’m a big fan of Hollow Knight), trying to write my own rap battles, or playing basketball at Hitch :)',
@@ -256,7 +256,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/cc.png',
+    image: '/static/member/cc.JPG',
     name: 'Carson Cox',
     position: 'Vice President',
     description: 'Hi! My name is Carson, and I am a third year computer science major living in the university apartments this year. In my free time, I like to game, climb, and binge anime, and I am also an intro to competitive programming track lead.',
@@ -270,7 +270,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/rl.png',
+    image: '/static/member/rl.JPG',
     name: 'Robert Lee',
     position: 'Advisor, President Emeritus',
     description: 'Hi! I’m Robert, a 3rd year studying Math of Computation and Aerospace Engineering from San Diego. I love competitive programming and teaching algorithms! My hobbies include working on never-ending projects and playing Overwatch.',
@@ -298,7 +298,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/rs.png',
+    image: '/static/member/rs.JPG',
     name: 'Rishi Sankar',
     position: 'Officer',
     description: 'Hi! I’m Rishi, a 4th year from the Bay Area. This year I’ve been involved with Codesprint and team practices with ICPC. In my free time I enjoy watching movies, going out to eat, and playing table tennis.',
@@ -312,7 +312,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/tx.png',
+    image: '/static/member/tx.JPG',
     name: 'Tony Xia',
     position: 'Officer',
     description: 'I’m a fourth year CS & applied math double major interested in CP, math, and computer vision. I spend almost all my time in E6 so come find me here LOL. I play league, val, violin, and soccer in my spare time and have been a Messi fan since 2008.',
@@ -340,7 +340,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/kc.png',
+    image: '/static/member/kt.JPG',
     name: 'Katie Chang',
     position: 'Officer',
     description: 'heyo this is kt! I am currently a fourth year cs major who is interested in ML, CV, bothering my friends about my cat KB, and bothering my cat :") come talk to me to get bothered uwu',
@@ -354,7 +354,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/lw.png',
+    image: '/static/member/lw.JPG',
     name: 'Lenny Wu',
     position: 'Officer',
     description: 'I’m Lenny, a 4th-year CS and Applied Math major. I like to cook, shoot photos, play piano, and read. You’ll also catch me running or lifting weights! :^)',
@@ -382,7 +382,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/nv.png',
+    image: '/static/member/nv.JPG',
     name: 'Neil Vaishampayan',
     position: 'Officer',
     description: 'Hi! I’m Neil, a 4th year undergrad/1st year masters CS student from the Bay Area interested in compilers and ML. In my free time, I like to watch soccer, play the horn, and play video games.',
@@ -396,7 +396,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/is.png',
+    image: '/static/member/is.JPG',
     name: 'Illia Shkirko',
     position: 'Officer',
     description: 'Hi! I am a second year Computer Science and Engineering major. I was co-leading Intro to Competitive Programming track this fall. I enjoy rock-climbing, meeting new people, trying new food, and learning Chinese!',
@@ -424,7 +424,7 @@ const members = [
   //   },
   // },
   {
-    image: '/static/member/jh.png',
+    image: '/static/member/jh.JPG',
     name: 'Jason Huang',
     position: 'Officer',
     description: 'Hi! I’m a second-year math major with an interest in ML. You can usually catch me playing piano at Covel. I also like to lift weights and watch anime (big fan of Attack on Titan and Studio Ghibli movies).',
@@ -438,7 +438,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/ad.png',
+    image: '/static/member/ad.JPG',
     name: 'Arvin Ding',
     position: 'Officer',
     description: 'Hi! I’m a second year CS major. I like math, Valorant, competitive programming, sushi, and shark tank. I want do a triathlon and create a startup at some point.',
@@ -452,9 +452,9 @@ const members = [
     },
   },
   {
-    image: '/static/member/snal.png',
+    image: '/static/member/snal.JPG',
     name: 'Sumith Nalabolu',
-    position: 'Intern',
+    position: 'Officer',
     description: 'Hi! I’m Sumith, a third year from San Diego studying CS and math. I’m very interested in math adjacent stuff and I’ve been involved in competitions ever since high school; aside from academics, I like reading manga, playing bedwars, and attempting to play basketball.',
     funFacts: {
       'ice cream': 'Cookies and Cream',
@@ -466,9 +466,9 @@ const members = [
     },
   },
   {
-    image: '/static/member/wz.png',
+    image: '/static/member/wz.JPG',
     name: 'William Zhao',
-    position: 'Intern',
+    position: 'Officer',
     description: 'I’m William, a 1st year Computer Science major! I really enjoy competitive programming and problem solving. As for non-CS related stuff, I love learning about 20th century European history, geeking out about airplanes, and reading about baseball analytics. ',
     funFacts: {
       'ice cream': 'Cookies and Cream',
@@ -480,9 +480,9 @@ const members = [
     },
   },
   {
-    image: '/static/member/sk.png',
+    image: '/static/member/sk.JPG',
     name: 'Shubham Kumar',
-    position: 'Intern',
+    position: 'Officer',
     description: 'hi! i’m shubham, a first-year computer engineering major from the bay. i’m interested in math, competitive programming and ml. in my free time, you can find me losing chess games, playing guitar or biking.',
     funFacts: {
       'ice cream': 'coffee',
@@ -494,9 +494,9 @@ const members = [
     },
   },
   {
-    image: '/static/member/jliu.png',
+    image: '/static/member/jliu.JPG',
     name: 'Jason Liu',
-    position: 'Intern',
+    position: 'Officer',
     description: 'I am a first year CS major. Aside from competitive programming, I also like math and cryptography. I spend most of my free time reading cultivation novels or playing Set.',
     funFacts: {
       'ice cream': 'vanilla',
@@ -508,9 +508,9 @@ const members = [
     },
   },
   {
-    image: '/static/member/am.png',
+    image: '/static/member/am.JPG',
     name: 'Akash Madiraju',
-    position: 'Intern',
+    position: 'Officer',
     description: 'Hi! I’m Akash, a 1st year CS Major this year, and I’m from the Bay Area. I like competitive programming and math, and enjoy playing video games (Smash and Rocket League) and playing the piano and saxophone. ',
     funFacts: {
       'ice cream': 'Birthday Cake',
@@ -522,9 +522,9 @@ const members = [
     },
   },
   {
-    image: '/static/member/xx.png',
+    image: '/static/member/xx.JPG',
     name: 'Xiaoxian Chen',
-    position: 'Intern',
+    position: 'Officer',
     description: 'I’m Xiaoxian, a first-year math major. I’m interested in competitive programming, cryptography, and analysis. I also enjoy music, reading poetry and playing video games! My favorite game is Civilization VI, my favorite animation is Steins Gate, and my favorite composers are Bach and Rachmaninoff :)',
     funFacts: {
       'ice cream': 'Cookies & Cream',
@@ -538,7 +538,7 @@ const members = [
   {
     image: '/static/member/pm.png',
     name: 'Peony Mong',
-    position: 'Intern',
+    position: 'Officer',
     description: 'I am a first year computer science major; I’m excited to help out with Interview Track plus the first in-person Estimathon event this year! I’m also involved in UCLA Wushu, but down to play tennis and video games ',
     funFacts: {
       'ice cream': 'Cookies and cream',
@@ -549,6 +549,20 @@ const members = [
       'TV show': 'The Simpsons (early seasons GOAT)',
     },
   },
+  { 
+    image: '/static/member/hh.JPG', 
+    name: "Henry Huang", 
+    position: "Officer", 
+    description: "Hi, my name is Henry Huang, and I’m a first year CS major at UCLA. I started competitive programming in high school, and it has been a hobby of mine ever since. In my free time, I like to code random things, play video games, and listen to music.", 
+    funFacts: { 
+      'ice cream': 'Lime', 
+      professor: 'Smallberg', 
+      editor: 'VS Code', 
+      language: 'C++', 
+      course: 'CS32', 
+      'TV show': 'do not watch tv :('
+    },
+  }
 ];
 
 export { allEvents, members, pastEvents, upcomingEvents };

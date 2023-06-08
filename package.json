@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --node-env production --progress --color",
-    "build-dev": "export NODE_OPTIONS=--openssl-legacy-provider && webpack serve --node-env development --hot --progress --color"
+    "build-dev": "webpack serve --node-env development --hot --progress --color"
   },
   "repository": {
     "type": "git",
