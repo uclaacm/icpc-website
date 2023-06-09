@@ -562,6 +562,34 @@ const members = [
       course: 'CS32', 
       'TV show': 'do not watch tv :('
     },
+  },
+  {
+    image: '/static/member/hw.jpg',
+    name: 'Henry Wang',
+    position: 'Officer',
+    description: 'Guitarist band member.',
+    funFacts: {
+      'ice cream': 'strawberry',
+      professor: 'none',
+      editor: 'VS code',
+      language: 'c++',
+      course: 'cs35l',
+      'TV show': 'Bocchi the rock'
+    },
+  },
+  {
+    image: '/static/member/sk-fake.JPG',
+    name: 'Shreyas Kaasyap',
+    position: 'Officer',
+    description: '',
+    funFacts: {
+      'ice cream': '',
+      professor: '',
+      editor: '',
+      language: '',
+      course: '',
+      'TV show': ''
+    },
   }
 ];
 
