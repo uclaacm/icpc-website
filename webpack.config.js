@@ -11,12 +11,20 @@ const createConfig = (env, argv) => {
   const config = {
     target: 'web',
 
+    mode: 'none',
+
     context: path.resolve(__dirname, 'src'),
     entry: {
       main: ['@babel/polyfill', 'main.js'],
     },
     resolve: {
       modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+      fallback: 
+        {
+          "tty": require.resolve("tty-browserify"), 
+          "crypto": require.resolve("crypto-browserify"), 
+          "stream": require.resolve("stream-browserify"), 
+        }
     },
     module: {
       rules: [
@@ -38,7 +46,7 @@ const createConfig = (env, argv) => {
           use: {
             loader: 'file-loader',
             options: {
-              name: '/[name].[hash].[ext]',
+              name: '/[name].[contenthash].[ext]',
               outputPath: 'static/fonts',
             },
           },
@@ -48,6 +56,7 @@ const createConfig = (env, argv) => {
 
     optimization: {
       runtimeChunk: 'single',
+      moduleIds: 'deterministic',
       splitChunks: {
         chunks: 'all',
         cacheGroups: {
@@ -68,7 +77,9 @@ const createConfig = (env, argv) => {
     },
 
     plugins: [
-      new webpack.HashedModuleIdsPlugin(),
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      }),
       new HtmlPlugin({
         title: 'Nuke',
         filename: 'index.html',
@@ -92,7 +103,7 @@ const createConfig = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'bin'),
       publicPath: '/',
-      filename: 'static/[name].[hash].js',
+      filename: 'static/[name].[contenthash].js',
       chunkFilename: 'static/chunk.[name].[chunkhash].js',
     },
 
