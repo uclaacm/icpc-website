@@ -278,9 +278,9 @@ const members = [
     funFacts: {
       'ice cream': 'Vietnamese Rocky Road',
       professor: 'Taira',
-      editor: 'VS Code',
+      editor: 'Vim',
       language: 'C++',
-      course: 'CS 35L',
+      course: 'MAE 161C',
       'TV show': 'Community',
     },
   },
