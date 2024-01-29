@@ -19,7 +19,7 @@ const upcomingEvents = [
     discord: "https://discord.com/channels/702801010426511373/898718342922248252",
     location: "Engr. VI 289",
     image: "/static/event/interview.png",
-    description: "Are you preparing for a computer science interview and want to improve your skills in graph theory? Next week’s workshop on graph traversals is the perfect opportunity for you! This workshop will review graph representations and will cover various types of graph traversals, such as breadth-first search and depth-first search. You will also have the opportunity to practice solving interview-style questions and receive feedback from experienced instructors. The workshop will be held at Engineering VI 289 on Thursday (Jan. 26) at 6-8 PM. Don't miss out on this chance to improve your interview skills!"
+    description: "Are you preparing for a computer science interview and want to improve your skills in graph theory? Next week\'s workshop on graph traversals is the perfect opportunity for you! This workshop will review graph representations and will cover various types of graph traversals, such as breadth-first search and depth-first search. You will also have the opportunity to practice solving interview-style questions and receive feedback from experienced instructors. The workshop will be held at Engineering VI 289 on Thursday (Jan. 26) at 6-8 PM. Don't miss out on this chance to improve your interview skills!"
   },
   {
     name: "Intermediate Track Workshop #1",
@@ -95,7 +95,7 @@ const allEvents = [
   {
     image: '/static/event/interview.png',
     name: 'Interview Crash Course (Interview Track)',
-    description: 'Worried about your upcoming coding interview? Don’t worry, we got you covered! ACM ICPC is hosting a crash course that’ll give you the data structure and algorithm knowledge you’ll need to ace your next technical interview. Come through to hone your skills and get a head start on your CS career!',
+    description: 'Worried about your upcoming coding interview? Don\'t worry, we got you covered! ACM ICPC is hosting a crash course that\'ll give you the data structure and algorithm knowledge you\'ll need to ace your next technical interview. Come through to hone your skills and get a head start on your CS career!',
     quarter: "Fall | Winter | Spring",
     shortDesc: "Workshop",
   },
@@ -116,14 +116,14 @@ const allEvents = [
   {
     image: '/static/event/codesprint.png',
     name: 'CodeSprintLA',
-    description: 'CodeSprintLA is UCLA’s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!',
+    description: 'CodeSprintLA is UCLA\'s own Competitive Programming Competition organized by ACM ICPC. Competitive Programming is the activity (some call it a sport!) of writing programs to solve computational problems. You must be clever with your algorithm to solve the program in a given time limit. Individual or teams compete to solve the most problems!',
     quarter: "Spring",
     shortDesc: "Contest",
   },
   {
     image: '/static/event/bruinquest.png',
     name: 'ICPC x Cyber Puzzle Hunt',
-    description: 'Programming puzzles are fun, but do you know what’s more fun? Programming puzzles + Non-programming puzzles :). Join us to solve some interesting UCLA-related puzzles in an intense team-based contest. Winners get bragging rights, prizes, and more!',
+    description: 'Programming puzzles are fun, but do you know what\'s more fun? Programming puzzles + Non-programming puzzles :). Join us to solve some interesting UCLA-related puzzles in an intense team-based contest. Winners get bragging rights, prizes, and more!',
     quarter: 'TBD',
     shortDesc: "Contest"
   },
@@ -134,19 +134,19 @@ const Seniors = [
     image: '/static/member/jz.png',
     name: 'Jacob Zhang',
     position: 'President',
-    description: 'I’m a 4th year Math/CS double major interested in all things math and CS. I enjoy running, rock climbing, and learning Chinese. I’ve never been outside of the country, but I have visited over 30 US states.',
+    description: 'I\'m a 4th year Math/CS double major interested in all things math and CS. I enjoy running, rock climbing, and learning Chinese. I\'ve never been outside of the country, but I have visited over 30 US states.',
     funFacts: {
-      'ice cream': 'Handel’s Graham Central Station',
+      'ice cream': 'Handel\'s Graham Central Station',
       professor: 'Eggert',
       editor: 'VSCode + Vim keybindings',
-      'TV show': 'Queen’s Gambit',
+      'TV show': 'Queen\'s Gambit',
     },
   },
   {
     image: '/static/member/ag.png',
     name: 'Ana Gu',
     position: 'Officer',
-    description: 'Hello. I’m Ana. I am a fourth year majoring in CS. In my free time, I\m usually playing my switch and watching TV. Hit me up if you’re into carnivorous plants and/or houseplants.',
+    description: 'Hello. I\'m Ana. I am a fourth year majoring in CS. In my free time, I\m usually playing my switch and watching TV. Hit me up if you\'re into carnivorous plants and/or houseplants.',
     funFacts: {
       'ice cream': 'Ruby Chocolate',
       professor: 'Smallberg',
@@ -158,7 +158,7 @@ const Seniors = [
     image: '/static/member/an.png',
     name: 'Alvin Nguyen',
     position: 'Officer',
-    description: 'Hi, I’m Alvin. I’m a 4th year CS major + math minor, and I’ve helped teach ICPC workshops for almost 3 years now. Outside of tech, I enjoy playing Minecraft, and I also do a little bit of running.',
+    description: 'Hi, I\'m Alvin. I\'m a 4th year CS major + math minor, and I\'ve helped teach ICPC workshops for almost 3 years now. Outside of tech, I enjoy playing Minecraft, and I also do a little bit of running.',
     funFacts: {
       'ice cream': 'Chocolate',
       professor: 'Smallberg',
@@ -170,7 +170,7 @@ const Seniors = [
     image: '/static/member/rn.png',
     name: 'Rohit Nema',
     position: 'Officer',
-    description: 'Hi! I’m Rohit, a 4th year Computer Science and Math major. I’m currently involved in Cryptography research and trying to dip my feet in competitive programming. I like to watch anime and play basketball.',
+    description: 'Hi! I\'m Rohit, a 4th year Computer Science and Math major. I\'m currently involved in Cryptography research and trying to dip my feet in competitive programming. I like to watch anime and play basketball.',
     funFacts: {
       'ice cream': 'Mint Chocolate Chip',
       professor: 'Eggert',
@@ -182,7 +182,7 @@ const Seniors = [
     image: '/static/member/bl.png',
     name: 'Bill Liu',
     position: 'Officer',
-    description: 'Hi there! I’m Bill, a fourth-year CS major interested in iOS development and competitive programming! At ICPC, I used to lead Interview Track, and now I’m involved with events like Bruin Quest! I also enjoy fencing, painting, chess, and digital card games!',
+    description: 'Hi there! I\'m Bill, a fourth-year CS major interested in iOS development and competitive programming! At ICPC, I used to lead Interview Track, and now I\'m involved with events like Bruin Quest! I also enjoy fencing, painting, chess, and digital card games!',
     funFacts: {
       'ice cream': 'Mango/Peach',
       professor: 'Eggert',
@@ -194,7 +194,7 @@ const Seniors = [
     image: '/static/member/ak.png',
     name: 'Arjun Kallapur',
     position: 'Officer',
-    description: 'Hi I’m Arjun and I am a 4th year CS major! I’m super passionate about teaching and learning new things. Catch me gardening, listening to pop music, and trying to (and mostly failing to) cook.',
+    description: 'Hi I\'m Arjun and I am a 4th year CS major! I\'m super passionate about teaching and learning new things. Catch me gardening, listening to pop music, and trying to (and mostly failing to) cook.',
     funFacts: {
       'ice cream': 'Chocolate',
       professor: 'Eggert',
@@ -218,7 +218,7 @@ const Seniors = [
     image: '/static/member/rd.png',
     name: 'Reiya Downs',
     position: 'Officer',
-    description: 'Hi! :) I’m Reiya, and I’m a a fourth year Math of Computation major who loves rational fiction, TV, dancing, and learning to draw! I also know 1 card trick, and if you’re lucky I’ll show you ;)',
+    description: 'Hi! :) I\'m Reiya, and I\'m a a fourth year Math of Computation major who loves rational fiction, TV, dancing, and learning to draw! I also know 1 card trick, and if you\'re lucky I\'ll show you ;)',
     funFacts: {
       'ice cream': 'Double Peanut Butter Chip',
       professor: 'Jon Eyolfson',
@@ -230,7 +230,7 @@ const Seniors = [
     image: '/static/member/ns.png',
     name: 'Nikil Selvam',
     position: 'Advisor',
-    description: 'Hey! I’m Nikil, a 4th year majoring in cs & math. i hail from qatar (bonus points if you know this desert in the middle east!). badminton player, ml enthusiast, keyboardist, algorithms junkie, factorio novice, and a die-hard roger federer fan! former icpc prez, now advisor :)',
+    description: 'Hey! I\'m Nikil, a 4th year majoring in cs & math. i hail from qatar (bonus points if you know this desert in the middle east!). badminton player, ml enthusiast, keyboardist, algorithms junkie, factorio novice, and a die-hard roger federer fan! former icpc prez, now advisor :)',
     funFacts: {
       'ice cream': 'Olive Oil',
       professor: 'Darwiche',
@@ -246,7 +246,7 @@ const members = [
     image: '/static/member/sn.JPG',
     name: 'Suhas Nagar',
     position: 'President',
-    description: 'Hi! I’m Suhas, a 3rd year CS Major from the Bay Area. I’m the Codesprint 2023 Director for the upcoming year. In my free time, you can usually find me playing video games (I’m a big fan of Hollow Knight + Outer Wilds), trying to write my own rap battles, or playing basketball at Wooden :)',
+    description: 'Hi! I\'m Suhas, a 3rd year CS Major from the Bay Area. I\'m the Codesprint 2023 Director for the upcoming year. In my free time, you can usually find me playing video games (I\'m a big fan of Hollow Knight + Outer Wilds), trying to write my own rap battles, or playing basketball at Wooden :)',
     funFacts: {
       'ice cream': 'Pink Rose',
       professor: 'Reinmann',
@@ -302,7 +302,7 @@ const members = [
     image: '/static/member/nv.JPG',
     name: 'Neil Vaishampayan',
     position: 'Officer',
-    description: 'Hi! I’m Neil, a 5th year undergrad/2nd year masters CS student from the Bay Area interested in compilers and Quantum Programming. In my free time, I like to watch soccer, play the horn, and play video games.',
+    description: 'Hi! I\'m Neil, a 5th year undergrad/2nd year masters CS student from the Bay Area interested in compilers and Quantum Programming. In my free time, I like to watch soccer, play the horn, and play video games.',
     funFacts: {
       'ice cream': 'Mint Chocolate Chip',
       professor: 'Palsberg',
@@ -372,7 +372,7 @@ const members = [
     image: '/static/member/wz.JPG',
     name: 'William Zhao',
     position: 'Officer',
-    description: 'hi! I’m William, a 2nd year Computer Science major! I\'m the CodeSprint 2024 Director. I really enjoy competitive programming and problem solving. As for non-CS related stuff, I love learning about 20th century European history, geeking out about airplanes, and reading about baseball analytics.',
+    description: 'hi! I\'m William, a 2nd year Computer Science major! I\'m the CodeSprint 2024 Director. I really enjoy competitive programming and problem solving. As for non-CS related stuff, I love learning about 20th century European history, geeking out about airplanes, and reading about baseball analytics.',
     funFacts: {
       'ice cream': 'Cookies and Cream',
       professor: 'Smallberg',
@@ -386,7 +386,7 @@ const members = [
     image: '/static/member/sk.JPG',
     name: 'Shubham Kumar',
     position: 'Officer',
-    description: 'hi! i’m shubham, a second-year computer engineering major from the bay. i’m interested in math, competitive programming and ml. in my free time, you can find me losing chess games, playing guitar or biking.',
+    description: 'hi! i\'m shubham, a second-year computer engineering major from the bay. i\'m interested in math, competitive programming and ml. in my free time, you can find me losing chess games, playing guitar or biking.',
     funFacts: {
       'ice cream': 'covefe',
       professor: 'Paul Balmer',
@@ -414,7 +414,7 @@ const members = [
     image: '/static/member/am.JPG',
     name: 'Akash Madiraju',
     position: 'Officer',
-    description: 'Hi! I’m Akash, a 2nd year CS Major this year, and I’m from the Bay Area. I like competitive programming and math, and enjoy playing video games (Smash and Rocket League) and playing the piano and saxophone.',
+    description: 'Hi! I\'m Akash, a 2nd year CS Major this year, and I\'m from the Bay Area. I like competitive programming and math, and enjoy playing video games (Smash and Rocket League) and playing the piano and saxophone.',
     funFacts: {
       'ice cream': 'Birthday Cake',
       professor: 'Paul Balmer',
@@ -428,7 +428,7 @@ const members = [
     image: '/static/member/xx.JPG',
     name: 'Charlotte Chen',
     position: 'Officer',
-    description: 'Hiii, I’m Charlotte, a second-year math major! I’m interested in competitive programming, cryptography, and analysis. I also like music (esp Bach and Rachmaninoff), a cat called Jr. Kolmogorov (mine), and dota2.',
+    description: 'Hiii, I\'m Charlotte, a second-year math major! I\'m interested in competitive programming, cryptography, and analysis. I also like music (esp Bach and Rachmaninoff), a cat called Jr. Kolmogorov (mine), and dota2.',
     funFacts: {
       'ice cream': 'Cookies & Cream',
       professor: 'Marek Biskup',
@@ -456,7 +456,7 @@ const members = [
     image: '/static/member/hh.JPG', 
     name: "Henry Huang", 
     position: "Officer", 
-    description: 'Hi, my name is Henry Huang, and I’m a second year CS major at UCLA. I started competitive programming in high school, and it has been a hobby of mine ever since. In my free time, I like to code random things, play video games, and listen to music.', 
+    description: 'Hi, my name is Henry Huang, and I\'m a second year CS major at UCLA. I started competitive programming in high school, and it has been a hobby of mine ever since. In my free time, I like to code random things, play video games, and listen to music.', 
     funFacts: { 
       'ice cream': 'Lime', 
       professor: 'Smallberg', 
