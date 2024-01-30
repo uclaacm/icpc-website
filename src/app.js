@@ -2,9 +2,9 @@ import React, {
   Fragment, Suspense, lazy,
 } from 'react';
 import {
-  Switch,
+  Routes,
   Route,
-  Redirect,
+  Navigate,
   NavLink,
   withRouter,
   useLocation,
@@ -70,22 +70,22 @@ const Navbar = (props) => {
   const MenuContent = () => {
     return (
       <Fragment>
-        <NavLink exact to='/' activeStyle={{color: '#ff5479'}}>
+        <NavLink to='/' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
           <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
             home
           </Button>
         </NavLink>
-        <NavLink to='/events' activeStyle={{color: '#ff5479'}}>
+        <NavLink end to='/events' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
           <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
             events
           </Button>
         </NavLink>
-        <NavLink to='/icpc' activeStyle={{color: '#ff5479'}}>
+        <NavLink end to='/icpc' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
           <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
             competition
           </Button>
         </NavLink>
-        <NavLink to='/team' activeStyle={{color: '#ff5479'}}>
+        <NavLink end to='/team' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
           <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
             team
           </Button>
@@ -103,17 +103,17 @@ const Navbar = (props) => {
   const HiddenContent = () => {
     return (
       <Fragment>
-        <NavLink exact to='/update' activeStyle={{color: '#ff5479'}}>
+        <NavLink end to='/update' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
           <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
             update
           </Button>
         </NavLink>
-        <NavLink to='/create' activeStyle={{color: '#ff5479'}}>
+        <NavLink to='/create' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
           <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
             create
           </Button>
         </NavLink>
-        <NavLink exact to='/' activeStyle={{color: '#ff5479'}} onClick={props.logout}>
+        <NavLink exact to='/' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})} onClick={props.logout}>
           <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
             log out
           </Button>
@@ -138,7 +138,7 @@ const Navbar = (props) => {
         <Flex
           alignItems="center"
         >
-          <NavLink exact to="/">
+          <NavLink end to="/">
             <Stack
               isInline
               justify="center"
@@ -273,22 +273,16 @@ const App = () => {
       <Navbar admin={isAdmin()} logout={logout}/>
       <Suspense fallback={FallbackView}>
         <MainContent>
-          <Switch>
-            <Route exact path="/" component={HomeContainer} />
-            <Route exact path="/events" component={EventsContainer} />
-            <Route exact path="/icpc" component={RegionalsContainer} />
-            <Route exact path="/team" component={TeamContainer} />
-            <Route exact path="/admin">
-              <LoginContainer isAdmin={isAdmin()} onChange={handle_cred}/>
-            </Route>
-            <Route exact path="/create">
-              {isAdmin() ? <CreateContainer/> : <Redirect to="/admin" />}
-            </Route>
-            <Route exact path="/update">
-              {isAdmin() ? <UpdateContainer/> : <Redirect to="/admin" />}
-            </Route>
-            <Redirect to="/" />
-          </Switch>
+          <Routes>
+            <Route exact path="/" element={<HomeContainer />} />
+            <Route exact path="/events" element={<EventsContainer />} />
+            <Route exact path="/icpc" element={<RegionalsContainer />} />
+            <Route exact path="/team" element={<TeamContainer />} />
+            <Route exact path="/admin" element={<LoginContainer isAdmin={isAdmin()} onChange={handle_cred}/>} />
+            <Route exact path="/create" element={isAdmin() ? <CreateContainer/> : <Navigate to="/admin" />} />
+            <Route exact path="/update" element={isAdmin() ? <UpdateContainer/> : <Navigate to="/admin" />} />
+            <Route path="*" element={<Navigate to='/' />} />
+          </Routes>
         </MainContent>
       </Suspense>
       <Footer />

@@ -1,12 +1,11 @@
 import 'main.scss'
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { ChakraProvider, CSSReset, theme } from '@chakra-ui/react';
 
 import App from 'app';
-
 
 const customTheme = {
   ...theme,
@@ -51,14 +50,12 @@ const customTheme = {
   },
 };
 
-ReactDOM.render(
-  <div id="mount">
-    <ChakraProvider theme={customTheme}>
-      <CSSReset />
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ChakraProvider>
-  </div>,
-  document.getElementById('mount'),
+const root = ReactDOM.createRoot(document.getElementById('mount'));
+root.render(
+  <ChakraProvider theme={customTheme}>
+    <CSSReset />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </ChakraProvider>
 );
