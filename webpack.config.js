@@ -15,15 +15,15 @@ const createConfig = (env, argv) => {
 
     context: path.resolve(__dirname, 'src'),
     entry: {
-      main: ['@babel/polyfill', 'main.js'],
+      main: ['main.js'],
     },
     resolve: {
       modules: [path.resolve(__dirname, 'src'), 'node_modules'],
       fallback: 
         {
-          "tty": require.resolve("tty-browserify"), 
           "crypto": require.resolve("crypto-browserify"), 
-          "stream": require.resolve("stream-browserify"), 
+          "stream": require.resolve("stream-browserify"),
+          "tty": require.resolve("tty-browserify")
         }
     },
     module: {
@@ -68,11 +68,15 @@ const createConfig = (env, argv) => {
         },
       },
       minimizer: [
-        new TerserPlugin({
-          cache: true,
-          parallel: true,
-          sourceMap: false,
-        }),
+        (compiler) => {
+          new TerserPlugin({
+            terserOptions: {
+              cache: true,
+              parallel: true,
+              sourceMap: false,
+            },
+          }).apply(compiler);
+        },
       ],
     },
 
@@ -114,11 +118,11 @@ const createConfig = (env, argv) => {
     },
 
     devServer: {
-      contentBase: path.resolve(__dirname, 'public'),
+      static: path.resolve(__dirname, 'public'),
       compress: true,
       host: '0.0.0.0',
       port: 12345,
-      disableHostCheck: true,
+      allowedHosts: 'all',
       historyApiFallback: true,
     },
   };
