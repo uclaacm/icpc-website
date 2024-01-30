@@ -18,6 +18,9 @@
     "url": "https://github.com/uclaacm/icpc.uclaacm.com/issues"
   },
   "homepage": "https://icpc.uclaacm.com",
+  "engine": {
+    "node": "^21.6.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.23.9",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
