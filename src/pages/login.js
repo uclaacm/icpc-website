@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import {
     useLocation,
-    Redirect,
+    Navigate,
 } from "react-router-dom";
 import {
   Heading,
@@ -33,7 +33,7 @@ const { createHash } = require('crypto');
 function LoginContainer(props) {
 
     if (props.isAdmin) {
-        return <Redirect to="/update" />;
+        return <Navigate to="/update" />;
     } else {
         return (
             <div id='pw-frame'>
