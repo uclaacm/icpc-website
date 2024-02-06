@@ -11,12 +11,12 @@ Built using React and Webpack. Uses [Chakra-UI](https://chakra-ui.com) for compo
 
 ## Development Setup
 
-Install [`git`](https://git-scm.com/) and [Node.js](https://nodejs.org/en) version `16.15.0`.
+Install [`git`](https://git-scm.com/) and [Node.js](https://nodejs.org/en) version `21.6.1`.
 
 We recommend using [`nvm`](https://github.com/nvm-sh/nvm) to manage Node.js versions: 
 ```sh
-$ nvm install 16.15.0
-$ nvm use 16.15.0
+$ nvm install 21.6.1
+$ nvm use 21.6.1
 ```
 
 Clone the repository and install dependencies: 
