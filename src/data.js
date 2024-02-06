@@ -493,6 +493,76 @@ const members = [
       course: 'ee 102',
       'TV show': 'The office'
     },
+  },
+  {
+    image: '/static/member/ra.jpg',
+    name: 'Rathul Anand',
+    position: 'Intern',
+    description: 'Whats up! I\'m Rathul, a 1st year Ling+CS and Math who likes puzzles, ML, and security. More often than not you can find me with a matcha latte, but in the meantime, I enjoy playing percussion with the Symphony, hooping at Hitch, or spending time with my friends :)',
+    funFacts: {
+      'ice cream': 'mango',
+      professor: 'eggert',
+      editor: 'vs code',
+      language: 'c++',
+      course: 'ece 117',
+      'TV show': 'loki'
+    },
+  },
+  {
+    image: '/static/member/ew.jpg',
+    name: 'Eric Wang',
+    position: 'Intern',
+    description: 'Hello! I\'m Eric, a 1st CS major, and I\'m interested in algorithmic puzzles and computer graphics. You\'ll probably find me in E6 trying out dumb things with programming languages. Outside of CS, I\'m also part of Medleys A Cappella, a community service a cappella group!',
+    funFacts: {
+      'ice cream': 'Cookies and Cream',
+      professor: 'KT Do',
+      editor: 'Neovim (but really VS Code)',
+      language: 'Python',
+      course: 'None of them so far',
+      'TV show': 'Kaguya-sama: Love is War'
+    },
+  },
+  {
+    image: '/static/member/sk-fake.JPG',
+    name: 'Michael Song',
+    position: 'Intern',
+    description: 'Hi! I\'m Michael, a 2nd year CS major, interested in competitive programming and machine learning. Outside of CS, I enjoy playing basketball (or any sport in general) and trying new things with friends. I\'m also involved with other student organizations such as exploretech.la.',
+    funFacts: {
+      'ice cream': 'Cookie Dough',
+      professor: 'KT Do',
+      editor: 'anything jetbrains',
+      language: 'C++ for comp prog, Python otherwise',
+      course: 'CS 188',
+      'TV show': 'Don\'t watch'
+    },
+  },
+  {
+    image: '/static/member/suryas.png',
+    name: 'Surya Subbarao',
+    position: 'Intern',
+    description: 'Hello! I\'m Surya, a 2nd year CS and Math major, and I\'m interested in computer architecture and probability theory. I also love reading, jazz music, and learning languages. I enjoy collecting strange icebreaker questions.',
+    funFacts: {
+      'ice cream': 'Mint',
+      professor: 'Marek Biskup',
+      editor: 'Vim',
+      language: 'C++',
+      course: 'CS 111',
+      'TV show': 'Don\'t watch'
+    },
+  },
+  {
+    image: '/static/member/hz.jpg',
+    name: 'Harry Zhou',
+    position: 'Intern',
+    description: 'Hey there! I\'m Harry, a 1st year CSE major, and I love competitive programming, math, and ML. Outside of CS, I enjoy playing basketball (future Steph Curry in the making :D), chess, and hanging out with my friends!',
+    funFacts: {
+      'ice cream': 'Sea salt',
+      professor: 'Jonathan Kao',
+      editor: 'Neovim (really, cough cough Eric)',
+      language: 'C++',
+      course: 'ECE 147',
+      'TV show': 'Friends (all time), Arcane (more recently)'
+    },
   }
 ];
 
