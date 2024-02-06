@@ -252,7 +252,7 @@ const members = [
       professor: 'Reinmann',
       editor: 'IntelliJ',
       language: 'Java',
-      course: 'CS 33',
+      course: 'CS C122',
       'TV show': 'The Owl House',
     },
   },
