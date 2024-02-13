@@ -498,7 +498,7 @@ const members = [
     image: '/static/member/ra.jpg',
     name: 'Rathul Anand',
     position: 'Intern',
-    description: 'Whats up! I\'m Rathul, a 1st year Ling+CS and Math who likes puzzles, ML, and security. More often than not you can find me with a matcha latte, but in the meantime, I enjoy playing percussion with the Symphony, hooping at Hitch, or spending time with my friends :)',
+    description: 'Whats up! I\'m Rathul, a 1st year Ling+CS and Math major who likes puzzles, ML, and security. More often than not you can find me with a matcha latte, but in the meantime, I enjoy playing percussion with the Symphony, hooping, or spending time with my friends :)',
     funFacts: {
       'ice cream': 'mango',
       professor: 'eggert',
@@ -523,7 +523,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/sk-fake.JPG',
+    image: '/static/member/ms.JPG',
     name: 'Michael Song',
     position: 'Intern',
     description: 'Hi! I\'m Michael, a 2nd year CS major, interested in competitive programming and machine learning. Outside of CS, I enjoy playing basketball (or any sport in general) and trying new things with friends. I\'m also involved with other student organizations such as exploretech.la.',
