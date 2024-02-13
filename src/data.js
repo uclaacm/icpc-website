@@ -537,7 +537,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/suryas.png',
+    image: '/static/member/ss.jpg',
     name: 'Surya Subbarao',
     position: 'Intern',
     description: 'Hello! I\'m Surya, a 2nd year CS and Math major, and I\'m interested in computer architecture and probability theory. I also love reading, jazz music, and learning languages. I enjoy collecting strange icebreaker questions.',
