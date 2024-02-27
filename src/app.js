@@ -97,11 +97,6 @@ const Navbar = (props) => {
             codesprint
           </Button>
         </a>
-        <NavLink end to='/privacy' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
-          <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
-            privacy policy
-          </Button>
-        </NavLink>
         
       </Fragment>
     )};
@@ -250,6 +245,11 @@ const Footer = () => (
           >
             join the ACM mailing list
           </Button>
+          <NavLink end to='/privacy' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
+            <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
+              privacy policy
+            </Button>
+          </NavLink>
         </Box>
       </SimpleGrid>
       <Link href="https://www.netlify.com" isExternal>
