@@ -249,7 +249,7 @@ const members = [
     description: 'Hi! I\'m Suhas, a 3rd year CS Major from the Bay Area. I\'m the Codesprint 2023 Director for the upcoming year. In my free time, you can usually find me playing video games (I\'m a big fan of Hollow Knight + Outer Wilds), trying to write my own rap battles, or playing basketball at Wooden :)',
     funFacts: {
       'ice cream': 'Pink Rose',
-      professor: 'Reinmann',
+      professor: 'Reinman',
       editor: 'IntelliJ',
       language: 'Java',
       course: 'CS C122',
