@@ -55,6 +55,8 @@ const CreateContainer = lazy(() => import("pages/create"));
 // import CreateContainer from './pages/create';
 const UpdateContainer = lazy(() => import("pages/update"));
 const LoginContainer = lazy(() => import("pages/login"));
+const PrivacyPolicyContainer = lazy(() => import("pages/privacy"));
+
 const FallbackView = (
   <h1>Loading</h1>
 );
@@ -243,6 +245,11 @@ const Footer = () => (
           >
             join the ACM mailing list
           </Button>
+          <NavLink end to='/privacy' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
+            <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
+              privacy policy
+            </Button>
+          </NavLink>
         </Box>
       </SimpleGrid>
       <Link href="https://www.netlify.com" isExternal>
@@ -278,6 +285,7 @@ const App = () => {
             <Route exact path="/events" element={<EventsContainer />} />
             <Route exact path="/icpc" element={<RegionalsContainer />} />
             <Route exact path="/team" element={<TeamContainer />} />
+            <Route exact path="/privacy" element={<PrivacyPolicyContainer />} />
             <Route exact path="/admin" element={<LoginContainer isAdmin={isAdmin()} onChange={handle_cred}/>} />
             <Route exact path="/create" element={isAdmin() ? <CreateContainer/> : <Navigate to="/admin" />} />
             <Route exact path="/update" element={isAdmin() ? <UpdateContainer/> : <Navigate to="/admin" />} />
