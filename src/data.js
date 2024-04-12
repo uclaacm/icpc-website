@@ -131,6 +131,34 @@ const allEvents = [
 
 const Seniors = [
   {
+    image: '/static/member/lj.png',
+    name: 'Lucas Jeong',
+    position: 'Officer',
+    description: '👋ඞ',
+    funFacts: {
+      'ice cream': 'stwawbewwy',
+      professor: 'sherstov',
+      editor: 'nwim',
+      language: 'c++',
+      course: 'cs 181',
+      'TV show': 'i dont watch tv',
+    },
+  },
+  {
+    image: '/static/member/nv.JPG',
+    name: 'Neil Vaishampayan',
+    position: 'Officer',
+    description: 'Hi! I\'m Neil, a 5th year undergrad/2nd year masters CS student from the Bay Area interested in compilers and Quantum Programming. In my free time, I like to watch soccer, play the horn, and play video games.',
+    funFacts: {
+      'ice cream': 'Mint Chocolate Chip',
+      professor: 'Palsberg',
+      editor: 'VSCode',
+      language: 'Ocaml',
+      course: 'CS 132',
+      'TV show': 'Andor',
+    },
+  },
+  {
     image: '/static/member/jz.png',
     name: 'Jacob Zhang',
     position: 'President',
@@ -243,31 +271,45 @@ const Seniors = [
 // Members ordered by position then seniority
 const members = [
   {
-    image: '/static/member/sn.JPG',
-    name: 'Suhas Nagar',
+    image: '/static/member/wz.JPG',
+    name: 'William Zhao',
     position: 'President',
-    description: 'Hi! I\'m Suhas, a 3rd year CS Major from the Bay Area. I\'m the Codesprint 2023 Director for the upcoming year. In my free time, you can usually find me playing video games (I\'m a big fan of Hollow Knight + Outer Wilds), trying to write my own rap battles, or playing basketball at Wooden :)',
+    description: 'hi! I\'m William, a 2nd year Computer Science major! I\'m the CodeSprint 2024 Director. I really enjoy competitive programming and problem solving. As for non-CS related stuff, I love learning about 20th century European history, geeking out about airplanes, and reading about baseball analytics.',
     funFacts: {
-      'ice cream': 'Pink Rose',
-      professor: 'Reinman',
-      editor: 'IntelliJ',
-      language: 'Java',
-      course: 'CS C122',
-      'TV show': 'The Owl House',
+      'ice cream': 'Cookies and Cream',
+      professor: 'Smallberg',
+      editor: 'VS Code',
+      language: 'c++',
+      course: 'CS 35L',
+      'TV show': 'Better Call Saul!',
     },
   },
   {
-    image: '/static/member/cc.JPG',
-    name: 'Carson Cox',
+    image: '/static/member/am.JPG',
+    name: 'Akash Madiraju',
     position: 'Vice President',
-    description: 'Howdy! I\'m Carson, a fourth year computer science major and the Vice President of ICPC. You can probably find me at the climbing gym more often than not, and when I\'m not there I\'m probably watching anime in my apt or playing switch with my roommates. Don\'t be afraid to say hi if you see me!',
+    description: 'Hi! I\'m Akash, a 2nd year CS Major this year, and I\'m from the Bay Area. I like competitive programming and math, and enjoy playing video games (Smash and Rocket League) and playing the piano and saxophone.',
+    funFacts: {
+      'ice cream': 'Birthday Cake',
+      professor: 'Paul Balmer',
+      editor: 'Vim',
+      language: 'C++',
+      course: 'Math 115AH',
+      'TV show': 'Death Note',
+    },
+  },
+  {
+    image: '/static/member/jliu.JPG',
+    name: 'Jason Liu',
+    position: 'Vice President',
+    description: 'Hey, I\'m Jason, a 2nd year Computer Science major. Aside from competitive programming, I like math and playing social deduction games. In short, I really enjoy solving problems. You might also catch me reading in dining halls (in which case please say hi!)',
     funFacts: {
       'ice cream': 'Vanilla',
       professor: 'Eggert',
-      editor: 'Repl.it',
+      editor: 'MacVim',
       language: 'C++',
-      course: 'CS 131',
-      'TV show': 'One Piece',
+      course: 'CS 35L',
+      'TV show': 'Sousou no Frieren',
     },
   },
   {
@@ -285,31 +327,31 @@ const members = [
     },
   },
   {
-    image: '/static/member/lj.png',
-    name: 'Lucas Jeong',
-    position: 'Officer',
-    description: '👋ඞ',
+    image: '/static/member/sn.JPG',
+    name: 'Suhas Nagar',
+    position: 'Advisor, President Emeritus',
+    description: 'Hi! I\'m Suhas, a 3rd year CS Major from the Bay Area. I\'m the Codesprint 2023 Director for the upcoming year. In my free time, you can usually find me playing video games (I\'m a big fan of Hollow Knight + Outer Wilds), trying to write my own rap battles, or playing basketball at Wooden :)',
     funFacts: {
-      'ice cream': 'stwawbewwy',
-      professor: 'sherstov',
-      editor: 'nwim',
-      language: 'c++',
-      course: 'cs 181',
-      'TV show': 'i dont watch tv',
+      'ice cream': 'Pink Rose',
+      professor: 'Reinman',
+      editor: 'IntelliJ',
+      language: 'Java',
+      course: 'CS C122',
+      'TV show': 'The Owl House',
     },
   },
   {
-    image: '/static/member/nv.JPG',
-    name: 'Neil Vaishampayan',
+    image: '/static/member/cc.JPG',
+    name: 'Carson Cox',
     position: 'Officer',
-    description: 'Hi! I\'m Neil, a 5th year undergrad/2nd year masters CS student from the Bay Area interested in compilers and Quantum Programming. In my free time, I like to watch soccer, play the horn, and play video games.',
+    description: 'Howdy! I\'m Carson, a fourth year computer science major. You can probably find me at the climbing gym more often than not, and when I\'m not there I\'m probably watching anime in my apt or playing switch with my roommates. Don\'t be afraid to say hi if you see me!',
     funFacts: {
-      'ice cream': 'Mint Chocolate Chip',
-      professor: 'Palsberg',
-      editor: 'VSCode',
-      language: 'Ocaml',
-      course: 'CS 132',
-      'TV show': 'Andor',
+      'ice cream': 'Vanilla',
+      professor: 'Eggert',
+      editor: 'Repl.it',
+      language: 'C++',
+      course: 'CS 131',
+      'TV show': 'One Piece',
     },
   },
   {
@@ -369,20 +411,6 @@ const members = [
     },
   },
   {
-    image: '/static/member/wz.JPG',
-    name: 'William Zhao',
-    position: 'Officer',
-    description: 'hi! I\'m William, a 2nd year Computer Science major! I\'m the CodeSprint 2024 Director. I really enjoy competitive programming and problem solving. As for non-CS related stuff, I love learning about 20th century European history, geeking out about airplanes, and reading about baseball analytics.',
-    funFacts: {
-      'ice cream': 'Cookies and Cream',
-      professor: 'Smallberg',
-      editor: 'VS Code',
-      language: 'c++',
-      course: 'CS 35L',
-      'TV show': 'Better Call Saul!',
-    },
-  },
-  {
     image: '/static/member/sk.JPG',
     name: 'Shubham Kumar',
     position: 'Officer',
@@ -394,34 +422,6 @@ const members = [
       language: 'python',
       course: 'CS 111',
       'TV show': 'spongebob',
-    },
-  },
-  {
-    image: '/static/member/jliu.JPG',
-    name: 'Jason Liu',
-    position: 'Officer',
-    description: 'Hey, I\'m Jason, a 2nd year Computer Science major. Aside from competitive programming, I like math and playing social deduction games. In short, I really enjoy solving problems. You might also catch me reading in dining halls (in which case please say hi!)',
-    funFacts: {
-      'ice cream': 'Vanilla',
-      professor: 'Eggert',
-      editor: 'MacVim',
-      language: 'C++',
-      course: 'CS 35L',
-      'TV show': 'Sousou no Frieren',
-    },
-  },
-  {
-    image: '/static/member/am.JPG',
-    name: 'Akash Madiraju',
-    position: 'Officer',
-    description: 'Hi! I\'m Akash, a 2nd year CS Major this year, and I\'m from the Bay Area. I like competitive programming and math, and enjoy playing video games (Smash and Rocket League) and playing the piano and saxophone.',
-    funFacts: {
-      'ice cream': 'Birthday Cake',
-      professor: 'Paul Balmer',
-      editor: 'Vim',
-      language: 'C++',
-      course: 'Math 115AH',
-      'TV show': 'Death Note',
     },
   },
   {
@@ -497,7 +497,7 @@ const members = [
   {
     image: '/static/member/ra.jpg',
     name: 'Rathul Anand',
-    position: 'Intern',
+    position: 'Officer',
     description: 'Whats up! I\'m Rathul, a 1st year Ling+CS and Math major who likes puzzles, ML, and security. More often than not you can find me with a matcha latte, but in the meantime, I enjoy playing percussion with the Symphony, hooping, or spending time with my friends :)',
     funFacts: {
       'ice cream': 'mango',
@@ -511,7 +511,7 @@ const members = [
   {
     image: '/static/member/ew.jpg',
     name: 'Eric Wang',
-    position: 'Intern',
+    position: 'Officer',
     description: 'Hello! I\'m Eric, a 1st CS major, and I\'m interested in algorithmic puzzles and computer graphics. You\'ll probably find me in E6 trying out dumb things with programming languages. Outside of CS, I\'m also part of Medleys A Cappella, a community service a cappella group!',
     funFacts: {
       'ice cream': 'Cookies and Cream',
@@ -525,7 +525,7 @@ const members = [
   {
     image: '/static/member/ms.JPG',
     name: 'Michael Song',
-    position: 'Intern',
+    position: 'Officer',
     description: 'Hi! I\'m Michael, a 2nd year CS major, interested in competitive programming and machine learning. Outside of CS, I enjoy playing basketball (or any sport in general) and trying new things with friends. I\'m also involved with other student organizations such as exploretech.la.',
     funFacts: {
       'ice cream': 'Cookie Dough',
@@ -539,7 +539,7 @@ const members = [
   {
     image: '/static/member/ss.jpg',
     name: 'Surya Subbarao',
-    position: 'Intern',
+    position: 'Officer',
     description: 'Hello! I\'m Surya, a 2nd year CS and Math major, and I\'m interested in computer architecture and probability theory. I also love reading, jazz music, and learning languages. I enjoy collecting strange icebreaker questions.',
     funFacts: {
       'ice cream': 'Mint',
@@ -553,7 +553,7 @@ const members = [
   {
     image: '/static/member/hz.jpg',
     name: 'Harry Zhou',
-    position: 'Intern',
+    position: 'Officer',
     description: 'Hey there! I\'m Harry, a 1st year CSE major, and I love competitive programming, math, and ML. Outside of CS, I enjoy playing basketball (future Steph Curry in the making :D), chess, and hanging out with my friends!',
     funFacts: {
       'ice cream': 'Sea salt',
