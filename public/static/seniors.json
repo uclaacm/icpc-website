@@ -1,0 +1,138 @@
+[
+  {
+    "image": "/static/member/lj.png",
+    "name": "Lucas Jeong",
+    "position": "Officer",
+    "description": "👋ඞ",
+    "funFacts": {
+      "ice cream": "stwawbewwy",
+      "professor": "sherstov",
+      "editor": "nwim",
+      "language": "c++",
+      "course": "cs 181",
+      "TV show": "i dont watch tv"
+    }
+  },
+  {
+    "image": "/static/member/nv.JPG",
+    "name": "Neil Vaishampayan",
+    "position": "Officer",
+    "description": "Hi! I'm Neil, a 5th year undergrad/2nd year masters CS student from the Bay Area interested in compilers and Quantum Programming. In my free time, I like to watch soccer, play the horn, and play video games.",
+    "funFacts": {
+      "ice cream": "Mint Chocolate Chip",
+      "professor": "Palsberg",
+      "editor": "VSCode",
+      "language": "Ocaml",
+      "course": "CS 132",
+      "TV show": "Andor"
+    }
+  },
+  {
+    "image": "/static/member/jz.png",
+    "name": "Jacob Zhang",
+    "position": "President",
+    "description": "I'm a 4th year Math/CS double major interested in all things math and CS. I enjoy running, rock climbing, and learning Chinese. I've never been outside of the country, but I have visited over 30 US states.",
+    "funFacts": {
+      "ice cream": "Handel's Graham Central Station",
+      "professor": "Eggert",
+      "editor": "VSCode + Vim keybindings",
+      "TV show": "Queen's Gambit"
+    }
+  },
+  {
+    "image": "/static/member/ag.png",
+    "name": "Ana Gu",
+    "position": "Officer",
+    "description": "Hello. I'm Ana. I am a fourth year majoring in CS. In my free time, Im usually playing my switch and watching TV. Hit me up if you're into carnivorous plants and/or houseplants.",
+    "funFacts": {
+      "ice cream": "Ruby Chocolate",
+      "professor": "Smallberg",
+      "editor": "Emacs/Pycharm",
+      "TV show": "Brooklyn 99"
+    }
+  },
+  {
+    "image": "/static/member/an.png",
+    "name": "Alvin Nguyen",
+    "position": "Officer",
+    "description": "Hi, I'm Alvin. I'm a 4th year CS major + math minor, and I've helped teach ICPC workshops for almost 3 years now. Outside of tech, I enjoy playing Minecraft, and I also do a little bit of running.",
+    "funFacts": {
+      "ice cream": "Chocolate",
+      "professor": "Smallberg",
+      "editor": "VS Code",
+      "TV show": "The Boys"
+    }
+  },
+  {
+    "image": "/static/member/rn.png",
+    "name": "Rohit Nema",
+    "position": "Officer",
+    "description": "Hi! I'm Rohit, a 4th year Computer Science and Math major. I'm currently involved in Cryptography research and trying to dip my feet in competitive programming. I like to watch anime and play basketball.",
+    "funFacts": {
+      "ice cream": "Mint Chocolate Chip",
+      "professor": "Eggert",
+      "editor": "Vim",
+      "TV show": "Re:Zero"
+    }
+  },
+  {
+    "image": "/static/member/bl.png",
+    "name": "Bill Liu",
+    "position": "Officer",
+    "description": "Hi there! I'm Bill, a fourth-year CS major interested in iOS development and competitive programming! At ICPC, I used to lead Interview Track, and now I'm involved with events like Bruin Quest! I also enjoy fencing, painting, chess, and digital card games!",
+    "funFacts": {
+      "ice cream": "Mango/Peach",
+      "professor": "Eggert",
+      "editor": "Emacs",
+      "TV show": "Mythic Quest"
+    }
+  },
+  {
+    "image": "/static/member/ak.png",
+    "name": "Arjun Kallapur",
+    "position": "Officer",
+    "description": "Hi I'm Arjun and I am a 4th year CS major! I'm super passionate about teaching and learning new things. Catch me gardening, listening to pop music, and trying to (and mostly failing to) cook.",
+    "funFacts": {
+      "ice cream": "Chocolate",
+      "professor": "Eggert",
+      "editor": "VS Code",
+      "TV show": "The Bachelor"
+    }
+  },
+  {
+    "image": "/static/member/aj.png",
+    "name": "Arihant Jain",
+    "position": "Officer",
+    "description": "4th year CS Major originally from NJ 1/3 of the ICPC team representing UCLA. Big fan of Air Bud, Rocket League, and spicy food",
+    "funFacts": {
+      "ice cream": "Butter Pecan",
+      "professor": "Nachenberg",
+      "editor": "VS Code",
+      "TV show": "Barry"
+    }
+  },
+  {
+    "image": "/static/member/rd.png",
+    "name": "Reiya Downs",
+    "position": "Officer",
+    "description": "Hi! :) I'm Reiya, and I'm a a fourth year Math of Computation major who loves rational fiction, TV, dancing, and learning to draw! I also know 1 card trick, and if you're lucky I'll show you ;)",
+    "funFacts": {
+      "ice cream": "Double Peanut Butter Chip",
+      "professor": "Jon Eyolfson",
+      "editor": "Emacs",
+      "TV show": "Banana Fish"
+    }
+  },
+  {
+    "image": "/static/member/ns.png",
+    "name": "Nikil Selvam",
+    "position": "Advisor",
+    "description": "Hey! I'm Nikil, a 4th year majoring in cs & math. i hail from qatar (bonus points if you know this desert in the middle east!). badminton player, ml enthusiast, keyboardist, algorithms junkie, factorio novice, and a die-hard roger federer fan! former icpc prez, now advisor :)",
+    "funFacts": {
+      "ice cream": "Olive Oil",
+      "professor": "Darwiche",
+      "editor": "VS Code",
+      "TV show": "The Crown"
+    }
+  }
+]

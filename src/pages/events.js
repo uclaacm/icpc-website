@@ -18,7 +18,7 @@ import {
 import Container from 'components/container';
 import { EventCard, EventDescriptionCard } from 'components/eventcard';
 // import * as AWS from "aws-sdk";
-import { allEvents, pastEvents } from 'data';
+import { allEvents } from 'data';
 
 // const docClient = new AWS.DynamoDB.DocumentClient();
 
@@ -87,27 +87,6 @@ const AllEvents = () => {
   );
 };
 
-const PastEvents = () => {
-  const eventsData = pastEvents;
-  return (
-    <Flex wrap="wrap" textAlign="center" justify="space-evenly">
-      {eventsData.map((event, index) => (
-        <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
-          <Image src={event.image} rounded="lg" />
-            <Stack isInline mt={2} spacing={2}>
-              {typeof event.quarter !== "undefined" && 
-                  event.quarter.split('/').map((qtr, index) => (
-                    <Badge key={index} colorScheme="teal">{qtr}</Badge>
-                  ))}
-          </Stack>
-          <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
-          <Text>{event.description}</Text>
-        </Box>
-      ))}
-    </Flex>
-  );
-};
-
 const EventsContainer = (props) => (
   <div className="events">
     <Helmet>
@@ -132,10 +111,6 @@ const EventsContainer = (props) => (
           <Heading as="h2" id="all-events" fontSize={['lg', 'xl']}>All Events and Workshops</Heading>
           <AllEvents />
         </Stack>
-        {/* <Stack align="center">
-          <Heading as="h2" id="past-events" fontSize={['lg', 'xl']}>Past Events and Workshops </Heading>
-          <PastEvents />
-        </Stack> */}
       </Stack>
     </Container>
   </div>
