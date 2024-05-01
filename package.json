@@ -71,7 +71,7 @@
     "react-router-dom": "^6.21.3",
     "redux": "^5.0.1",
     "redux-thunk": "^3.1.0",
-    "sass": "^1.70.0",
+    "sass": "^1.76.0",
     "tty-browserify": "^0.0.1",
     "uuid": "^9.0.1"
   }
