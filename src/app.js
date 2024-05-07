@@ -227,7 +227,7 @@ const Footer = () => (
         </Box>
         <Box>
           <Heading my={2} fontSize="sm">reach us at</Heading>
-          <Heading my={2} fontSize="sm" fontWeight="regular" as="a" href="mailto:uclaicpc@gmail.com">uclaicpc@gmail.com</Heading>
+          <Heading my={2} fontSize="sm" fontWeight="regular" as="a" href="mailto:icpc@uclaacm.com">icpc@uclaacm.com</Heading>
         </Box>
         <Box>
           <Button
