@@ -13,6 +13,7 @@ import {
   useToast,
 } from '@chakra-ui/react';
 import Container from 'components/container';
+import Sponsor from "components/sponsor";
 import { UpcomingEvents } from 'pages/events';
 
 import { useMediaQuery } from 'hooks';
@@ -96,7 +97,17 @@ const HomeContainer = () => {
         </Stack>
       </Container>
 
+      <Divider p={3} borderColor="brand.500" />
 
+      <Container narrow>
+        <Stack p={3} spacing={3} textAlign="center" align="center">
+          <Heading as="p">Sponsored by</Heading>
+          <Flex alignItems="center" justifyContent="space-between" direction="row" maxWidth={isMobile?null:"850px"} wrap="wrap">
+            <Sponsor sponsor_name="Jane Street" external_link="https://www.janestreet.com/" img_src="static/sponsors/Jane_Street_Capital_Logo.svg" />
+          </Flex>
+        </Stack>
+        <br/>      
+      </Container>
     </div>
   );
 };
