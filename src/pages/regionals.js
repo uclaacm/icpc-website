@@ -51,12 +51,12 @@ const RegionalsContainer = () => (
           <Heading as="h2" fontSize={['lg', 'xl']}> News</Heading>
           <Heading as="h4" fontSize={['md']}> 2023-2024 North America Championship</Heading>
           <List styleType="disc" width="100%" pb={10}>
-            <ListItem>UCLA Stroopwafel (William Zhao, Kevin Sheng, and Leo Cui) placed 24th.</ListItem>
+            <ListItem>UCLA Stroopwafel (William Zhao, Kevin Sheng, and Xuanhao Cui) placed 24th.</ListItem>
           </List>
           <Heading as="h4" fontSize={['md']}> 2023-2024 Regionals</Heading>
           <List styleType="disc" width="100%" pb={10}>
             <ListItem>UCLA's teams placed 1st, 2nd, 3rd, 5th, 7th, and 15th.</ListItem>
-            <ListItem>UCLA Stroopwafel (William Zhao, Kevin Sheng, and Leo Cui) qualified for the North American Championship.</ListItem>
+            <ListItem>UCLA Stroopwafel (William Zhao, Kevin Sheng, and Xuanhao Cui) qualified for the North American Championship.</ListItem>
           </List>
           <Heading as="h4" fontSize={['md']}> 2022-2023 World Finals</Heading>
           <List styleType="disc" width="100%" pb={10}>
