@@ -49,6 +49,30 @@ const RegionalsContainer = () => (
         </Stack>
         <Stack align="center">
           <Heading as="h2" fontSize={['lg', 'xl']}> News</Heading>
+          <Heading as="h4" fontSize={['md']}> 2024-2025 North America Championship</Heading>
+          <List styleType="disc" width="100%" pb={10}>
+            <ListItem>UCLA Stroopwafel (William Zhao, Kevin Sheng, and Leo Cui) placed 24th.</ListItem>
+          </List>
+          <Heading as="h4" fontSize={['md']}> 2024-2025 Regionals</Heading>
+          <List styleType="disc" width="100%" pb={10}>
+            <ListItem>UCLA's teams placed 1st, 2nd, 3rd, 5th, 7th, and 15th.</ListItem>
+            <ListItem>UCLA Stroopwafel (William Zhao, Kevin Sheng, and Leo Cui) qualified for the North American Championship.</ListItem>
+          </List>
+          <Heading as="h4" fontSize={['md']}> 2023-2024 World Finals</Heading>
+          <List styleType="disc" width="100%" pb={10}>
+            <ListItem>UCLA Tortellini (Jason Liu, Nikil Roashan Selvam, and Rishi Sankar) competed in Luxor, Egypt.</ListItem>
+            <ListItem>Congratulations to Jason Liu, Nikil Roashan Selvam, and Rishi Sankar for their amazing performance at ICPC World Finals in Luxor, solving 5 problems and placing 52nd out of 130 teams.</ListItem>
+          </List>
+          <Heading as="h4" fontSize={['md']}> 2023-2024 North American Championship</Heading>
+          <List styleType="disc" width="100%" pb={10}>
+            <ListItem>UCLA Tortellini (Jason Liu, Nikil Roashan Selvam, and Rishi Sankar) placed 15th qualifying for the World Finals.</ListItem>
+            <ListItem>Congratulations to Jason Liu, Nikil Roashan Selvam, and Rishi Sankar for their first solve on problem G.</ListItem>
+          </List>
+          <Heading as="h4" fontSize={['md']}> 2023-2024 Regionals</Heading>
+          <List styleType="disc" width="100%" pb={10}>
+          <ListItem>UCLA's teams placed 2nd, 3rd, 4th, 8th, 14th, and 23rd.</ListItem>
+          <ListItem>UCLA Tortellini (Jason Liu, Nikil Roashan Selvam, and Rishi Sankar) qualified for the North American Championship.</ListItem>
+          </List>
           <Heading as="h4" fontSize={['md']}> 2020-2021 World Finals</Heading>
           <List styleType="disc" width="100%" pb={10}>
             <ListItem>UCLA Ice-cream Sandwich (Lucas Xia, Jacob Zhang, and Arihant Jain) competed in Dhaka, Bangladesh.</ListItem>
