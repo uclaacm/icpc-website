@@ -565,7 +565,7 @@ const members = [
     },
   },
   {
-    image: '/static/member/rg.jpg',
+    image: '/static/member/rg.png',
     name: 'Riya Gupta',
     position: 'Officer',
     description: 'Hi, I\'m a second year, helping organize Break the Binary for this quarter.',
