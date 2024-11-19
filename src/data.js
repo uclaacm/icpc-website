@@ -568,14 +568,14 @@ const members = [
     image: '/static/member/rg.png',
     name: 'Riya Gupta',
     position: 'Officer',
-    description: 'Hi, I\'m a second year, helping organize Break the Binary for this quarter.',
+    description: 'Hi, My name is Riya and I am a second year CS major, insterested in math, algorithms, and machine learning. In my free time, I like to drink boba, listen to music, take naps, chit-chat with my friends.',
     funFacts: {
-      'ice cream': '',
-      professor: '',
-      editor: '',
-      language: '',
-      course: '',
-      'TV show': ''
+      'ice cream': 'mint chocolate',
+      professor: 'eggert',
+      editor: 'vs code',
+      language: 'c++',
+      course: 'cs 35l',
+      'TV show': 'friends'
     },
   },
   {
