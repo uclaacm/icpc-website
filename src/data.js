@@ -327,9 +327,39 @@ const Seniors = [
 // Members ordered by position then seniority
 const members = [
   {
+    image: '/static/member/hz2.jpg',
+    name: 'Harry Zhou',
+    position: 'President',
+    description: 'Hey there! I\'m Harry, a 2nd year CSE major, and I love competitive programming, math, and ML. Outside of CS, I enjoy playing basketball (future Steph Curry in the making :D), chess, and hanging out with my friends!',
+    funFacts: {
+      'ice cream': 'Sea salt',
+      professor: 'Jonathan Kao',
+      editor: 'Neovim (really, cough cough Eric)',
+      language: 'C++',
+      course: 'ECE 147',
+      'TV show': 'Friends (all time), Arcane (more recently)'
+    },
+  },
+
+  {
+    
+    image: '/static/member/ra.jpg',
+    name: 'Rathul Anand',
+    position: 'Vice President',
+    description: 'Whats up! I\'m Rathul, a 2nd year CSE and Math major. More often than not you can find me with a matcha latte, but in the meantime, I enjoy playing percussion, hiking, and spending time with my friends :)',
+    funFacts: {
+      'ice cream': 'matcha',
+      professor: 'eggert',
+      editor: 'VS Code',
+      language: 'Haskell',
+      course: 'CS 111',
+      'TV show': 'House'
+    },
+  },
+  {
     image: '/static/member/wz.JPG',
     name: 'William Zhao',
-    position: 'President',
+    position: 'Officer, President Emeritus',
     description: 'hi! I\'m William, a 3rd year Computer Science major! I really enjoy competitive programming and problem solving. As for non-CS related stuff, I love learning about 20th century European history, geeking out about airplanes, and reading about baseball analytics.',
     funFacts: {
       'ice cream': 'Cookies and Cream',
@@ -340,10 +370,11 @@ const members = [
       'TV show': 'Better Call Saul!',
     },
   },
+
   {
     image: '/static/member/jliu.JPG',
     name: 'Jason Liu',
-    position: 'Vice President',
+    position: 'Officer',
     description: 'Hey, I\'m Jason, a 3rd year Computer Science major. Aside from competitive programming, I like math and playing social deduction games. In short, I really enjoy solving problems. You might also catch me reading in dining halls (in which case please say hi!)',
     funFacts: {
       'ice cream': 'Vanilla',
@@ -357,7 +388,7 @@ const members = [
   {
     image: '/static/member/am.JPG',
     name: 'Akash Madiraju',
-    position: 'Vice President',
+    position: 'Officer',
     description: 'Hi! I\'m Akash, a 3rd year CS Major from the Bay Area. I like competitive programming and math, and enjoy playing video games (Smash and Rocket League) and playing saxophone for the UCLA Marching Band.',
     funFacts: {
       'ice cream': 'Birthday Cake',
@@ -385,7 +416,7 @@ const members = [
   {
     image: '/static/member/is.JPG',
     name: 'Illia Shkirko',
-    position: 'Officer',
+    position: 'Advisor',
     description: 'Hi! I am a fourth year Computer Science major. I enjoy rock-climbing, traveling, skiing, and going to concerts.',
     funFacts: {
       'ice cream': 'Chocolate',
@@ -469,7 +500,7 @@ const members = [
   {
     image: '/static/member/hw.jpg',
     name: 'Henry Wang',
-    position: 'Officer',
+    position: 'Advisor',
     description: 'Guitarist band member',
     funFacts: {
       'ice cream': 'strawberry',
@@ -492,20 +523,6 @@ const members = [
       language: 'c++',
       course: 'ee 102',
       'TV show': 'The office'
-    },
-  },
-  {
-    image: '/static/member/ra.jpg',
-    name: 'Rathul Anand',
-    position: 'Officer',
-    description: 'Whats up! I\'m Rathul, a 2nd year CSE and Math major. More often than not you can find me with a matcha latte, but in the meantime, I enjoy playing percussion, hiking, and spending time with my friends :)',
-    funFacts: {
-      'ice cream': 'matcha',
-      professor: 'eggert',
-      editor: 'VS Code',
-      language: 'Haskell',
-      course: 'CS 111',
-      'TV show': 'House'
     },
   },
   {
@@ -548,20 +565,6 @@ const members = [
       language: 'C++',
       course: 'CS 132',
       'TV show': 'Wheel of Fortune'
-    },
-  },
-  {
-    image: '/static/member/hz2.jpg',
-    name: 'Harry Zhou',
-    position: 'Officer',
-    description: 'Hey there! I\'m Harry, a 2nd year CSE major, and I love competitive programming, math, and ML. Outside of CS, I enjoy playing basketball (future Steph Curry in the making :D), chess, and hanging out with my friends!',
-    funFacts: {
-      'ice cream': 'Sea salt',
-      professor: 'Jonathan Kao',
-      editor: 'Neovim (really, cough cough Eric)',
-      language: 'C++',
-      course: 'ECE 147',
-      'TV show': 'Friends (all time), Arcane (more recently)'
     },
   },
   {
@@ -637,6 +640,7 @@ const members = [
   {
     image: '/static/member/pl.png',
     name: 'Patrick Lu',
+    position: 'Officer',
     description: 'howdy! I\'m patrick, a second-year CS major interested in algorithms, math, and brainteasers.  In my free time, I like to travel, watch football, and hang out with my friends.',
     funFacts: {
       'ice cream': 'ube malted crunch',
@@ -650,6 +654,7 @@ const members = [
   {
     image: '/static/member/pb.png',
     name: 'Prabhvir Babra',
+    position: 'Officer',
     description: 'Hi, I\'m Prabhvir. I am a Computer Engineering major and am involved with the Competitive Coding track and Codesprint. I love a variety of fields within this space as I love Computer Security, robotics, and low-level systems. I am also involved with Bruin Underwater Robotics in ASME, IEEE, and 3D4E. Outside of CS, I also enjoy Pokemon Showdown, mainly current-gen OU and ZU and down to play a game or two. I also play video games and love Nintendo series such as The Legend of Zelda or Mario, and I\'m currently playing Majora\'s Mask and Twilight Princess.',
     funFacts: {
       'ice cream': 'Cookies and Cream',
@@ -663,6 +668,7 @@ const members = [
   {
     image: '/static/member/et.png',
     name: 'Ethan Tran',
+    position: 'Officer',
     description: 'Hi, I\'m Ethan, a 1st year Math of Computation major. Besides math and computational problem solving, I enjoy running and playing tennis. I also like to watch cycling and StarCraft 2 in my spare time. You\'ll often find me listening to classical music from no earlier than the 1830\'s.',
     funFacts: {
       'ice cream': 'Chocolate',
