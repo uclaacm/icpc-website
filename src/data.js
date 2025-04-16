@@ -369,8 +369,21 @@ const members = [
       course: 'CS 35L',
       'TV show': 'Better Call Saul!',
     },
+  },  
+  {
+    image: '/static/member/sn.JPG',
+    name: 'Suhas Nagar',
+    position: 'Advisor, President Emeritus',
+    description: 'Hi! I\'m Suhas, a 4th year CS Major from the Bay Area. In my free time, you can usually find me playing video games (I\'m a big fan of Hollow Knight + Outer Wilds), trying to write my own rap battles, or playing basketball at Wooden :)',
+    funFacts: {
+      'ice cream': 'Pink Rose',
+      professor: 'Reinman',
+      editor: 'IntelliJ',
+      language: 'Java',
+      course: 'CS C122',
+      'TV show': 'The Owl House',
+    },
   },
-
   {
     image: '/static/member/jliu.JPG',
     name: 'Jason Liu',
@@ -397,20 +410,6 @@ const members = [
       language: 'C++',
       course: 'CS 132',
       'TV show': 'Death Note',
-    },
-  },
-  {
-    image: '/static/member/sn.JPG',
-    name: 'Suhas Nagar',
-    position: 'Advisor, President Emeritus',
-    description: 'Hi! I\'m Suhas, a 4th year CS Major from the Bay Area. In my free time, you can usually find me playing video games (I\'m a big fan of Hollow Knight + Outer Wilds), trying to write my own rap battles, or playing basketball at Wooden :)',
-    funFacts: {
-      'ice cream': 'Pink Rose',
-      professor: 'Reinman',
-      editor: 'IntelliJ',
-      language: 'Java',
-      course: 'CS C122',
-      'TV show': 'The Owl House',
     },
   },
   {
@@ -652,20 +651,6 @@ const members = [
     },
   },
   {
-    image: '/static/member/pb.png',
-    name: 'Prabhvir Babra',
-    position: 'Officer',
-    description: 'Hi, I\'m Prabhvir. I am a Computer Engineering major and am involved with the Competitive Coding track and Codesprint. I love a variety of fields within this space as I love Computer Security, robotics, and low-level systems. I am also involved with Bruin Underwater Robotics in ASME, IEEE, and 3D4E. Outside of CS, I also enjoy Pokemon Showdown, mainly current-gen OU and ZU and down to play a game or two. I also play video games and love Nintendo series such as The Legend of Zelda or Mario, and I\'m currently playing Majora\'s Mask and Twilight Princess.',
-    funFacts: {
-      'ice cream': 'Cookies and Cream',
-      professor: 'Smallberg',
-      editor: 'Emacs',
-      language: 'APL',
-      course: 'Physics 1C',
-      'TV show': 'Xavier Renegade Angel',
-    },
-  },
-  {
     image: '/static/member/et.png',
     name: 'Ethan Tran',
     position: 'Officer',
@@ -677,6 +662,19 @@ const members = [
       language: 'Python',
       course: 'Math 33A',
       'TV show': 'Arcane',
+    },
+  },   {
+    image: '/static/member/pb.png',
+    name: 'Prabhvir Babra',
+    position: 'Officer',
+    description: 'Hi, I\'m Prabhvir. I am a Computer Engineering major and am involved with the Competitive Coding track and Codesprint. I love a variety of fields within this space as I love Computer Security, robotics, and low-level systems. I am also involved with Bruin Underwater Robotics in ASME, IEEE, and 3D4E. Outside of CS, I also enjoy Pokemon Showdown, mainly current-gen OU and ZU and down to play a game or two. I also play video games and love Nintendo series such as The Legend of Zelda or Mario, and I\'m currently playing Majora\'s Mask and Twilight Princess.',
+    funFacts: {
+      'ice cream': 'Cookies and Cream',
+      professor: 'Smallberg',
+      editor: 'Emacs',
+      language: 'APL',
+      course: 'Physics 1C',
+      'TV show': 'Xavier Renegade Angel',
     },
   }
 ];
