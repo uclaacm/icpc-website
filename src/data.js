@@ -633,6 +633,45 @@ const members = [
       course: '',
       'TV show': ''
     },
+  },
+  {
+    image: '/static/member/pl.png',
+    name: 'Patrick Lu',
+    description: 'howdy! I\'m patrick, a second-year CS major interested in algorithms, math, and brainteasers.  In my free time, I like to travel, watch football, and hang out with my friends.',
+    funFacts: {
+      'ice cream': 'ube malted crunch',
+      professor: 'reinman',
+      editor: 'vs code',
+      language: 'c++',
+      course: 'cs33',
+      'TV show': 'suits',
+    },
+  },
+  {
+    image: '/static/member/pb.png',
+    name: 'Prabhvir Babra',
+    description: 'Hi, I\'m Prabhvir. I am a Computer Engineering major and am involved with the Competitive Coding track and Codesprint. I love a variety of fields within this space as I love Computer Security, robotics, and low-level systems. I am also involved with Bruin Underwater Robotics in ASME, IEEE, and 3D4E. Outside of CS, I also enjoy Pokemon Showdown, mainly current-gen OU and ZU and down to play a game or two. I also play video games and love Nintendo series such as The Legend of Zelda or Mario, and I\'m currently playing Majora\'s Mask and Twilight Princess.',
+    funFacts: {
+      'ice cream': 'Cookies and Cream',
+      professor: 'Smallberg',
+      editor: 'Emacs',
+      language: 'APL',
+      course: 'Physics 1C',
+      'TV show': 'Xavier Renegade Angel',
+    },
+  },
+  {
+    image: '/static/member/et.png',
+    name: 'Ethan Tran',
+    description: 'Hi, I\'m Ethan, a 1st year Math of Computation major. Besides math and computational problem solving, I enjoy running and playing tennis. I also like to watch cycling and StarCraft 2 in my spare time. You\'ll often find me listening to classical music from no earlier than the 1830\'s.',
+    funFacts: {
+      'ice cream': 'Chocolate',
+      professor: 'Gannon',
+      editor: 'VSCode',
+      language: 'Python',
+      course: 'Math 33A',
+      'TV show': 'Arcane',
+    },
   }
 ];
 
