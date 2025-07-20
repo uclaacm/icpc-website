@@ -26,6 +26,7 @@ export default function Carousel() {
   const cards = [
     '/static/regionals/2024.jpg',
     '/static/regionals/nac_2025.jpg',
+    '/static/regionals/nac2024.jpg',
     '/static/regionals/j_concentrate.jpg',
     '/static/regionals/andy_prize.jpg',
     '/static/regionals/2021.jpg',
