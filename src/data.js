@@ -677,7 +677,49 @@ const members = [
       course: 'Physics 1C',
       'TV show': 'Xavier Renegade Angel',
     },
-  }
+  },
+  {
+    image: '/static/member/ta.jpg',
+    name: 'Tejasvi Aynor',
+    position: 'Officer',
+    description: 'Hi, I\'m Tejasvi, a second-year CSE major. In my free time, I enjoy doing euclidean geo problems, designing escape rooms, and watercolor painting.',
+    funFacts: {
+      'ice cream': 'Butterscotch',
+      professor: 'Smallberg',
+      editor: 'vscode',
+      language: 'c++',
+      course: 'Math 61',
+      'TV show': 'Avatar the Last Airbender',
+    },
+  },
+  {
+    image: '/static/member/jc.jpg',
+    name: 'Justin Chen',
+    position: 'Officer',
+    description: 'Hi, I\'m Justin, a soon-to-be second year computer science major. Outside of CS, I enjoy drawing, cooking, and playing Fromsoftware games.',
+    funFacts: {
+      'ice cream': 'Mint',
+      professor: 'Paul Eggert',
+      editor: 'VS Code',
+      language: 'C++',
+      course: 'Math 61',
+      'TV show': 'Not into TV :(',
+    },
+  },
+  {
+    image: '/static/member/aw.jpg',
+    name: 'Alan Wu',
+    position: 'Officer',
+    description: 'Hi there! I\'m Alan, a third year math and CS major. Academically I\'m interested in competitive programming and math, but outside of that, I like playing strategy games, listening to music, and hanging out with my friends.',
+    funFacts: {
+      'ice cream': 'vanilla',
+      professor: 'Palsburg',
+      editor: 'vscode',
+      language: 'c++',
+      course: 'Analysis',
+      'TV show': 'Frieren',
+    },
+  },
 ];
 
 export { allEvents, members, pastEvents, upcomingEvents };
