@@ -17,9 +17,11 @@ import {
   Flex,
 } from '@chakra-ui/react';
 import Container from 'components/container';
-import Carousel from './competitionCarousel';
+import Carousel from 'components/competitionCarousel';
 // import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import { Carousel } from 'react-responsive-carousel';
+
+import { carouselCards } from 'data';
 
 const AboutAndCarousel = () => {
   return (
@@ -45,7 +47,7 @@ const AboutAndCarousel = () => {
               maxW="600px"
               position="relative"
             >
-              <Carousel />
+              <Carousel cards={carouselCards} />
             </Box>
           </Box>
           {/* About Section - 50% */}

@@ -1,5 +1,15 @@
 import { UnorderedList } from "@chakra-ui/react";
 
+const carouselCards = [
+  '/static/regionals/2024.jpg',
+  '/static/regionals/nac_2025.jpg',
+  '/static/regionals/nac2024.jpg',
+  '/static/regionals/j_concentrate.jpg',
+  '/static/regionals/andy_prize.jpg',
+  '/static/regionals/2021.jpg',
+  '/static/regionals/2019.jpeg',
+]
+
 const upcomingEvents = [
   {
     name: "Estimathon",
@@ -636,4 +646,4 @@ const members = [
   }
 ];
 
-export { allEvents, members, pastEvents, upcomingEvents };
+export { carouselCards, allEvents, members, pastEvents, upcomingEvents };

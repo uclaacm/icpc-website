@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react'
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'
@@ -17,21 +16,11 @@ const settings = {
   pauseOnHover: true,
 }
 
-export default function Carousel() {
+export default function Carousel({ cards }) {
   const [slider, setSlider] = React.useState(null)
   
   const top = useBreakpointValue({ base: '90%', md: '50%' })
   const side = useBreakpointValue({ base: '30%', md: '10px' })
-  
-  const cards = [
-    '/static/regionals/2024.jpg',
-    '/static/regionals/nac_2025.jpg',
-    '/static/regionals/nac2024.jpg',
-    '/static/regionals/j_concentrate.jpg',
-    '/static/regionals/andy_prize.jpg',
-    '/static/regionals/2021.jpg',
-    '/static/regionals/2019.jpeg',
-  ]
   
   return (
     <Box position={'relative'} height={'400px'} width={'full'} overflow={'hidden'} borderRadius={'xl'} boxShadow={'2xl'}>
