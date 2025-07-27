@@ -18,8 +18,119 @@ import {
   Divider,
 } from '@chakra-ui/react';
 import Container from 'components/container';
+import Carousel from 'components/competitionCarousel';
 // import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import { Carousel } from 'react-responsive-carousel';
+
+import { carouselCards } from 'data';
+
+const AboutAndCarousel = () => {
+  return (
+    <Box py={8} px={4}>
+      {/* Main container */}
+      <Box maxW="1200px" mx="auto" w="full">
+        <Flex
+          direction={{ base: 'column', lg: 'row' }}
+          gap={{ base: 8, lg: 12 }}
+          align="center"
+          justify="center"
+        >
+          {/* Carousel Section - 50% */}
+          <Box 
+            flex={{ base: 1, lg: '0 0 50%' }} 
+            w="full"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Box 
+              w="full" 
+              maxW="600px"
+              position="relative"
+            >
+              <Carousel cards={carouselCards} />
+            </Box>
+          </Box>
+          {/* About Section - 50% */}
+          <Box 
+            flex={{ base: 1, lg: '0 0 50%' }}
+            pl={{ base: 0, lg: 6 }}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Stack spacing={4} textAlign="center" align="center">
+              <Box>
+                <Heading 
+                  as="h2" 
+                  fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                  fontWeight="bold"
+                  color="gray.800"
+                  lineHeight="1.2"
+                  position="relative"
+                  _after={{
+                    content: '""',
+                    position: 'absolute',
+                    bottom: '-6px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    width: '50px',
+                    height: '3px',
+                    bg: 'linear-gradient(90deg, #EC4899, #F472B6)',
+                    borderRadius: 'full'
+                  }}
+                >
+                  About ICPC
+                </Heading>
+              </Box>
+              
+              <Text 
+                fontSize={{ base: 'sm', lg: 'md' }}
+                lineHeight="1.6"
+                color="gray.600"
+                maxW="600px"
+                textAlign="center"
+              >
+                The International Collegiate Programming Contest (ICPC) is an algorithmic programming contest for college students. Teams of three, representing their university, work to solve the most real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure.
+              </Text>
+              
+              <Text 
+                fontSize={{ base: 'xs', lg: 'sm' }}
+                lineHeight="1.5"
+                color="gray.500"
+                textAlign="center"
+              >
+                It is the oldest, largest, and most prestigious programming contest in the world, featuring contestants from over 2,000 universities across 80 countries and six continents.
+              </Text>
+              
+              <Box pt={1}>
+                <Flex 
+                  direction={{ base: 'column', sm: 'row' }}
+                  gap={3}
+                  justify="center"
+                  align="center"
+                >
+                  <Box textAlign="center">
+                    <Text fontSize="lg" fontWeight="bold" color="pink.500">2000+</Text>
+                    <Text fontSize="xs" color="gray.500">Universities</Text>
+                  </Box>
+                  <Box textAlign="center">
+                    <Text fontSize="lg" fontWeight="bold" color="pink.600">80</Text>
+                    <Text fontSize="xs" color="gray.500">Countries</Text>
+                  </Box>
+                  <Box textAlign="center">
+                    <Text fontSize="lg" fontWeight="bold" color="pink.700">6</Text>
+                    <Text fontSize="xs" color="gray.500">Continents</Text>
+                  </Box>
+                </Flex>
+              </Box>
+            </Stack>
+          </Box>
+        </Flex>
+      </Box>
+    </Box>
+  )
+}
 
 const RegionalsContainer = () => (
   <div className="regionals">
@@ -35,19 +146,8 @@ const RegionalsContainer = () => (
       <meta property="og:site_name" content="ACM ICPC at UCLA" />
     </Helmet>
     <Container narrow>
-      <Heading as="h1" fontSize={['5xl']} textAlign="center" py={4}>ICPC</Heading>
       <Stack pb={10} spacing={10} align="center">
-        <Stack direction={['column', 'row']} align="center" justify='space-between'>
-          <Image src="/static/regionals/2021.jpg" width={["100%", "49%"]} />
-          <Image src="/static/regionals/2019.jpeg" width={["100%", "49%"]} />
-        </Stack>
-        <Stack align="center">
-          <Heading as="h2" fontSize={['lg', 'xl']}>About</Heading>
-          <Text>
-            The International Collegiate Programming Contest (ICPC) is an algorithmic programming contest for college students. Teams of three, representing their university, work to solve the most real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure. It is the oldest, largest, and most prestigious programming contest in the world, featuring contestants from over 2,000 universities that are spread across 80 countries and six continents.
-
-          </Text>
-        </Stack>
+        <AboutAndCarousel/>
         <Stack align="center">
           <Heading as="h2" fontSize={['lg', 'xl']}> UCLA ICPC Achievements</Heading>
 
