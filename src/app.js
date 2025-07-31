@@ -48,7 +48,6 @@ const { createHash } = require('crypto');
 
 
 const HomeContainer = lazy(() => import('pages/home'));
-const EventsContainer = lazy(() => import('pages/events'));
 const RegionalsContainer = lazy(() => import('pages/regionals'));
 const TeamContainer = lazy(() => import('pages/team'));
 const CreateContainer = lazy(() => import("pages/create"));
@@ -75,11 +74,6 @@ const Navbar = (props) => {
         <NavLink to='/' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
           <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
             home
-          </Button>
-        </NavLink>
-        <NavLink end to='/events' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
-          <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
-            events
           </Button>
         </NavLink>
         <NavLink end to='/icpc' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
@@ -282,7 +276,6 @@ const App = () => {
         <MainContent>
           <Routes>
             <Route exact path="/" element={<HomeContainer />} />
-            <Route exact path="/events" element={<EventsContainer />} />
             <Route exact path="/icpc" element={<RegionalsContainer />} />
             <Route exact path="/team" element={<TeamContainer />} />
             <Route exact path="/privacy" element={<PrivacyPolicyContainer />} />
