@@ -668,7 +668,7 @@ const members = [
     image: '/static/member/pb.png',
     name: 'Prabhvir Babra',
     position: 'Officer',
-    description: 'Hi, I\'m Prabhvir. I am a Computer Engineering major and am involved with the Competitive Coding track and Codesprint. I love a variety of fields within this space as I love Computer Security, robotics, and low-level systems. I am also involved with Bruin Underwater Robotics in ASME, IEEE, and 3D4E. Outside of CS, I also enjoy Pokemon Showdown, mainly current-gen OU and ZU and down to play a game or two. I also play video games and love Nintendo series such as The Legend of Zelda or Mario, and I\'m currently playing Majora\'s Mask and Twilight Princess.',
+    description: 'Hi, I\'m Prabhvir. I am a Computer Engineering major and am involved with the Competitive Coding track and Codesprint. I\'m really into robots. I also enjoy Pokemon Showdown, mainly current-gen OU and randbats.',
     funFacts: {
       'ice cream': 'Cookies and Cream',
       professor: 'Smallberg',
