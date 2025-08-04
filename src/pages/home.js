@@ -68,33 +68,110 @@ const HomeContainer = () => {
             programming contests, everything we do revolves around the central theme of critical algorithmic thinking.
           </Text>
           <Text textalign="center" fontSize={['sm', 'md']}>
-            Click below to find out more about us:
+            We have the following:
             </Text>
-          <Flex wrap="wrap" justify="center" align="center">
-            <Link to="team">
-              <Button m={3} colorScheme="brand" variant="outline">Meet Our Team</Button>
-            </Link>
-            <Link to="icpc">
-              <Button m={3} colorScheme="brand" variant="outline">ICPC Regionals</Button>
-            </Link>
-            <Link to={{
-              pathname: 'events',
-              hash: '#all-events',
-            }}
-            >
-              <Button m={3} colorScheme="brand" variant="outline">Learn More About our Events</Button>
-            </Link>
-          </Flex>
         </Stack>
       </Container>
 
       <Divider p={3} borderColor="brand.500" />
 
       <Container>
-        <Stack p={3} spacing={3} align="center">
-          <Heading as="h1" fontSize={['2xl', '3xl']}>Upcoming Events</Heading>
-          <UpcomingEvents />
-        </Stack>
+        <Flex
+          direction={isMobile ? "column" : "row"}
+          justify="space-between"
+          align="stretch"
+          wrap="wrap"
+          px={3}
+          py={6}
+          gap={6}
+        >
+          {/* Workshops Column */}
+          <Box
+            as={Link}
+            to="/workshops"  // Adjust this path to your actual route
+            flex="1"
+            minW={isMobile ? "100%" : "30%"}
+            mb={isMobile ? 6 : 0}
+            textAlign="center"
+            p={4}
+            borderRadius="md"
+            boxShadow="sm"
+            cursor="pointer"
+            _hover={{ boxShadow: "lg", bg: "pink.50" }}
+            transition="all 0.3s ease"
+          >
+            <Heading fontSize={['xl', '2xl']} mb={3}>Workshops</Heading>
+            <Image
+              mx="auto"
+              objectFit="contain"
+              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+              alt="Workshops"
+              maxHeight="200px"
+              mb={3}
+            />
+            <Text fontSize={['sm', 'md']} px={2}>
+              Explore our regularly held workshops to practice for interviews, competitive projects, and more.
+            </Text>
+          </Box>
+
+          {/* Events Column */}
+          <Box
+            as={Link}
+            to="/events"  // Adjust this path to your actual route
+            flex="1"
+            minW={isMobile ? "100%" : "30%"}
+            mb={isMobile ? 6 : 0}
+            textAlign="center"
+            p={4}
+            borderRadius="md"
+            boxShadow="sm"
+            cursor="pointer"
+            _hover={{ boxShadow: "lg", bg: "pink.50" }}
+            transition="all 0.3s ease"
+          >
+            <Heading fontSize={['xl', '2xl']} mb={3}>Events</Heading>
+            <Image
+              mx="auto"
+              objectFit="contain"
+              src="https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png"
+              alt="Events"
+              maxHeight="200px"
+              mb={3}
+            />
+            <Text fontSize={['sm', 'md']} px={2}>
+              Checkout out the events we will be hosting throughout the year.
+            </Text>
+          </Box>
+
+          {/* Competitions Column */}
+          <Box
+            as={Link}
+            to="/icpc"  // Adjust this path to your actual route
+            flex="1"
+            minW={isMobile ? "100%" : "30%"}
+            mb={isMobile ? 6 : 0}
+            textAlign="center"
+            p={4}
+            borderRadius="md"
+            boxShadow="sm"
+            cursor="pointer"
+            _hover={{ boxShadow: "lg", bg: "pink.50" }}
+            transition="all 0.3s ease"
+          >
+            <Heading fontSize={['xl', '2xl']} mb={3}>Competitions</Heading>
+            <Image
+              mx="auto"
+              objectFit="contain"
+              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/133.png"
+              alt="Competitions"
+              maxHeight="200px"
+              mb={3}
+            />
+            <Text fontSize={['sm', 'md']} px={2}>
+              Try out for our competitiion team to participate in the International Collegiate Programming Contest.
+            </Text>
+          </Box>
+        </Flex>
       </Container>
 
       <Divider p={3} borderColor="brand.500" />
