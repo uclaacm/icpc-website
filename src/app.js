@@ -205,7 +205,7 @@ const Footer = () => (
             <Link href="https://www.facebook.com/groups/ucla.icpc" isExternal>
               <Box as={FaFacebook} w={8} h={8} />
             </Link>
-            <Link href="https://discord.gg/3a6kx2y9" isExternal>
+            <Link href="https://discord.gg/jPXmBEWDgv" isExternal>
               <Box as={FaDiscord} w={8} h={8} />
             </Link>
             <Link href="https://www.instagram.com/acm.ucla" isExternal>
