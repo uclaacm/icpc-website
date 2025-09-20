@@ -14,7 +14,6 @@ import {
 } from '@chakra-ui/react';
 import Container from 'components/container';
 import Sponsor from "components/sponsor";
-import { UpcomingEvents } from 'pages/events';
 
 import { useMediaQuery } from 'hooks';
 
@@ -72,8 +71,6 @@ const HomeContainer = () => {
             </Text>
         </Stack>
       </Container>
-
-      <Divider p={3} borderColor="brand.500" />
 
       <Container>
         <Flex

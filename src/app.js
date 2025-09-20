@@ -48,6 +48,7 @@ const { createHash } = require('crypto');
 
 
 const HomeContainer = lazy(() => import('pages/home'));
+const WorkshopsContainer = lazy(() => import('pages/workshops'))
 const EventsContainer = lazy(() => import('pages/events'));
 const RegionalsContainer = lazy(() => import('pages/regionals'));
 const TeamContainer = lazy(() => import('pages/team'));
@@ -72,9 +73,9 @@ const Navbar = (props) => {
   const MenuContent = () => {
     return (
       <Fragment>
-        <NavLink to='/' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
+        <NavLink to='/workshops' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
           <Button fontWeight="semibold" fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
-            home
+            workshops
           </Button>
         </NavLink>
         <NavLink end to='/events' style={({isActive}) => ({color: isActive ? '#ff5479' : 'inherit'})}>
@@ -92,12 +93,6 @@ const Navbar = (props) => {
             team
           </Button>
         </NavLink>
-        <a href="https://codesprintla.uclaacm.com/">
-          <Button fontWeight='semibold' fontFamily="heading" size="sm" variant="transparent" _hover={{color: "brand.500"}}>
-            codesprint
-          </Button>
-        </a>
-        
       </Fragment>
     )};
 
@@ -282,6 +277,7 @@ const App = () => {
         <MainContent>
           <Routes>
             <Route exact path="/" element={<HomeContainer />} />
+            <Route exact path="/workshops" element={<WorkshopsContainer />} />
             <Route exact path="/events" element={<EventsContainer />} />
             <Route exact path="/icpc" element={<RegionalsContainer />} />
             <Route exact path="/team" element={<TeamContainer />} />
