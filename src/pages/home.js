@@ -104,7 +104,7 @@ const HomeContainer = () => {
             <Image
               mx="auto"
               objectFit="contain"
-              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+              src="/static/icon/workshopicon.png"
               alt="Workshops"
               maxHeight="200px"
               mb={3}
@@ -133,7 +133,7 @@ const HomeContainer = () => {
             <Image
               mx="auto"
               objectFit="contain"
-              src="https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png"
+              src="/static/icon/eventicon.svg"
               alt="Events"
               maxHeight="200px"
               mb={3}
@@ -162,7 +162,7 @@ const HomeContainer = () => {
             <Image
               mx="auto"
               objectFit="contain"
-              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/133.png"
+              src="/static/icon/icpccomplogo.svg"
               alt="Competitions"
               maxHeight="200px"
               mb={3}
