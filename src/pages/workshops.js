@@ -42,13 +42,13 @@ const TrackCard = ({ title, text, imageUrl, imageOnLeft = false }) => {
         </Box>
 
         {/* Right/Left Side: Image */}
-        <Box flexShrink={0} w={{ base: '100%', md: '250px' }}>
+        <Box flexShrink={0} w={{ base: '100%', md: '25vh' }}>
           <Image
             src={imageUrl}
             alt={`Illustration for ${title}`}
             borderRadius="md"
             objectFit="cover"
-            boxSize="250px"
+            boxSize="25vh"
             mx="auto"
           />
         </Box>

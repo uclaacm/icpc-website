@@ -1,145 +1,148 @@
-import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import React, { useRef, useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import {
-  Heading,
-  Image,
-  Stack,
-  Flex,
-  Text,
-  Badge,
-  SimpleGrid,
   Box,
-  Link,
-} from '@chakra-ui/react';
-import {
-  FaFacebook,
-  FaDiscord,
-} from 'react-icons/fa';
-import Container from 'components/container';
-import { EventCard, EventDescriptionCard } from 'components/eventcard';
-// import * as AWS from "aws-sdk";
-import { allEvents, pastEvents } from 'data';
+  Center,
+  Flex,
+  Heading,
+  Text,
+  Button,
+  Image,
+} from "@chakra-ui/react";
+import Container from "components/container";
 
-// const docClient = new AWS.DynamoDB.DocumentClient();
+const loremIpsum =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
 
-const UpcomingEvents = () => {
-  const [eventsData, setEventsData] = useState([]);
-  
-  useEffect(()=>{
-    (async ()=>{
-      let res = await fetch('https://clammy-waiting-dragon.glitch.me/events');
-      let data = await res.json();
-      console.log(data);
-      data = data.map(event => ({
-        ...event,
-        start_time: new Date(event.start_time),
-        end_time: new Date(event.end_time)
-      }));
-      data.sort((a,b) => {return a.start_time - b.start_time});
-      const firstUpcomingEvent = data.findIndex(event => event.end_time > (new Date()));
-      if (firstUpcomingEvent !== -1) {
-        setEventsData(data.splice(firstUpcomingEvent, firstUpcomingEvent+4)); 
-      }
-      // setEventsData(eventsData.splice(0, 4));
-    })()
+const loremPic = "https://picsum.photos/900/900"
+
+
+const featuredEvents = [
+  {
+    title: "Codesprint",
+    description: loremIpsum,
+    bgColor: "gray.50",
+    link: "#",
+    imageSrc: loremPic,
+  },
+  {
+    title: "Break the Binary",
+    description: loremIpsum,
+    bgColor: "brand.50",
+    link: "#",
+    imageSrc: loremPic,
+  },
+  {
+    title: "Estimathon",
+    description: loremIpsum,
+    bgColor: "gray.50",
+    link: "#",
+    imageSrc: loremPic,
+  },
+];
+
+const EventsContainer = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const scrollRef = useRef();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollLeft = scrollRef.current.scrollLeft;
+      const width = scrollRef.current.offsetWidth;
+      setActiveIndex(Math.round(scrollLeft / width));
+    };
+    const node = scrollRef.current;
+    node.addEventListener("scroll", handleScroll);
+    return () => node.removeEventListener("scroll", handleScroll);
   }, []);
 
-  function hourToString(hour){
-    return ((hour%12) === 0 ? '12' : (hour % 12)) + ((hour < 12) ? ' AM' : ' PM');
-  }
-
-  if (eventsData.length === 0) 
-    return (<Heading size='lg'>Loading...</Heading>);
   return (
-    <Flex wrap="wrap" direction="row" textAlign="center" justify="space-evenly" w={"100%"}>
-      {eventsData.map((event, index) => (
-        <EventCard key={index} event={event}></EventCard>
-      ))}
-    </Flex>
+    <div className="events">
+      <Box
+        position="relative"
+        h="95vh"
+        overflowX="auto"
+        whiteSpace="nowrap"
+        ref={scrollRef}
+        sx={{
+          scrollSnapType: "x mandatory",
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
+          "&::-webkit-scrollbar": {
+            display: "none",
+          },
+        }}
+      >
+        {/* Event sections */}
+        {featuredEvents.map((event, index) => (
+          <Flex
+            key={index}
+            h="100%"
+            w="100%"
+            align="center"
+            justify="center"
+            direction="column"
+            display="inline-flex"
+            bg={event.bgColor}
+            sx={{
+              scrollSnapAlign: "start",
+            }}
+          >
+            <Container>
+              <Heading as="h1" size="2xl" mb={6} textAlign="center" px={4}>
+                {event.title}
+              </Heading>
+              <Text fontSize="xl" textAlign="center" whiteSpace="pre-line" px={4} mb={6}>
+                {event.description}
+              </Text>
+              {/* Event image */}
+              <Center>
+                <Image
+                  src={event.imageSrc}
+                  alt={event.title}
+                  borderRadius="md"
+                  mb={2}
+                  maxH="300px"
+                />
+              </Center>
+              <Box textAlign="center" mt={8}>
+                <Button
+                  as="a"
+                  href={event.link}
+                  colorScheme="blue"
+                  size="lg"
+                >
+                  Learn More
+                </Button>
+              </Box>
+            </Container>
+          </Flex>
+        ))}
+      </Box>
+
+      {/* Pagination dots */}
+      <Flex
+        position="absolute"
+        bottom={8}
+        right={8}
+        gap={2}
+        zIndex={1}
+      >
+        {featuredEvents.map((_, idx) => (
+          <Box
+            key={idx}
+            w={4}
+            h={4}
+            borderRadius="full"
+            bg={activeIndex === idx ? "blue.400" : "gray.300"}
+            border="2px solid"
+            borderColor="white"
+            transition="background 0.3s"
+          />
+        ))}
+      </Flex>
+    </div>
   );
 };
 
-const AllEvents = () => {
-  const eventsData = allEvents;
-  return (
-    <Flex wrap="wrap" direction="row" textAlign="center" justify="space-evenly" w={"100%"}>
-      {eventsData.map((event, index) => (
-        <EventDescriptionCard key={index} event={event}></EventDescriptionCard>
-      ))}
-    </Flex>
-  );
-  return (
-    <Flex wrap="wrap" textAlign="center" justify="space-evenly">
-      {eventsData.map((event, index) => (
-        <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
-          <Image src={event.image} rounded="lg" />
-            <Stack isInline mt={2} spacing={2}>
-            {typeof event.quarter !== "undefined" && 
-                  event.quarter.split('/').map((qtr, index) => (
-                    <Badge key={index} colorScheme="teal">{qtr}</Badge>
-                  ))}
-          </Stack>
-          <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
-          <Text>{event.description}</Text>
-        </Box>
-      ))}
-    </Flex>
-  );
-};
-
-const PastEvents = () => {
-  const eventsData = pastEvents;
-  return (
-    <Flex wrap="wrap" textAlign="center" justify="space-evenly">
-      {eventsData.map((event, index) => (
-        <Box key={index} w={["100%", "400px"]} rounded="lg" p={6}>
-          <Image src={event.image} rounded="lg" />
-            <Stack isInline mt={2} spacing={2}>
-              {typeof event.quarter !== "undefined" && 
-                  event.quarter.split('/').map((qtr, index) => (
-                    <Badge key={index} colorScheme="teal">{qtr}</Badge>
-                  ))}
-          </Stack>
-          <Heading as="h4" fontSize={['md', 'lg']} mt={2}>{event.name}</Heading>
-          <Text>{event.description}</Text>
-        </Box>
-      ))}
-    </Flex>
-  );
-};
-
-const EventsContainer = (props) => (
-  <div className="events">
-    <Helmet>
-      <title>Events | ACM ICPC at UCLA</title>
-      <meta name="description" content="Learn more about our current and upcoming events." />
-      <meta name="keywords" content="events,acm,icpc,ucla,competitive,programming" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="Events | ACM ICPC at UCLA" />
-      <meta property="og:description" content="Learn more about ACM ICPC's current and upcoming events." />
-      <meta property="og:url" content="https://icpc.uclaacm.com/events" />
-      <meta property="og:image" content="https://icpc.uclaacm.com/static/icon/logo256.png" />
-      <meta property="og:site_name" content="ACM ICPC at UCLA" />
-    </Helmet>
-    <Container>
-      <Heading as="h1" fontSize={['2xl', '3xl']} textAlign="center" py={4}>Events</Heading>
-      <Stack pb={10} spacing={10}>
-        <Stack align="center">
-          <Heading as="h2" fontSize={['lg', 'xl']}>Upcoming</Heading>
-          <UpcomingEvents />
-        </Stack>
-        <Stack align="center">
-          <Heading as="h2" id="all-events" fontSize={['lg', 'xl']}>All Events and Workshops</Heading>
-          <AllEvents />
-        </Stack>
-        {/* <Stack align="center">
-          <Heading as="h2" id="past-events" fontSize={['lg', 'xl']}>Past Events and Workshops </Heading>
-          <PastEvents />
-        </Stack> */}
-      </Stack>
-    </Container>
-  </div>
-);
-
-export { UpcomingEvents };
 export default EventsContainer;
