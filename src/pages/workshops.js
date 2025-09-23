@@ -63,14 +63,14 @@ const WorkshopsContainer = () => {
   const tracks = [
     {
       title: "Interview Track",
-      text: loremIpsum,
-      imageUrl: "https://picsum.photos/1600/900",
+      text: "Get ready for interviews with focused sessions designed to help you succeed. We’ll cover algorithms and techniques that often come up in technical interviews, explore behavioral strategies to help you tell your story, and run mock interviews so you can practice in a supportive setting.",
+      imageUrl: "/static/icon/interviewtrackicon.png",
       imageOnLeft: false,
     },
     {
-      title: "Training",
-      text: loremIpsum,
-      imageUrl: "https://picsum.photos/1600/900",
+      title: "Small Group Training",
+      text: "Join us for focused small group training sessions where you’ll learn algorithms and competitive coding alongside peers at a similar skill level. The smaller group sizes ensure you’ll get more personal feedback and support as you grow your skills.",
+      imageUrl: "/static/icon/trainingicon.png",
       imageOnLeft: true,
     },
     {
