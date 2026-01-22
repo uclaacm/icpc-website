@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react';
 import Container from 'components/container';
 import Sponsor from "components/sponsor";
-import { UpcomingEvents } from 'pages/events';
+import { UpcomingEvents } from 'pages/hardcoded_events';
 
 import { useMediaQuery } from 'hooks';
 
