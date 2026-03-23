@@ -90,15 +90,6 @@ const HomeContainer = () => {
 
       <Divider p={3} borderColor="brand.500" />
 
-      <Container>
-        <Stack p={3} spacing={3} align="center">
-          <Heading as="h1" fontSize={['2xl', '3xl']}>Upcoming Events</Heading>
-          <UpcomingEvents />
-        </Stack>
-      </Container>
-
-      <Divider p={3} borderColor="brand.500" />
-
       <Container narrow>
         <Stack p={3} spacing={3} textAlign="center" align="center">
           <Heading as="p">Sponsored by</Heading>
@@ -106,7 +97,8 @@ const HomeContainer = () => {
             <Sponsor sponsor_name="Jane Street" external_link="https://www.janestreet.com/" img_src="static/sponsors/Jane_Street_Capital_Logo.svg" />
             <Sponsor sponsor_name="Traversal" external_link="https://www.traversal.com/" img_src="static/sponsors/traversal-full-logo.png" />
             <Sponsor sponsor_name="HRT" external_link="https://www.hudsonrivertrading.com/" img_src="static/sponsors/hrt-full-logo.png" />
-            <Sponsor sponsor_name="Citadel" external_link="https://www.citadel.com/" img_src="static/sponsors/Citadel-Logo.jpg" />
+            <Sponsor sponsor_name="Citadel" external_link="https://www.citadel.com/" img_src="static/sponsors/citadel.webp" />
+            <Sponsor sponsor_name="X-Camp" external_link="https://x-camp.academy/" img_src="static/sponsors/x-camp.webp" />
           </Flex>
         </Stack>
         <br/>      

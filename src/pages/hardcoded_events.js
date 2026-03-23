@@ -20,14 +20,14 @@ import { allEvents, pastEvents } from 'data';
 
 const hardcodedUpcomingEvents = [
   {
-    name: 'Break The Binary',
-    description: 'To kick off winter quarter, ICPC is proud to present the 3rd edition of Break the Binary in collaboration with ACM W. Get ready for a Pokémon-themed 🙀🙀🙀  puzzle hunt packed with logic, patterns, and clever problem-solving. Work in teams to tackle a sequence of puzzles inspired by the Pokémon universe — no coding required and beginner-friendly! Furthermore, there will be free food, awesome prizes, and a chance to network with professors!',
-    image: '/static/event/btb26.png', // placeholder path
-    start_time: new Date('2026-01-24T10:00:00'),
-    end_time: new Date('2026-01-24T16:30:00'),
+    name: 'Codesprint 2026',
+      description: "Codesprint LA is our flagship competitive coding competition where you will be competing in teams of three to solve competitive coding problems. This year, our theme is The Legend of Zelda. You have the choice of participating in Beginner or Open Division for university students and High School Division for high-schoolers. Stay tuned for registration details :).",
+    image: '/static/event/codesprint2026firsticon.webp', // placeholder path
+    start_time: new Date('2026-05-09T09:00:00'),
+    end_time: new Date('2026-05-09T17:00:00'),
     location: 'De Neve Plaza Room, The Hill',
-    quarter: 'Winter 2026',
-    discord: 'https://forms.gle/ZT2oqEFrCRqgXQQf8',
+    quarter: 'Spring 2026',
+    discord: 'https://discord.gg/rsqVFrJc',
   },
 ];
 
