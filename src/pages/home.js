@@ -89,7 +89,7 @@ const HomeContainer = () => {
         </Stack>
       </Container>
 
-      <Divider p={3} borderColor="brand.500" />
+      <Divider borderColor="brand.500" />
 
       <SponsorCarousel />
     </div>
