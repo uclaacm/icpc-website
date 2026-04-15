@@ -12,8 +12,9 @@ import {
   Divider,
   useToast,
 } from '@chakra-ui/react';
+
 import Container from 'components/container';
-import Sponsor from "components/sponsor";
+import SponsorCarousel from "components/sponsorcarousel";
 import { UpcomingEvents } from 'pages/hardcoded_events';
 
 import { useMediaQuery } from 'hooks';
@@ -88,21 +89,9 @@ const HomeContainer = () => {
         </Stack>
       </Container>
 
-      <Divider p={3} borderColor="brand.500" />
+      <Divider borderColor="brand.500" />
 
-      <Container narrow>
-        <Stack p={3} spacing={3} textAlign="center" align="center">
-          <Heading as="p">Sponsored by</Heading>
-          <Flex alignItems="center" justifyContent="space-between" direction="row" maxWidth={isMobile?null:"850px"} wrap="wrap" gap={16}>
-            <Sponsor sponsor_name="Jane Street" external_link="https://www.janestreet.com/" img_src="static/sponsors/Jane_Street_Capital_Logo.svg" />
-            <Sponsor sponsor_name="Traversal" external_link="https://www.traversal.com/" img_src="static/sponsors/traversal-full-logo.png" />
-            <Sponsor sponsor_name="HRT" external_link="https://www.hudsonrivertrading.com/" img_src="static/sponsors/hrt-full-logo.png" />
-            <Sponsor sponsor_name="Citadel" external_link="https://www.citadel.com/" img_src="static/sponsors/citadel.webp" />
-            <Sponsor sponsor_name="X-Camp" external_link="https://x-camp.academy/" img_src="static/sponsors/x-camp.webp" />
-          </Flex>
-        </Stack>
-        <br/>      
-      </Container>
+      <SponsorCarousel />
     </div>
   );
 };
