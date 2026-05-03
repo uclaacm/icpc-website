@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
   Box,
   Flex,
@@ -49,7 +49,21 @@ const events = [
     registrationUrl: null,
     learnMoreUrl: 'https://docs.google.com/document/d/1ScsJaGIcoq8K-DrO3pfhatx5L6ACuHPgPA8MyWz7cEo/edit?usp=sharing',
     status: 'upcoming',
-    registrationOpens: 'May 4, 2026'
+    registrationOpens: 'May 4, 2026',
+    signupForms: [
+      {
+        label: 'Lesson Modules',
+        endpoint: 'https://canis.jasonfeng365.top/api/contests/62916844/signups/',
+        capacity: 50,
+        formUrl: 'https://docs.google.com/forms/d/1KuDSaz0HUIYUwNisAPXTtx3t1BG3iS5Zs2cNwsGofjM/',
+      },
+      {
+        label: 'Mock Interviews',
+        endpoint: 'https://canis.jasonfeng365.top/api/contests/72691826/signups/',
+        capacity: 24,
+        formUrl: 'https://docs.google.com/forms/d/1P9lAErAkgM3tepnDIonM0QPyDWvuYmNKqqmohVlXFR0/',
+      },
+    ],
   },
 
   // ── Past ──────────────────────────────────────────────────────────────────
@@ -82,6 +96,108 @@ const events = [
     status: 'closed',
   },
 ];
+
+// ─── Signup Capacity ───────────────────────────────────────────────────────────
+const SignupCapacity = ({ forms }) => {
+  const [counts, setCounts] = useState(forms.map(() => null)); // null = loading
+
+  useEffect(() => {
+    forms.forEach((form, i) => {
+      fetch(form.endpoint, { method: 'GET' })
+        .then((res) => res.json())
+        .then((json) => {
+          const yes = json.teamSizeMap?.['Yes!'] ?? 0;
+          setCounts((prev) => {
+            const next = [...prev];
+            next[i] = yes;
+            return next;
+          });
+        })
+        .catch(() => {
+          setCounts((prev) => {
+            const next = [...prev];
+            next[i] = -1; // error sentinel
+            return next;
+          });
+        });
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  return (
+    <Box mb={5}>
+      <Text
+        fontFamily="heading"
+        fontWeight="semibold"
+        fontSize="xs"
+        color="gray.400"
+        textTransform="uppercase"
+        letterSpacing="wider"
+        mb={2}
+      >
+        Registration
+      </Text>
+      <Flex direction="column" gap={2}>
+        {forms.map((form, i) => {
+          const filled = counts[i];
+          const isLoading = filled === null;
+          const isError = filled === -1;
+          const pct = isLoading || isError ? 0 : Math.min((filled / form.capacity) * 100, 100);
+          const isFull = !isLoading && !isError && filled >= form.capacity;
+
+          return (
+            <Box
+              key={form.label}
+              as="a"
+              href={form.formUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              bg="gray.50"
+              border="1.5px solid"
+              borderColor={isFull ? 'red.200' : 'gray.200'}
+              borderRadius="lg"
+              px={3}
+              py={2}
+              _hover={{ borderColor: isFull ? 'red.300' : 'brand.300', bg: isFull ? 'red.50' : 'brand.50' }}
+              transition="all 0.2s"
+              display="block"
+            >
+              <Flex justify="space-between" align="center" mb={1}>
+                <Text fontFamily="heading" fontWeight="semibold" fontSize="xs" color="primary">
+                  {form.label}
+                </Text>
+                <Text
+                  fontFamily="heading"
+                  fontSize="xs"
+                  fontWeight="bold"
+                  color={isFull ? 'red.500' : isError ? 'gray.400' : 'brand.600'}
+                >
+                  {isLoading
+                    ? '…'
+                    : isError
+                    ? 'N/A'
+                    : isFull
+                    ? 'Full'
+                    : `${filled} / ${form.capacity} filled`}
+                </Text>
+              </Flex>
+              {/* Progress bar */}
+              <Box bg="gray.200" borderRadius="full" h="5px" overflow="hidden">
+                <Box
+                  h="100%"
+                  w={`${pct}%`}
+                  bg={isFull ? 'red.400' : pct > 75 ? 'orange.400' : 'brand.500'}
+                  borderRadius="full"
+                  transition="width 0.6s ease"
+                />
+              </Box>
+            </Box>
+          );
+        })}
+      </Flex>
+    </Box>
+  );
+};
 
 // ─── Event Slide ───────────────────────────────────────────────────────────────
 const EventSlide = ({ event, isActive }) => {
@@ -225,6 +341,8 @@ const EventSlide = ({ event, isActive }) => {
                 </Text>
               </Box>
             </Flex>
+
+            {event.signupForms && <SignupCapacity forms={event.signupForms} />}
 
             {event.status === 'open' && event.registrationUrl ? (
               <Flex gap={3} align="center" wrap="wrap">
