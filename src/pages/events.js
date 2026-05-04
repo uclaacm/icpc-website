@@ -48,7 +48,7 @@ const events = [
     image: "/static/event/s26_interview_event.png",
     registrationUrl: null,
     learnMoreUrl: 'https://docs.google.com/document/d/1ScsJaGIcoq8K-DrO3pfhatx5L6ACuHPgPA8MyWz7cEo/edit?usp=sharing',
-    status: 'upcoming',
+    status: 'open',
     registrationOpens: 'May 4, 2026',
     signupForms: [
       {
@@ -344,24 +344,26 @@ const EventSlide = ({ event, isActive }) => {
 
             {event.signupForms && <SignupCapacity forms={event.signupForms} />}
 
-            {event.status === 'open' && event.registrationUrl ? (
+            {event.status === 'open' ? (
               <Flex gap={3} align="center" wrap="wrap">
-                <Button
-                  as="a"
-                  href={event.registrationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  colorScheme="brand"
-                  fontFamily="heading"
-                  fontWeight="semibold"
-                  size="md"
-                  rounded="lg"
-                  px={7}
-                  _hover={{ transform: 'translateY(-1px)', boxShadow: 'md' }}
-                  transition="all 0.2s"
-                >
-                  Register Now
-                </Button>
+                {event.registrationUrl && (
+                  <Button
+                    as="a"
+                    href={event.registrationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    colorScheme="brand"
+                    fontFamily="heading"
+                    fontWeight="semibold"
+                    size="md"
+                    rounded="lg"
+                    px={7}
+                    _hover={{ transform: 'translateY(-1px)', boxShadow: 'md' }}
+                    transition="all 0.2s"
+                  >
+                    Register Now
+                  </Button>
+                )}
                 {event.learnMoreUrl && (
                   <Button
                     as="a"
