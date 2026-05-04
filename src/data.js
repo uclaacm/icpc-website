@@ -649,7 +649,7 @@ const members = [
     image: '/static/member/aka.jpg',
     name: 'Arsh Koneru-Ansari',
     position: 'Officer',
-    description: 'Hi, I\'m a third year, teaching Interview Track this quarter.',
+    description: 'Hi, I\'m a third year.',
     funFacts: {
       'ice cream': '',
       professor: '',
@@ -803,6 +803,36 @@ const members = [
       "TV show": "N/A",
     },
   },
+  {
+      image: "/static/member/sr.webp",
+    name: "Sanjay Reddy",
+    position: "Officer",
+    description:
+      "Hi, I'm Sanjay, a first-year CSE major. I'm invested in competitive math/programming. In my free time, I like to read and play video games.",
+    funFacts: {
+      "ice cream": "mint chocolate chip",
+      professor: "Conley",
+      editor: "CP Editor",
+      language: "Python/C++ tie",
+      course: "cs 180",
+      "TV show": "Unstable",
+    },
+  },
+  {
+      image: "/static/member/as.webp",
+    name: "Aarav Singh",
+    position: "Officer",
+    description:
+      "Hi im Aarav! I'm a first year CS major who enjoys math and game theory. Outside of academics I love going to the gym, watching sports, and playing poker.",
+    funFacts: {
+      "ice cream": "mint chocolate chip",
+      professor: "Conley",
+      editor: "VSCode",
+      language: "Python",
+      course: "cs 33",
+      "TV show": "Spongebob",
+    },
+  }
 ];
 
 export { carouselCards, allEvents, members, pastEvents, upcomingEvents };
