@@ -26,7 +26,7 @@ const AllMembers = () => {
             <center>
               <AspectRatio maxW="152px" ratio={1}>
                 <Box p="4px" rounded="50%" borderColor="brand.500" borderWidth="8px">
-                  <Image size="128px" src={member.image} rounded="50%" />
+                  <Image boxSize="128px" src={member.image} rounded="50%" objectFit="cover" />
                 </Box>
               </AspectRatio>
             </center>
