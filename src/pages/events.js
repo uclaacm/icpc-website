@@ -24,7 +24,7 @@ const events = [
   // ── Upcoming ──────────────────────────────────────────────────────────────
   {
     id: 1,
-    tab: 'upcoming',
+    tab: 'past',
     name: 'CodeSprintLA 2026',
     description:
       'CodeSprintLA 2026 is a 3-person team competition from 11:30AM-4:30PM PDT. We have three divisions: a novice-friendly Beginner Division, an intermediate difficulty High School Division, and a challenging Open Division. We are excited to be giving out $2100+ in prizes across these rounds 🫰 💵 \n The contest will be held virtually for non-UCLA participants, with an in-person option for UCLA students. If you\'re interested, click learn more.',
@@ -34,7 +34,7 @@ const events = [
     image: "/static/event/banner_2026.png",
     registrationUrl: 'https://codesprintla.uclaacm.com/',
     learnMoreUrl: 'https://codesprintla.uclaacm.com/',
-    status: 'open',
+    status: 'closed',
   },
   {
     id: 2,
