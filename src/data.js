@@ -804,6 +804,21 @@ const members = [
     },
   },
   {
+    image: "/static/member/lf.webp",
+    name: "Leo Feng",
+    position: "Officer",
+    description:
+      "Hi, my name is Leo Feng. I am a first year applied math major. I enjoy going down random rabbit holes, watching sports (pretty much every major sport besides hockey), solving logic puzzles, playing the trumpet, and exploring different fields of research.",
+    funFacts: {
+      "ice cream": "banana dulce de luche",
+      professor: "Conley",
+      editor: "VS",
+      language: "English/Python",
+      course: "Cluster 10",
+      "TV show": "Arcane",
+    },
+  },
+  {
       image: "/static/member/sr.webp",
     name: "Sanjay Reddy",
     position: "Officer",
