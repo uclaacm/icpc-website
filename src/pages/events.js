@@ -38,7 +38,7 @@ const events = [
   },
   {
     id: 2,
-    tab: 'upcoming',
+    tab: 'past',
     name: 'Interview Prep Boot Camp',
     description:
       "ACM ICPC is hosting an Interview Prep Boot Camp this quarter! We've prepared a series of workshops on more niche interview topics outside of algorithms, a curated set of practice problems, and spots for mock technical interviews! This is a great opportunity to get some practice alongside peers and test your live problem-solving skills in a friendly, low-stakes environment.",
@@ -48,7 +48,7 @@ const events = [
     image: "/static/event/s26_interview_event.png",
     registrationUrl: null,
     learnMoreUrl: 'https://docs.google.com/document/d/1ScsJaGIcoq8K-DrO3pfhatx5L6ACuHPgPA8MyWz7cEo/edit?usp=sharing',
-    status: 'open',
+    status: 'closed',
     registrationOpens: 'May 4, 2026',
     signupForms: [
       {
